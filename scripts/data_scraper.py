@@ -16,7 +16,7 @@ data_dir = BASE_DIR / "data"
 # cards = pd.read_json(f"{data_dir}/default-cards-20260614090813.json")
 # ixalan_cards = cards[cards["set_name"] == "Ixalan"]
 
-xln = pd.read_csv(f"{data_dir}/xln_cards.csv")
+# xln = pd.read_csv(f"{data_dir}/xln_cards.csv")
 
 
 def mtggoldfish_slug(value: object) -> str:
@@ -25,10 +25,24 @@ def mtggoldfish_slug(value: object) -> str:
     return slug.strip("-")
 
 
+def mtggoldfish_card_name(value: object) -> str:
+    card_name = re.sub(r"//.*", "", str(value))
+    card_name = re.sub(r"\s*<[^>]+>\s*", " ", card_name)
+    return card_name.strip()
+
+
+def mtggoldfish_collector_number(value: object) -> str:
+    collector = str(value).strip()
+    collector = collector.replace("★", "")
+    collector = re.sub(r"^[A-Z0-9]{2,5}-", "", collector)
+    return collector
+
+
 def construct_html(card_name: str, set_name: str, collector_num: int, foil=False):
     base_html = "https://www.mtggoldfish.com/price/"
     
-    card_name = re.sub(r"//.*","",card_name)
+    card_name = mtggoldfish_card_name(card_name)
+    collector_num = mtggoldfish_collector_number(collector_num)
         
     set_html = mtggoldfish_slug(set_name)
     card_html = mtggoldfish_slug(card_name)
@@ -53,11 +67,47 @@ def get_url(name: str, df: pd.DataFrame, foil=False):
     final_html = construct_html(name, set_nm, collector, foil)
     return final_html
 
+# I need to construct my own legalities time series, as the "legality" is the current one
+
+
+allowed_set_types = [
+    "core",
+    "expansion",
+    "masters",
+    "draft_innovation",
+]
+def html_pipeline(cards_path: str):
+    cards = pd.read_json(cards_path)
+    
+
+    normal_sets_mask = cards["set_type"].isin(allowed_set_types)
+    normal_sets = cards.loc[normal_sets_mask]
+    normal_sets = normal_sets.loc[~normal_sets["collector_number"].astype(str).str.startswith("A-")]
+    normal_sets_unique = normal_sets["set_name"].unique()
+    all_sets_ready = [mtggoldfish_slug(x) for x in normal_sets_unique]
+    
+    card_htmls = []
+
+    for idx, row in normal_sets.iterrows():
+        card = row["name"]
+        set_name = row["set_name"]
+        collector_number = row["collector_number"]
+        
+        temp_card = construct_html(card, set_name, collector_number)
+
+        card_htmls.append(temp_card)
+           
+    return card_htmls
+
 def main():
-    print(xln.info()) 
     # construct_html("Favorable Winds", "Ixalan", 56, True)
-    the_html = get_url(xln["name"].iloc[11], xln, True)
-    print(the_html)
+    # the_html = get_url(xln["name"].iloc[11], xln, True)
+    # print(the_html)
+        
+    result = html_pipeline(f"{data_dir}/default-cards-20260614090813.json")
+
+    print(result)
+    print(len(result))
     return None
 
 if __name__ == "__main__":
