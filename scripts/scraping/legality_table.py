@@ -57,8 +57,6 @@ def process_legality(legality_table: pd.DataFrame) -> pd.DataFrame:
     print(df.sample(5))
     return df 
 
-
-
 def main():
     print(BASE_DIR)
 
