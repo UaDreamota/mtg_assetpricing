@@ -1,5 +1,7 @@
 import sys
 import re
+import time
+
 
 import numpy as np
 import pandas as pd
@@ -74,8 +76,28 @@ def weekly_returns(df: pd.DataFrame, type:str) -> pd.DataFrame:
 
     return weekly_returns
 
-def calculate_index():
-    pass
+def calculate_index(path_to_standards:str):
+           
+
+    portfolios = []
+
+    for file in path_to_standards.glob("*.parquet*"):
+        
+        start = time.time()
+        temp_df = pd.read_parquet(file) 
+        portfolio_temp = weekly_returns(temp_df, "price")
+        
+        portfolios.append(portfolio_temp)
+        
+        print(f"Execution time: {time.time() - start:.2f} seconds")
+
+        
+    whole_portfolio = pd.concat(portfolios, ignore_index = True)
+    whole_portfolio = whole_portfolio.sort_values("return_date")
+    whole_portfolio["portfolio_value"] = 100 * (1 + whole_portfolio["weekly_return"]).cumprod()
+        
+
+    return whole_portfolio
 
 # So, what I can do now is to make the average price per week
 # For that I need to make double index: card and date
@@ -98,15 +120,26 @@ def main():
     print(xln[rare_mask].count()) 
     print(xln[rare_mask]["weekly_close"].mean())
     
-    xln_portfolio = weekly_returns(xln, "price")
-    xln_portfolio["portfolio_value"] = 100 * (1 + xln_portfolio["weekly_return"]).cumprod()
-    print(xln_portfolio.head(25))
+    # xln_portfolio = weekly_returns(xln, "price")
+    # xln_portfolio["portfolio_value"] = 100 * (1 + xln_portfolio["weekly_return"]).cumprod()
+    # print(xln_portfolio.head(25))
+    #
+    # xln_portfolio_rare = weekly_returns(xln, "rare")
+    # xln_portfolio_rare["portfolio_value"] = 100 * (1 + xln_portfolio_rare["weekly_return"]).cumprod()
+    # print(xln_portfolio_rare.head(25))
 
-    xln_portfolio_rare = weekly_returns(xln, "rare")
-    xln_portfolio_rare["portfolio_value"] = 100 * (1 + xln_portfolio_rare["weekly_return"]).cumprod()
-    print(xln_portfolio_rare.head(25))
+    whole_portfolio = calculate_index(data_path)
+    print(whole_portfolio.head())
+    
+    print(whole_portfolio.info())
+    # plt.hist(whole_portfolio["portfolio_value"])
+    ax = sns.lineplot(data=whole_portfolio, x="return_date",y="portfolio_value")
+    ax.set_xlim(pd.Timestamp("2010-01-01"), pd.Timestamp("2026-01-01"))
+    plt.xlabel("Date")
+    plt.ylabel("Portfolio Value")
+    plt.title("Portfolio value of $2 standard card index")
 
-
+    plt.show()
 
 if __name__ == "__main__":
     main()
