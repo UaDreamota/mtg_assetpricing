@@ -188,12 +188,38 @@ def get_weekly_standard():
         print(f"Execution time: {time.time() - start:.2f} seconds")
     pass
 
+def grab_modern_index(cards_prices: Path):
+    
+    price_parquet = pd.read_json(cards_prices)[["name","rarity"]].drop_duplicates()
+    printr("[yellow]Loaded data[/yellow]")
+    con.register("cards", price_parquet)
+    printr("[blue]Starting query[/blue]")
+    query_df = con.execute(
+            """
+            SELECT card_name, card_id, price, date, rarity
+            from prices AS p
+            JOIN cards AS c
+            ON p.card_name = c.name
+            WHERE p.price > 2
+            """).df()
+    
+    printr("[magenta3]Ended query[/magenta3]")
+
+    result_weekly = query_df.groupby(["card_name", "rarity", pd.Grouper(key="date", freq="W-FRI")])["price"].last().reset_index(name="weekly_close")
+        
+
+    return result_weekly
 
 def main():
         
-        start_whole = time.time()
-        get_weekly_standard()
-        print(f"Execution time of the whole function: {time.time() - start_whole:.2f} seconds")
+        # start_whole = time.time()
+        # get_weekly_standard()
+        # print(f"Execution time of the whole function: {time.time() - start_whole:.2f} seconds")
+        df = grab_modern_index(cards_path)
+        print(df.head())
+        df.to_parquet("data/modern_prices.parquet")
+        
+        printr("[magenta3]File saved[/magenta3]")
         pass
 
 

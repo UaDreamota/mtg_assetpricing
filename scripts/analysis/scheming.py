@@ -26,6 +26,42 @@ parquet_dir = BASE_DIR / "data/price_histories.parquet"
 cards_path = f"{data_dir}/default-cards-20260614090813.json"
 data_path = BASE_DIR / "data" / "standards"
 ixalan_path = BASE_DIR / "data/ixalan_weekly.parquet"
+modern_path = BASE_DIR / "data" / "modern_prices.parquet"
+
+def load_weekly_prices(path: Path) -> pd.DataFrame:
+    columns = set(pq.read_schema(path).names)
+    if "weekly_close" in columns:
+        return pd.read_parquet(path)
+
+    required_columns = {"card_name", "rarity", "date", "price"}
+    missing_columns = required_columns - columns
+    if missing_columns:
+        raise ValueError(
+            f"{path} is missing required columns: {sorted(missing_columns)}"
+        )
+
+    # Support older generated files that contain daily prices. Doing this in
+    # DuckDB avoids loading the full daily dataset into pandas first.
+    connection = duckdb.connect()
+    try:
+        return connection.execute(
+            """
+            SELECT
+                card_name,
+                rarity,
+                CAST(
+                    time_bucket(INTERVAL '1 week', date + INTERVAL '2 days')
+                    + INTERVAL '4 days'
+                    AS DATE
+                ) AS date,
+                arg_max(price, date) AS weekly_close
+            FROM read_parquet(?)
+            GROUP BY card_name, rarity, 3
+            """,
+            [str(path)],
+        ).df()
+    finally:
+        connection.close()
 
 
 def straight_average(data_path: str, type: str) -> pd.DataFrame:
@@ -50,7 +86,7 @@ def straight_average(data_path: str, type: str) -> pd.DataFrame:
     all_times = index
     return all_times
     
-def weekly_returns(df: pd.DataFrame, type:str) -> pd.DataFrame:
+def weekly_returns(df: pd.DataFrame, type:str, filter=2) -> pd.DataFrame:
     df = df.sort_values(["card_name", "date"])
 
     grouped = df.groupby("card_name")
@@ -61,7 +97,10 @@ def weekly_returns(df: pd.DataFrame, type:str) -> pd.DataFrame:
     df["card_return"] = df["next_close"] / df["weekly_close"] - 1
 
     if type == "price":
-        sorting_criteria = df["weekly_close"] >= 2 & df["card_return"].notna().copy()
+        sorting_criteria = (
+            (df["weekly_close"] >= filter)
+            & df["card_return"].notna()
+        )
     elif type == "rare":
         sorting_criteria = df["rarity"].isin(["rare", "mythic"])& df["card_return"].notna().copy()
 
@@ -94,54 +133,35 @@ def calculate_index(path_to_standards:str):
         
     whole_portfolio = pd.concat(portfolios, ignore_index = True)
     whole_portfolio = whole_portfolio.sort_values("return_date")
-    whole_portfolio["portfolio_value"] = 100 * (1 + whole_portfolio["weekly_return"]).cumprod()
-        
+    whole_portfolio = calculate_portfolio_value(whole_portfolio) 
 
     return whole_portfolio
 
-# So, what I can do now is to make the average price per week
-# For that I need to make double index: card and date
+def calculate_portfolio_value(whole_portfolio: pd.DataFrame):
+    
+    whole_portfolio["portfolio_value"] = 100 * (1 + whole_portfolio["weekly_return"]).cumprod()
+    
+    return whole_portfolio
+
+# What is the next logical step? Allow the portfolio sorts.
+# Zero thing: Non-standard index (keep the high price cards)
+# First thing: deck metagame
+# Second thing: Keyword existence*
+# Third thing: Word count + Keyword count (Quantiles of word counts sounds fun)
+# Fourth thing: Model synergies 
+# Fifth thing: 
+
 
 def main():
-    xln = pd.read_parquet(ixalan_path)
-    print(xln.info())
-    # plt.hist(xln["weekly_close"], bins=10)
-    # plt.show()
-     
-    sns.kdeplot(data=np.log(xln["weekly_close"]), fill=True, cut=0)
-    plt.xlabel("Price")
-    plt.ylabel("Density")
-    plt.title("Distribution of MTG card prices")
-    # plt.show()
-    mask = xln["weekly_close"] >=2
-    rare_mask = xln["rarity"].isin(["rare", "mythic"])
-    print(xln[mask]["weekly_close"].mean())
-    print(xln[mask].count())
-    print(xln[rare_mask].count()) 
-    print(xln[rare_mask]["weekly_close"].mean())
     
-    # xln_portfolio = weekly_returns(xln, "price")
-    # xln_portfolio["portfolio_value"] = 100 * (1 + xln_portfolio["weekly_return"]).cumprod()
-    # print(xln_portfolio.head(25))
-    #
-    # xln_portfolio_rare = weekly_returns(xln, "rare")
-    # xln_portfolio_rare["portfolio_value"] = 100 * (1 + xln_portfolio_rare["weekly_return"]).cumprod()
-    # print(xln_portfolio_rare.head(25))
+    modern_prices = load_weekly_prices(modern_path)
 
     whole_portfolio = calculate_index(data_path)
     print(whole_portfolio.head())
     
     print(whole_portfolio.info())
-    # plt.hist(whole_portfolio["portfolio_value"])
-    ax = sns.lineplot(data=whole_portfolio, x="return_date",y="portfolio_value")
-    ax.set_xlim(pd.Timestamp("2010-01-01"), pd.Timestamp("2026-01-01"))
-    plt.xlabel("Date")
-    plt.ylabel("Portfolio Value")
-    plt.title("Portfolio value of $2 standard card index")
-
-    plt.show()
+    modern_portfolio = weekly_returns(modern_prices, "price", filter=2)
+    modern_portfolio = calculate_portfolio_value(modern_portfolio)
 
 if __name__ == "__main__":
     main()
-
-
