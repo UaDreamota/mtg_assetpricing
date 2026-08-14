@@ -10,6 +10,13 @@ legality_dir = BASE_DIR / "data/legality_table.csv"
 parquet_dir = BASE_DIR / "data/price_histories.parquet"
 endpoint = "https://mtg.fandom.com/api.php"
 
+greek_names = [
+    "Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta",
+    "Eta", "Theta", "Iota", "Kappa", "Lambda", "Mu",
+    "Nu", "Xi", "Omicron", "Pi", "Rho", "Sigma",
+    "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"
+]
+
 params = {
     "action": "parse",
     "page": "Standard/Timeline",
@@ -56,6 +63,24 @@ def process_legality(legality_table: pd.DataFrame) -> pd.DataFrame:
     print(df.info())
     print(df.sample(5))
     return df 
+
+
+def greek_index_name(index: int) -> str:
+    base = len(greek_names)
+    parts = []
+    index += 1
+    while index:
+        index -= 1
+        parts.append(greek_names[index % base])
+        index //= base
+    return "_".join(reversed(parts))
+
+
+def load_legality_with_greeks(legality_path: Path = legality_dir) -> pd.DataFrame:
+    legality = pd.read_csv(legality_path, sep=";")
+    legality = process_legality(legality).copy()
+    legality["Greek"] = [greek_index_name(i) for i in range(len(legality))]
+    return legality
 
 def main():
     print(BASE_DIR)
