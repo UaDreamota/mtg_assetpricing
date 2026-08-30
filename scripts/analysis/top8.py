@@ -1,23 +1,38 @@
 import re
 import sys
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
 
 import pandas as pd 
-from pathlib import Path
 import pyarrow.parquet as pq
 
 
 from scripts.scraping.legality_table import load_legality_with_greeks
-
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(BASE_DIR))
-
 
 st_decks = BASE_DIR / "data/mtgtop8/mtgtop8_decks"
 st_cards = BASE_DIR / "data/mtgtop8/mtgtop8_cards"
 
 mo_decks = BASE_DIR /"data/modern/mtgtop8_decks"
 mo_cards = BASE_DIR /"data/modern/mtgtop8_cards" 
+
+vi_decks = BASE_DIR /"data/vintage/mtgtop8_decks"
+vi_cards = BASE_DIR /"data/vintage/mtgtop8_cards" 
+
+pau_decks = BASE_DIR /"data/pauper/mtgtop8_decks"
+pau_cards = BASE_DIR /"data/pauper/mtgtop8_cards" 
+
+le_decks = BASE_DIR /"data/legacy/mtgtop8_decks"
+le_cards = BASE_DIR /"data/legacy/mtgtop8_cards" 
+
+cedh_decks = BASE_DIR /"data/cedh/mtgtop8_decks"
+cedh_cards = BASE_DIR /"data/cedh/mtgtop8_cards" 
+
+
+
 
 DATA_DIR = BASE_DIR / "data"
 
@@ -46,13 +61,16 @@ def cards_to_deck(decks: pd.DataFrame, cards: pd.DataFrame, time_mask_beg="2011-
     time_mask_beg = pd.to_datetime(time_mask_beg)
     time_mask_end = pd.to_datetime(time_mask_end)
 
+    
+    decks["month"] = decks["event_date"].dt.to_period("M")
     decks = decks[(decks["event_date"] >= time_mask_beg) & (decks["event_date"] <= time_mask_end)]
+
     
     archetypes = decks["archetype"].unique()
     print(archetypes) 
 
 
-    cards = cards.merge(decks[["deck_id","archetype"]], on="deck_id",how="left")
+    cards = cards.merge(decks[["deck_id","archetype", "month"]], on="deck_id",how="left")
     cards = cards.dropna(subset=["archetype"])
     print(cards.info())
     print(cards.head())
@@ -80,59 +98,79 @@ def get_finalist_rate(decks:pd.DataFrame):
 
 def card_exposure(cards:pd.DataFrame):
      
-    card_presence = cards[["deck_id", "archetype","card_name"]].drop_duplicates().groupby(["archetype", "card_name"]).size().reset_index(name="deck_count")
+    card_presence = cards[["deck_id", "archetype","card_name", "month"]].drop_duplicates().groupby(["archetype", "card_name", "month"]).size().reset_index(name="deck_count")
 
-    archetype_presence = cards[["archetype","deck_id"]].drop_duplicates().groupby("archetype").size().reset_index(name="archetype_decks")
+    archetype_presence = cards[["archetype","deck_id", "month"]].drop_duplicates().groupby(["archetype", "month"]).size().reset_index(name="archetype_decks")
 
-    exposure = card_presence.merge(archetype_presence, on="archetype", how="left")
+    exposure = card_presence.merge(archetype_presence, on=["month", "archetype"], how="left")
     exposure["deck_share"] = exposure["deck_count"] / exposure["archetype_decks"]
-
-
 
     return exposure
 
+def calculating_the_e(cards: pd.DataFrame, wr:pd.DataFrame, index:str):
 
-def main():
-    standard_decks = load_parquets(st_decks)
-    standard_cards = load_parquets(st_cards)    
-
-    legality = pd.read_csv(DATA_DIR/"legality_proc.csv")
-    # print(standard_decks.head)
-    # print(standard_decks.info())
-    # print(standard_cards.info())
-    # print(standard_cards.head)
+    card_score = cards.merge(wr[["month", "archetype", "share", "performance"]], on=["month", "archetype"], how="left")
     
-    # legality = load_legality_with_greeks(BASE_DIR /"data" /"legality_table.csv")
-    # legality.to_csv(BASE_DIR/"data/legality_proc.csv")    
+    card_score[f"{index}_meta_contribution"] = card_score["share"] * card_score["deck_share"]  
+    card_score[f"{index}_performance_contribution"] = card_score["share"] *  card_score["performance"] * card_score["deck_share"]
 
-    print(legality.info())    
-    # print(legality[legality["Greek"] == "Delta_Alpha"])
-    date_mask_beg = "2017-09-29"
-    date_mask_end = "2018-01-18"
 
-    mask = legality["Greek"] == "Delta_Alpha"
-    print(type(mask))
+    card_score = card_score.groupby(["month", "card_name"], as_index=False).agg(
+        **{
+            f"{index}_meta_exposure": (f"{index}_meta_contribution", "sum"),
+            f"{index}_performance_exposure": (f"{index}_performance_contribution", "sum"),
+        }
+    )
 
-    cards_to_deck(standard_decks, standard_cards, date_mask_beg, date_mask_end) 
-    print(standard_decks.info())
-    print(standard_decks["rank"].value_counts())
+    return card_score
 
+    # Intended to be the master function that just ouputs all the card performance and metagame per format and aggregates
+def just_per_format(format_pd: Path, card_format: Path, index:str):
     
-    # I got archetype winrate, now to the share   
-
-    wr = get_finalist_rate(standard_decks)
-    
-    # print(wr.groupby("month").head(15))
-    # print(wr[wr["archetype"] == "Izzet Prowess"])
-
-    cards = cards_to_deck(standard_decks, standard_cards)
-    print(cards.info())
-    print(cards.head())
-     
+    format_pd = load_parquets(format_pd)
+    card_format = load_parquets(card_format)
+    cards = cards_to_deck(format_pd, card_format)
     cards = card_exposure(cards)
     
-    print(cards.info())
-    print(cards[cards["archetype"] == "Izzet Prowess"].head(25))
+    wr = get_finalist_rate(format_pd)
+    
+    
+    score = calculating_the_e(cards, wr, index)
+
+    return score
+    
+   
+def join_on_format(old_score, new_score):
+        
+    joined_pd = old_score.merge(new_score, on=["card_name", "month"], how="outer")
+
+    
+    return joined_pd
+
+
+def main():
+    
+    st = just_per_format(st_decks, st_cards, "st")
+    vi = just_per_format(vi_decks, vi_cards, "vi")
+    mo = just_per_format(mo_decks, mo_cards, "mo")
+    le = just_per_format(le_decks, le_cards, "le")
+    cedh = just_per_format(cedh_decks, cedh_cards, "cedh")
+    pau = just_per_format(pau_decks, pau_cards, "pau")
+
+    
+    st_vi = join_on_format(st, vi)
+    vi_mo = join_on_format(st_vi, mo)
+    lele = join_on_format(vi_mo, le)
+    cece = join_on_format(lele, cedh)
+    final = join_on_format(cece, pau)
+
+    
+    print(final.info())
+    pd.set_option("display.max_columns", None)
+    pd.set_option("display.width", None)
+    pd.set_option("display.max_colwidth", None)
+    print(final[final["card_name"] == "Brainstorm"].tail(50))
+    # final.to_parquet("data/all_f_exposure.parquet")
 
     return None
 
