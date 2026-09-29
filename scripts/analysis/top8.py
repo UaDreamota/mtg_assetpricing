@@ -70,6 +70,12 @@ def cards_to_deck(decks: pd.DataFrame, cards: pd.DataFrame, time_mask_beg="2011-
     print(archetypes) 
 
 
+    # Because TOP-8 has some Arena contamination card.
+    cards = cards.copy()
+    cards["card_name_raw"] = cards["card_name"]
+    cards["card_name"] = cards["card_name"].str.replace(r"^A-", "", regex=True)
+
+
     cards = cards.merge(decks[["deck_id","archetype", "month"]], on="deck_id",how="left")
     cards = cards.dropna(subset=["archetype"])
     print(cards.info())
@@ -170,7 +176,7 @@ def main():
     pd.set_option("display.width", None)
     pd.set_option("display.max_colwidth", None)
     print(final[final["card_name"] == "Brainstorm"].tail(50))
-    # final.to_parquet("data/all_f_exposure.parquet")
+    final.to_parquet("data/all_f_exposure.parquet")
 
     return None
 
