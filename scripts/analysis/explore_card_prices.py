@@ -16,11 +16,13 @@ from scipy.stats import t
 from threadpoolctl import threadpool_limits
 
 
+from scripts.analysis.plot_collections import CYAN, GREEN, MUTED, PINK, apply_plot_style
+
+
 RARITIES = ("common", "uncommon", "rare", "mythic")
 EXPOSURE = {"zero": "Zero Standard exposure", "positive": "Positive Standard exposure"}
-COLORS = {"zero": "#17685D", "positive": "#AB492B", "all": "#535C68"}
+COLORS = {"zero": GREEN, "positive": PINK, "all": CYAN}
 MARKERS = {"zero": "o", "positive": "D", "all": "s"}
-PAPER, INK, MUTED, GRID = "#FAF9F5", "#182E2C", "#4F5D59", "#DDDFD6"
 
 
 def load_month(panel, month):
@@ -197,10 +199,9 @@ def price_axis(ax, ticks):
     ax.set_xlabel("Paper quote (USD, log scale)")
 
 
-def mark(ax, position, middle, low, high, group):
-    color = COLORS[group]
-    ax.hlines(position, low, high, color=color, linewidth=2.2, alpha=.65)
-    ax.plot(middle, position, marker=MARKERS[group], color=color, markersize=6, zorder=3)
+def mark(ax, position, middle, low, high, color, marker="o"):
+    ax.hlines(position, low, high, color=color, linewidth=2.3, alpha=.88)
+    ax.plot(middle, position, marker=marker, color=color, markersize=6, zorder=3)
 
 
 def exposure_legend(fig, groups):
@@ -213,9 +214,9 @@ def distribution(summary, folder):
     bins = summary["histogram"]
     fractions = np.array(bins["counts"]) / summary["sample"]["n"]
     hist.stairs(fractions, bins["edges"], color=COLORS["zero"], fill=True, alpha=.85)
-    hist.axvline(1, color=MUTED, linestyle="--", linewidth=1.2)
+    hist.axvline(1, color=PINK, linestyle="--", linewidth=1.2)
     under_dollar = summary["sample"]["under_one_dollar"] / summary["sample"]["n"]
-    hist.text(1.15, fractions.max() * .81, f"{under_dollar:.0%} below $1", color=MUTED)
+    hist.text(1.15, fractions.max() * .81, f"{under_dollar:.0%} below $1", color=PINK)
     hist.yaxis.set_major_formatter(PercentFormatter(1, decimals=0))
     hist.set_ylabel("Share of card names")
     hist.set_title("Distribution across card names", loc="left")
@@ -223,12 +224,28 @@ def distribution(summary, folder):
 
     for i, level in enumerate(RARITIES):
         values = summary["raw_rarity"][level]
-        mark(rarity, i, values["median"], values["q1"], values["q3"], "zero")
+        mark(rarity, i, values["median"], values["q1"], values["q3"], PINK)
     rarity.set_yticks(range(len(RARITIES)), [level.title() for level in RARITIES])
     rarity.invert_yaxis()
     rarity.set_title("Median and middle half by first rarity", loc="left")
     price_axis(rarity, [.2, .5, 1, 2, 5])
     fig.savefig(folder / "paper-price-distribution.png")
+    plt.close(fig)
+
+
+def raw_comparisons(summary, folder):
+    fig, axes = plt.subplots(1, 2, figsize=(10.7, 3.4), layout="constrained", sharex=True)
+    for ax, (feature, title) in zip(axes, [("creature", "Card type"), ("long_text", "Rules-text length")]):
+        categories = summary["raw_features"][feature]
+        for i, values in enumerate(categories.values()):
+            for offset, (group, stats) in zip((-.13, .13), values.items()):
+                mark(ax, i + offset, stats["median"], stats["q1"], stats["q3"], COLORS[group], MARKERS[group])
+        ax.set_yticks(range(len(categories)), categories.keys())
+        ax.set_ylim(1.45, -.45)
+        ax.set_title(title, loc="left")
+        price_axis(ax, [.2, .4, .8, 1.6, 3.2])
+    exposure_legend(fig, EXPOSURE)
+    fig.savefig(folder / "creatures-and-rules-text.png")
     plt.close(fig)
 
 
@@ -240,7 +257,7 @@ def adjusted_comparisons(summary, folder):
         estimates = summary["adjusted"][term]
         offsets = [-.15, .15] if len(estimates) == 2 else [0]
         for offset, (group, values) in zip(offsets, estimates.items()):
-            mark(ax, i + offset, values["ratio"], values["low"], values["high"], group)
+            mark(ax, i + offset, values["ratio"], values["low"], values["high"], COLORS[group], MARKERS[group])
     ax.set_yticks(range(len(terms)), [label for _, label in terms])
     ax.set_ylim(2.45, -.45)
     ax.axvline(1, color=MUTED, linestyle="--", linewidth=1.2)
@@ -281,20 +298,21 @@ def main():
 
     folder = args.output / "figures"
     folder.mkdir(parents=True, exist_ok=True)
-    plt.rcParams.update({
-        "font.family": "DejaVu Sans", "font.size": 10, "text.color": INK, "axes.labelcolor": MUTED,
-        "axes.titlesize": 12, "axes.titleweight": "bold", "axes.spines.top": False,
-        "axes.spines.right": False, "axes.spines.left": False, "axes.edgecolor": GRID,
-        "axes.grid": True, "axes.axisbelow": True, "grid.color": GRID, "grid.linewidth": .7,
-        "axes.facecolor": PAPER, "figure.facecolor": PAPER, "savefig.facecolor": PAPER,
-        "xtick.color": MUTED, "ytick.color": MUTED, "ytick.major.size": 0, "savefig.dpi": 170,
-    })
+    apply_plot_style()
     distribution(summary, folder)
+    raw_comparisons(summary, folder)
     adjusted_comparisons(summary, folder)
     if "collections" in summary:
         from scripts.analysis.plot_collections import render
 
         render(summary, folder, summary_path.parent)
+
+    # The card features use the separate December printing regressions.
+    card_results = summary_path.parents[1] / "card_table/prices.json"
+    if card_results.exists() and summary["month"] == "2025-12":
+        from scripts.analysis.plot_card_features import render_card_features
+
+        render_card_features(card_results, folder)
 
 
 if __name__ == "__main__":
