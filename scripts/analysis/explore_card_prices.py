@@ -200,8 +200,8 @@ def price_axis(ax, ticks):
 
 
 def mark(ax, position, middle, low, high, color, marker="o"):
-    ax.hlines(position, low, high, color=color, linewidth=2.3, alpha=.88)
-    ax.plot(middle, position, marker=marker, color=color, markersize=6, zorder=3)
+    ax.hlines(position, low, high, color=color, linewidth=3)
+    ax.plot(middle, position, marker=marker, color=color, markersize=7, zorder=3)
 
 
 def exposure_legend(fig, groups):
@@ -296,7 +296,7 @@ def main():
         summary_path.parent.mkdir(parents=True, exist_ok=True)
         summary_path.write_text(json.dumps(summary, indent=2, allow_nan=False) + "\n")
 
-    folder = args.output / "figures"
+    folder = args.output / "figures/neon"
     folder.mkdir(parents=True, exist_ok=True)
     apply_plot_style()
     distribution(summary, folder)

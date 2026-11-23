@@ -9,8 +9,8 @@ import pandas as pd
 from scripts.analysis.explore_collections import COLORS, TYPES
 
 
-CANVAS, INK, MUTED, GRID = "#121019", "#F8F3FA", "#C9BED3", "#362D40"
-PINK, GREEN, CYAN, LAVENDER = "#FF55D4", "#74FFA8", "#63E5FF", "#C6ABFF"
+CANVAS, INK, MUTED, GRID = "#0D0B13", "#F8F3FA", "#C9BED3", "#3F354A"
+PINK, GREEN, CYAN, LAVENDER = "#FF43CA", "#52FF9A", "#52DFFF", "#C6ABFF"
 TYPE_HEAT = LinearSegmentedColormap.from_list(
     "card_type", ["#241B2C", "#85366D", "#CB489F", PINK, "#FFB2E5"])
 MANA_HEAT = LinearSegmentedColormap.from_list(
@@ -19,8 +19,8 @@ MANA_HEAT = LinearSegmentedColormap.from_list(
 
 def apply_plot_style():
     plt.rcParams.update({
-        "font.family": "DejaVu Sans", "font.size": 10, "text.color": INK,
-        "axes.labelcolor": MUTED, "axes.titlecolor": INK, "axes.titlesize": 13,
+        "font.family": "DejaVu Sans", "font.size": 10.5, "text.color": INK,
+        "axes.labelcolor": MUTED, "axes.titlecolor": PINK, "axes.titlesize": 13,
         "axes.titleweight": "bold", "axes.titlepad": 9, "axes.spines.top": False,
         "axes.spines.right": False, "axes.spines.left": False, "axes.edgecolor": GRID,
         "axes.grid": True, "axes.axisbelow": True, "grid.color": GRID, "grid.linewidth": .65,
@@ -193,7 +193,7 @@ def quarterly_estimates(records, folder):
             ratios, lows, highs = np.array([[r["effects"][term][split][k] for k in ("ratio", "low", "high")]
                                              for r in records]).T
             ax.errorbar(x + offset, ratios, yerr=[ratios - lows, highs - ratios], fmt=marker, markersize=5,
-                        color=color, capsize=3, linewidth=1.4, label=label)
+                        color=color, capsize=4, linewidth=2.2, label=label)
         ax.axhline(1, color=LAVENDER, linestyle="--", linewidth=1)
         ax.set_xticks(x, [r["month"] for r in records])
         ax.set_yscale("log")
@@ -225,7 +225,7 @@ def word_band_prices(records, folder):
         group = bands.loc[bands.standard.eq(split)].set_index("words").reindex(labels)
         x = np.arange(len(labels)) + offset
         price.errorbar(x, group["median"], yerr=[group["median"] - group.q1, group.q3 - group["median"]],
-                       color=color, fmt=marker, capsize=3, linewidth=1.5, markersize=5, label=label)
+                       color=color, fmt=marker, capsize=4, linewidth=2.2, markersize=6.5, label=label)
         row = 1 if split == "zero" else 0
         for i, count in enumerate(group.n.fillna(0)):
             counts.text(i, row, f"{int(count):,}", va="center", ha="center", color=color, fontsize=9)

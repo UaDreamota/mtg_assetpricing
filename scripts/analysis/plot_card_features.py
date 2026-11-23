@@ -10,12 +10,8 @@ from matplotlib.lines import Line2D
 from matplotlib.ticker import FixedLocator, FuncFormatter
 
 
-PAPER = "#121019"
-INK = "#F8F3FA"
-MUTED = "#C4BCCD"
-GRID = "#393343"
-PINK = "#FF55D4"
-MINT = "#74FFA8"
+from scripts.analysis.plot_collections import CANVAS, GREEN, GRID, INK, MUTED, PINK
+
 
 PANELS = (
     ("Card colors", (("White", "is_white_spell"), ("Blue", "is_blue_spell"),
@@ -69,7 +65,8 @@ def feature_rows(prices):
             step = log(2) if term == "log_play" else 1
             raw, adjusted, low, high = [100 * expm1(step * stats[key]) for key in ("raw", "b", "low", "high")]
             rows.append(dict(group=group, term=term, comparison=comparison(term, group),
-                             raw_difference_pct=raw, adjusted_difference_pct=adjusted,
+                             model_beta=stats["b"], clustered_se=stats["se"],
+                             beta_ci_low=stats["low"], beta_ci_high=stats["high"], raw_difference_pct=raw, adjusted_difference_pct=adjusted,
                              ci_low_pct=low, ci_high_pct=high, full_model_p_value=stats["p"]))
     return rows
 
@@ -95,16 +92,16 @@ def render_card_features(prices_path, figures_dir):
     groups = {name: {r["term"]: r for r in rows if r["group"] == name}
               for name in ("Creatures", "Noncreatures")}
     with plt.rc_context({"font.family": "DejaVu Sans", "axes.grid": False,
-                         "figure.facecolor": PAPER, "axes.facecolor": PAPER,
+                         "figure.facecolor": CANVAS, "axes.facecolor": CANVAS,
                          "text.color": INK, "axes.labelcolor": MUTED,
                          "xtick.color": MUTED, "ytick.color": INK}):
         fig, axes = plt.subplots(2, 2, figsize=(11.8, 6.8), layout="constrained")
         fig.get_layout_engine().set(w_pad=.12, h_pad=.12, wspace=.055, hspace=.035)
         fig.suptitle("How card features relate to December 2025 paper quotes",
                      fontsize=17, weight="bold", x=.01, ha="left", color=INK)
-        styles = (("Creatures", PINK, "o"), ("Noncreatures", MINT, "D"))
+        styles = (("Creatures", PINK, "o"), ("Noncreatures", GREEN, "D"))
         for ax, (title, items, ticks) in zip(axes.flat, PANELS):
-            ax.set_title(title, fontsize=12, weight="bold", loc="left", color=INK, pad=9)
+            ax.set_title(title, fontsize=12, weight="bold", loc="left", color=PINK, pad=9)
             ax.axvline(0, color="#B5ABB9", linewidth=1.2, zorder=1)
             for i, (_, key) in enumerate(items):
                 shared = all(key in group for group in groups.values())
@@ -115,7 +112,7 @@ def render_card_features(prices_path, figures_dir):
                     y = i + (j - .5) * .32 if shared else i
                     value = row["adjusted_difference_pct"]
                     ax.errorbar(value, y, xerr=[[value - row["ci_low_pct"]], [row["ci_high_pct"] - value]],
-                                fmt=marker, markersize=5.5, color=color, elinewidth=1.6,
+                                fmt=marker, markersize=6, color=color, elinewidth=2.2,
                                 capsize=3, capthick=1.4, zorder=3)
             ax.set_yticks(range(len(items)), labels=[label for label, _ in items])
             ax.set_ylim(len(items) - .55, -.5)
@@ -135,9 +132,9 @@ def render_card_features(prices_path, figures_dir):
         fig.legend(handles=legend, loc="outside lower center", ncol=2, frameon=False, fontsize=10,
                    title="Adjusted difference in quoted price   ·   Lines show pointwise 95% intervals",
                    title_fontsize=10)
-        fig.savefig(figures_dir / "card-feature-prices.png", dpi=160, facecolor=PAPER)
+        fig.savefig(figures_dir / "card-feature-prices.png", dpi=160, facecolor=CANVAS)
         plt.close(fig)
 
 
 if __name__ == "__main__":
-    render_card_features(Path("results/card_table/prices.json"), Path("figures"))
+    render_card_features(Path("results/card_table/prices.json"), Path("figures/neon"))
