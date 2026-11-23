@@ -1,0 +1,5635 @@
+{
+  "month": "2025-12",
+  "sample": {
+    "n": 16298,
+    "mean": 5.359864707326052,
+    "q1": 0.2,
+    "median": 0.28,
+    "q3": 0.77,
+    "first_sets": 312,
+    "under_one_dollar": 12702,
+    "positive_exposure": 521,
+    "median_words": 26.0,
+    "over_15_words": 12575
+  },
+  "histogram": {
+    "edges": [
+      0.1,
+      0.1333521432163324,
+      0.1778279410038923,
+      0.23713737056616552,
+      0.31622776601683794,
+      0.4216965034285822,
+      0.5623413251903491,
+      0.7498942093324559,
+      1.0,
+      1.333521432163324,
+      1.7782794100389228,
+      2.371373705661655,
+      3.1622776601683795,
+      4.216965034285822,
+      5.623413251903491,
+      7.498942093324558,
+      10.0,
+      13.33521432163324,
+      17.78279410038923,
+      23.71373705661655,
+      31.622776601683793,
+      42.169650342858226,
+      56.23413251903491,
+      74.98942093324558,
+      100.0,
+      133.3521432163324,
+      177.82794100389228,
+      237.13737056616552,
+      316.22776601683796,
+      421.6965034285823,
+      562.341325190349,
+      749.8942093324558,
+      1000.0,
+      1333.521432163324,
+      1778.2794100389228,
+      2371.373705661655,
+      3162.2776601683795,
+      4216.965034285822,
+      5623.413251903491,
+      7498.942093324558,
+      10000.0
+    ],
+    "counts": [
+      1,
+      1155,
+      4235,
+      3513,
+      1204,
+      1360,
+      627,
+      607,
+      547,
+      409,
+      411,
+      395,
+      321,
+      353,
+      267,
+      224,
+      154,
+      149,
+      90,
+      77,
+      52,
+      44,
+      18,
+      12,
+      10,
+      7,
+      9,
+      3,
+      7,
+      6,
+      6,
+      9,
+      6,
+      1,
+      3,
+      2,
+      2,
+      2,
+      0,
+      0
+    ]
+  },
+  "word_price_bands": [
+    {
+      "words": "0\u201310",
+      "standard": "zero",
+      "n": 1775,
+      "mean": 17.326371830985916,
+      "q1": 0.2,
+      "median": 0.25,
+      "q3": 0.655
+    },
+    {
+      "words": "0\u201310",
+      "standard": "positive",
+      "n": 36,
+      "mean": 0.5813888888888888,
+      "q1": 0.2,
+      "median": 0.25,
+      "q3": 0.36875
+    },
+    {
+      "words": "11\u201315",
+      "standard": "zero",
+      "n": 1887,
+      "mean": 5.257246952835188,
+      "q1": 0.2,
+      "median": 0.25,
+      "q3": 0.74
+    },
+    {
+      "words": "11\u201315",
+      "standard": "positive",
+      "n": 25,
+      "mean": 0.7323999999999999,
+      "q1": 0.2,
+      "median": 0.3,
+      "q3": 0.79
+    },
+    {
+      "words": "16\u201320",
+      "standard": "zero",
+      "n": 2285,
+      "mean": 5.217417943107221,
+      "q1": 0.2,
+      "median": 0.25,
+      "q3": 0.69
+    },
+    {
+      "words": "16\u201320",
+      "standard": "positive",
+      "n": 71,
+      "mean": 2.9476760563380284,
+      "q1": 0.25,
+      "median": 0.6,
+      "q3": 5.46
+    },
+    {
+      "words": "21\u201330",
+      "standard": "zero",
+      "n": 3954,
+      "mean": 3.8448191704602936,
+      "q1": 0.2,
+      "median": 0.26,
+      "q3": 0.69
+    },
+    {
+      "words": "21\u201330",
+      "standard": "positive",
+      "n": 111,
+      "mean": 3.4388738738738738,
+      "q1": 0.25,
+      "median": 0.46,
+      "q3": 3.395
+    },
+    {
+      "words": "31\u201345",
+      "standard": "zero",
+      "n": 3765,
+      "mean": 2.7151407702523245,
+      "q1": 0.2,
+      "median": 0.3,
+      "q3": 0.77
+    },
+    {
+      "words": "31\u201345",
+      "standard": "positive",
+      "n": 134,
+      "mean": 3.388059701492537,
+      "q1": 0.25,
+      "median": 0.555,
+      "q3": 1.8025
+    },
+    {
+      "words": "46\u201360",
+      "standard": "zero",
+      "n": 1677,
+      "mean": 2.8455038759689923,
+      "q1": 0.22,
+      "median": 0.35,
+      "q3": 0.985
+    },
+    {
+      "words": "46\u201360",
+      "standard": "positive",
+      "n": 100,
+      "mean": 2.6739500000000005,
+      "q1": 0.25,
+      "median": 0.6,
+      "q3": 2.2199999999999998
+    },
+    {
+      "words": "61+",
+      "standard": "zero",
+      "n": 434,
+      "mean": 6.961036866359448,
+      "q1": 0.25,
+      "median": 0.3775,
+      "q3": 1.2
+    },
+    {
+      "words": "61+",
+      "standard": "positive",
+      "n": 44,
+      "mean": 4.295113636363636,
+      "q1": 0.2575,
+      "median": 0.4,
+      "q3": 4.2225
+    }
+  ],
+  "raw_rarity": {
+    "common": {
+      "n": 5280,
+      "mean": 0.3745596590909091,
+      "q1": 0.19,
+      "median": 0.2,
+      "q3": 0.25
+    },
+    "uncommon": {
+      "n": 5034,
+      "mean": 1.7804976162097734,
+      "q1": 0.2,
+      "median": 0.25,
+      "q3": 0.37
+    },
+    "rare": {
+      "n": 5142,
+      "mean": 13.89017989109296,
+      "q1": 0.4,
+      "median": 0.75,
+      "q3": 2.89
+    },
+    "mythic": {
+      "n": 842,
+      "mean": 5.927636579572447,
+      "q1": 0.77125,
+      "median": 1.9849999999999999,
+      "q3": 5.635
+    }
+  },
+  "raw_features": {
+    "creature": {
+      "Noncreature": {
+        "zero": {
+          "n": 8685,
+          "mean": 8.618076568796775,
+          "q1": 0.2,
+          "median": 0.3,
+          "q3": 1.0
+        },
+        "positive": {
+          "n": 325,
+          "mean": 2.827353846153846,
+          "q1": 0.25,
+          "median": 0.42500000000000004,
+          "q3": 2.21
+        }
+      },
+      "Creature": {
+        "zero": {
+          "n": 7092,
+          "mean": 1.5463141567963903,
+          "q1": 0.2,
+          "median": 0.25,
+          "q3": 0.56
+        },
+        "positive": {
+          "n": 196,
+          "mean": 3.172091836734694,
+          "q1": 0.25,
+          "median": 0.5325,
+          "q3": 2.10375
+        }
+      }
+    },
+    "long_text": {
+      "0\u201315 words": {
+        "zero": {
+          "n": 3662,
+          "mean": 11.107246040415074,
+          "q1": 0.2,
+          "median": 0.25,
+          "q3": 0.7000000000000001
+        },
+        "positive": {
+          "n": 61,
+          "mean": 0.6432786885245902,
+          "q1": 0.2,
+          "median": 0.25,
+          "q3": 0.44
+        }
+      },
+      "16+ words": {
+        "zero": {
+          "n": 12115,
+          "mean": 3.7259364424267436,
+          "q1": 0.2,
+          "median": 0.29,
+          "q3": 0.76
+        },
+        "positive": {
+          "n": 460,
+          "mean": 3.2638695652173912,
+          "q1": 0.25,
+          "median": 0.535,
+          "q3": 2.62
+        }
+      }
+    }
+  },
+  "adjusted": {
+    "creature": {
+      "zero": {
+        "ratio": 0.8378991436956765,
+        "low": 0.8114022874518098,
+        "high": 0.8652612715830494
+      },
+      "positive": {
+        "ratio": 0.9759152515145992,
+        "low": 0.7560446194872996,
+        "high": 1.2597280022767259
+      }
+    },
+    "long_text": {
+      "zero": {
+        "ratio": 0.947112786529974,
+        "low": 0.9104665543817694,
+        "high": 0.9852340276438534
+      },
+      "positive": {
+        "ratio": 2.741705373809323,
+        "low": 1.4420961186392116,
+        "high": 5.212515490207442
+      }
+    },
+    "mana": {
+      "all": {
+        "ratio": 0.9547016945614575,
+        "low": 0.9423350317235117,
+        "high": 0.9672306503680386
+      }
+    }
+  },
+  "regressions": {
+    "traits": {
+      "n": 16298,
+      "sets": 312,
+      "r2": 0.011973007658279577,
+      "effects": {
+        "creature": {
+          "all": {
+            "ratio": 0.7523997732949625,
+            "low": 0.6911862343910985,
+            "high": 0.8190345679453851
+          }
+        },
+        "long_text": {
+          "all": {
+            "ratio": 1.0622176399027694,
+            "low": 0.9494279934576659,
+            "high": 1.1884064113293067
+          }
+        }
+      },
+      "slopes": [
+        {
+          "term": "creature",
+          "beta": -0.28448748286450093,
+          "cluster_se": 0.04312745625253211,
+          "low": -0.36934597721274537,
+          "high": -0.1996289885162565
+        },
+        {
+          "term": "long_text",
+          "beta": 0.060358835818719085,
+          "cluster_se": 0.05705083249932299,
+          "low": -0.05189558787969228,
+          "high": 0.17261325951713044
+        }
+      ]
+    },
+    "controls": {
+      "n": 16298,
+      "sets": 312,
+      "r2": 0.5867392656373717,
+      "effects": {
+        "creature": {
+          "all": {
+            "ratio": 0.8424312880505329,
+            "low": 0.8156812770317861,
+            "high": 0.8700585572700651
+          }
+        },
+        "long_text": {
+          "all": {
+            "ratio": 0.964180579444223,
+            "low": 0.9268681791530218,
+            "high": 1.002995043617651
+          }
+        },
+        "mana": {
+          "all": {
+            "ratio": 0.9537692204030593,
+            "low": 0.941279840442375,
+            "high": 0.9664243158131779
+          }
+        }
+      },
+      "slopes": [
+        {
+          "term": "uncommon",
+          "beta": 0.3939769852431507,
+          "cluster_se": 0.02556913720240456,
+          "low": 0.34366661052327974,
+          "high": 0.4442873599630217
+        },
+        {
+          "term": "rare",
+          "beta": 1.517203752423033,
+          "cluster_se": 0.044052381633972605,
+          "low": 1.4305253553475346,
+          "high": 1.6038821494985316
+        },
+        {
+          "term": "mythic",
+          "beta": 2.609630891215408,
+          "cluster_se": 0.07426707511315335,
+          "low": 2.4635014247138876,
+          "high": 2.755760357716928
+        },
+        {
+          "term": "creature",
+          "beta": -0.1714631772916403,
+          "cluster_se": 0.0163997094531333,
+          "low": -0.20373159219171583,
+          "high": -0.13919476239156475
+        },
+        {
+          "term": "long_text",
+          "beta": -0.03647667883944774,
+          "cluster_se": 0.020058356551107284,
+          "low": -0.07594392508880829,
+          "high": 0.0029905674099128116
+        },
+        {
+          "term": "played",
+          "beta": 0.09706880057286274,
+          "cluster_se": 0.07896015936078964,
+          "low": -0.0582948776746956,
+          "high": 0.2524324788204211
+        },
+        {
+          "term": "exposure",
+          "beta": 0.2817524561458625,
+          "cluster_se": 0.10750363067167519,
+          "low": 0.07022604052907083,
+          "high": 0.4932788717626541
+        },
+        {
+          "term": "mana",
+          "beta": -0.04733354413246868,
+          "cluster_se": 0.0066990809469072024,
+          "low": -0.06051479737733587,
+          "high": -0.03415229088760149
+        },
+        {
+          "term": "last_printing",
+          "beta": -0.20087355057496695,
+          "cluster_se": 0.01181861919100859,
+          "low": -0.22412811546170014,
+          "high": -0.17761898568823375
+        },
+        {
+          "term": "reserved",
+          "beta": 2.9966555125649985,
+          "cluster_se": 0.4274940958075639,
+          "low": 2.155509095290176,
+          "high": 3.837801929839821
+        }
+      ]
+    },
+    "interaction": {
+      "n": 16298,
+      "sets": 312,
+      "r2": 0.5888095653949602,
+      "effects": {
+        "creature": {
+          "zero": {
+            "ratio": 0.8378991436956765,
+            "low": 0.8114022874518098,
+            "high": 0.8652612715830494
+          },
+          "positive": {
+            "ratio": 0.9759152515145992,
+            "low": 0.7560446194872996,
+            "high": 1.2597280022767259
+          }
+        },
+        "long_text": {
+          "zero": {
+            "ratio": 0.947112786529974,
+            "low": 0.9104665543817694,
+            "high": 0.9852340276438534
+          },
+          "positive": {
+            "ratio": 2.741705373809323,
+            "low": 1.4420961186392116,
+            "high": 5.212515490207442
+          }
+        },
+        "mana": {
+          "all": {
+            "ratio": 0.9547016945614575,
+            "low": 0.9423350317235117,
+            "high": 0.9672306503680386
+          }
+        }
+      },
+      "slopes": [
+        {
+          "term": "uncommon",
+          "beta": 0.3932890022462921,
+          "cluster_se": 0.0245833534672022,
+          "low": 0.34491827643667533,
+          "high": 0.44165972805590886
+        },
+        {
+          "term": "rare",
+          "beta": 1.5115812870869076,
+          "cluster_se": 0.0431677230208838,
+          "low": 1.4266435629942844,
+          "high": 1.5965190111795309
+        },
+        {
+          "term": "mythic",
+          "beta": 2.6022718145679793,
+          "cluster_se": 0.07343221991903373,
+          "low": 2.4577850267896597,
+          "high": 2.746758602346299
+        },
+        {
+          "term": "creature",
+          "beta": -0.1768575393282395,
+          "cluster_se": 0.01633127902500835,
+          "low": -0.20899130907177516,
+          "high": -0.14472376958470384
+        },
+        {
+          "term": "long_text",
+          "beta": -0.0543370941232615,
+          "cluster_se": 0.020055191998829432,
+          "low": -0.0937981137326827,
+          "high": -0.014876074513840307
+        },
+        {
+          "term": "played",
+          "beta": -0.9475161568135413,
+          "cluster_se": 0.28947473690075326,
+          "low": -1.5170927666978742,
+          "high": -0.3779395469292084
+        },
+        {
+          "term": "exposure",
+          "beta": 0.34208606712497386,
+          "cluster_se": 0.08087416552785047,
+          "low": 0.18295634989382717,
+          "high": 0.5012157843561206
+        },
+        {
+          "term": "mana",
+          "beta": -0.04635634901224024,
+          "cluster_se": 0.006626305441190872,
+          "low": -0.059394407634072895,
+          "high": -0.03331829039040759
+        },
+        {
+          "term": "last_printing",
+          "beta": -0.20362905133670378,
+          "cluster_se": 0.011889544911101503,
+          "low": -0.2270231711691868,
+          "high": -0.18023493150422076
+        },
+        {
+          "term": "reserved",
+          "beta": 2.996844746990316,
+          "cluster_se": 0.42408189051660106,
+          "low": 2.162412256957173,
+          "high": 3.831277237023459
+        },
+        {
+          "term": "creature_played",
+          "beta": 0.15247801052448823,
+          "cluster_se": 0.1304685314737976,
+          "low": -0.10423462923485255,
+          "high": 0.409190650283829
+        },
+        {
+          "term": "long_text_played",
+          "beta": 1.0629172201136718,
+          "cluster_se": 0.32828904482064114,
+          "low": 0.4169687576914921,
+          "high": 1.7088656825358517
+        }
+      ]
+    }
+  },
+  "text_cutoffs": {
+    "10": {
+      "zero": {
+        "ratio": 0.9483544114378976,
+        "low": 0.9040428463169318,
+        "high": 0.994837903267281
+      },
+      "positive": {
+        "ratio": 4.199607649013388,
+        "low": 1.7393014978331873,
+        "high": 10.1401076395458
+      }
+    },
+    "15": {
+      "zero": {
+        "ratio": 0.947112786529974,
+        "low": 0.9104665543817694,
+        "high": 0.9852340276438534
+      },
+      "positive": {
+        "ratio": 2.741705373809323,
+        "low": 1.4420961186392116,
+        "high": 5.212515490207442
+      }
+    },
+    "20": {
+      "zero": {
+        "ratio": 0.9219494589437759,
+        "low": 0.8897454118957936,
+        "high": 0.9553191210456856
+      },
+      "positive": {
+        "ratio": 1.4356319958221866,
+        "low": 1.0023520323093809,
+        "high": 2.056202971604536
+      }
+    }
+  },
+  "excluding_lands": {
+    "n": 15399,
+    "adjusted": {
+      "creature": {
+        "zero": {
+          "ratio": 0.842886701878047,
+          "low": 0.8156383205547458,
+          "high": 0.8710453816339121
+        },
+        "positive": {
+          "ratio": 1.0343348608657899,
+          "low": 0.8081355578507013,
+          "high": 1.3238479534888894
+        }
+      },
+      "long_text": {
+        "zero": {
+          "ratio": 0.967001176927669,
+          "low": 0.9329325570396881,
+          "high": 1.00231390696307
+        },
+        "positive": {
+          "ratio": 2.072260985312966,
+          "low": 1.384234670497088,
+          "high": 3.1022670380797237
+        }
+      },
+      "mana": {
+        "all": {
+          "ratio": 0.9656342200725401,
+          "low": 0.9534429653085608,
+          "high": 0.9779813590352897
+        }
+      }
+    }
+  },
+  "quarter_checks": [
+    {
+      "month": "2025-03",
+      "n": 15477,
+      "positive": 592,
+      "effects": {
+        "creature": {
+          "zero": {
+            "ratio": 0.8332410045857206,
+            "low": 0.806810312381995,
+            "high": 0.8605375527157365
+          },
+          "positive": {
+            "ratio": 0.8912873442217168,
+            "low": 0.7379410166496733,
+            "high": 1.0764994925697804
+          }
+        },
+        "long_text": {
+          "zero": {
+            "ratio": 0.9431111786429096,
+            "low": 0.9051463729043325,
+            "high": 0.9826683527739524
+          },
+          "positive": {
+            "ratio": 2.082499015662582,
+            "low": 1.2547078232404854,
+            "high": 3.456423933848704
+          }
+        },
+        "mana": {
+          "all": {
+            "ratio": 0.9448834276112094,
+            "low": 0.9319117674769429,
+            "high": 0.9580356455756387
+          }
+        }
+      }
+    },
+    {
+      "month": "2025-06",
+      "n": 15840,
+      "positive": 433,
+      "effects": {
+        "creature": {
+          "zero": {
+            "ratio": 0.8356586361226344,
+            "low": 0.8095481547752156,
+            "high": 0.8626112628472891
+          },
+          "positive": {
+            "ratio": 0.8721122385246289,
+            "low": 0.7131374903564589,
+            "high": 1.0665261143461502
+          }
+        },
+        "long_text": {
+          "zero": {
+            "ratio": 0.9547137357954498,
+            "low": 0.9184081413384908,
+            "high": 0.9924545267947132
+          },
+          "positive": {
+            "ratio": 2.1276326292472283,
+            "low": 1.1837650814139198,
+            "high": 3.82408695450834
+          }
+        },
+        "mana": {
+          "all": {
+            "ratio": 0.9506113171333445,
+            "low": 0.9379811848621593,
+            "high": 0.9634115170388939
+          }
+        }
+      }
+    },
+    {
+      "month": "2025-09",
+      "n": 16119,
+      "positive": 521,
+      "effects": {
+        "creature": {
+          "zero": {
+            "ratio": 0.8377951752694429,
+            "low": 0.8116823666146159,
+            "high": 0.864748064729139
+          },
+          "positive": {
+            "ratio": 1.1038516201198676,
+            "low": 0.8503318288151431,
+            "high": 1.4329563565074406
+          }
+        },
+        "long_text": {
+          "zero": {
+            "ratio": 0.9506227710777718,
+            "low": 0.9143498569862114,
+            "high": 0.9883346576661732
+          },
+          "positive": {
+            "ratio": 2.5922548838700443,
+            "low": 1.2802888939357433,
+            "high": 5.248647719102496
+          }
+        },
+        "mana": {
+          "all": {
+            "ratio": 0.9535913781272357,
+            "low": 0.9411702172332673,
+            "high": 0.9661764681757063
+          }
+        }
+      }
+    },
+    {
+      "month": "2025-12",
+      "n": 16298,
+      "positive": 521,
+      "effects": {
+        "creature": {
+          "zero": {
+            "ratio": 0.8378991436956765,
+            "low": 0.8114022874518098,
+            "high": 0.8652612715830494
+          },
+          "positive": {
+            "ratio": 0.9759152515145992,
+            "low": 0.7560446194872996,
+            "high": 1.2597280022767259
+          }
+        },
+        "long_text": {
+          "zero": {
+            "ratio": 0.947112786529974,
+            "low": 0.9104665543817694,
+            "high": 0.9852340276438534
+          },
+          "positive": {
+            "ratio": 2.741705373809323,
+            "low": 1.4420961186392116,
+            "high": 5.212515490207442
+          }
+        },
+        "mana": {
+          "all": {
+            "ratio": 0.9547016945614575,
+            "low": 0.9423350317235117,
+            "high": 0.9672306503680386
+          }
+        }
+      }
+    }
+  ],
+  "collections": {
+    "census": {
+      "all": {
+        "cards": 30901,
+        "mean_words": 28.099802595385263,
+        "median_words": 26.0,
+        "mean_keywords": 0.6704637390375716,
+        "median_keywords": 0.0,
+        "no_keyword": 15867,
+        "no_rules_words": 348,
+        "mean_words_no_parentheses": 22.43124817967056
+      },
+      "colors": [
+        {
+          "color": "White",
+          "cards": 4671,
+          "mean_words": 25.86105758938129,
+          "median_words": 23.0,
+          "mean_keywords": 0.7032755298651252,
+          "median_keywords": 1.0,
+          "no_keyword": 2270,
+          "no_rules_words": 64,
+          "mean_words_no_parentheses": 20.224791265253693,
+          "nonlands": 4671,
+          "mean_mana_nonlands": 3.174052665382145,
+          "median_mana_nonlands": 3.0,
+          "mean_mana_with_lands": 3.174052665382145,
+          "mana_bins_0_to_7plus": [
+            3,
+            599,
+            1163,
+            1149,
+            878,
+            522,
+            228,
+            129
+          ],
+          "common_keywords": [
+            {
+              "keyword": "Flying",
+              "cards": 706
+            },
+            {
+              "keyword": "Enchant",
+              "cards": 273
+            },
+            {
+              "keyword": "Vigilance",
+              "cards": 270
+            }
+          ]
+        },
+        {
+          "color": "Blue",
+          "cards": 4508,
+          "mean_words": 27.44698314108252,
+          "median_words": 25.0,
+          "mean_keywords": 0.729148181011535,
+          "median_keywords": 1.0,
+          "no_keyword": 2073,
+          "no_rules_words": 44,
+          "mean_words_no_parentheses": 20.956299911268854,
+          "nonlands": 4508,
+          "mean_mana_nonlands": 3.380656610470275,
+          "median_mana_nonlands": 3.0,
+          "mean_mana_with_lands": 3.380656610470275,
+          "mana_bins_0_to_7plus": [
+            4,
+            468,
+            1049,
+            1100,
+            869,
+            533,
+            289,
+            196
+          ],
+          "common_keywords": [
+            {
+              "keyword": "Flying",
+              "cards": 804
+            },
+            {
+              "keyword": "Enchant",
+              "cards": 312
+            },
+            {
+              "keyword": "Flash",
+              "cards": 176
+            }
+          ]
+        },
+        {
+          "color": "Black",
+          "cards": 4579,
+          "mean_words": 27.509499890805852,
+          "median_words": 25.0,
+          "mean_keywords": 0.6479580694474776,
+          "median_keywords": 0.0,
+          "no_keyword": 2373,
+          "no_rules_words": 46,
+          "mean_words_no_parentheses": 21.588119676785325,
+          "nonlands": 4579,
+          "mean_mana_nonlands": 3.4175584188687487,
+          "median_mana_nonlands": 3.0,
+          "mean_mana_with_lands": 3.4175584188687487,
+          "mana_bins_0_to_7plus": [
+            3,
+            495,
+            929,
+            1153,
+            910,
+            608,
+            306,
+            175
+          ],
+          "common_keywords": [
+            {
+              "keyword": "Flying",
+              "cards": 488
+            },
+            {
+              "keyword": "Enchant",
+              "cards": 209
+            },
+            {
+              "keyword": "Deathtouch",
+              "cards": 144
+            }
+          ]
+        },
+        {
+          "color": "Red",
+          "cards": 4575,
+          "mean_words": 27.693989071038253,
+          "median_words": 25.0,
+          "mean_keywords": 0.6340983606557377,
+          "median_keywords": 0.0,
+          "no_keyword": 2444,
+          "no_rules_words": 70,
+          "mean_words_no_parentheses": 22.040437158469945,
+          "nonlands": 4574,
+          "mean_mana_nonlands": 3.3491473546130304,
+          "median_mana_nonlands": 3.0,
+          "mean_mana_with_lands": 3.348415300546448,
+          "mana_bins_0_to_7plus": [
+            8,
+            551,
+            962,
+            1118,
+            904,
+            575,
+            290,
+            166
+          ],
+          "common_keywords": [
+            {
+              "keyword": "Haste",
+              "cards": 336
+            },
+            {
+              "keyword": "Flying",
+              "cards": 245
+            },
+            {
+              "keyword": "Trample",
+              "cards": 187
+            }
+          ]
+        },
+        {
+          "color": "Green",
+          "cards": 4512,
+          "mean_words": 27.44326241134752,
+          "median_words": 25.0,
+          "mean_keywords": 0.6620124113475178,
+          "median_keywords": 0.0,
+          "no_keyword": 2304,
+          "no_rules_words": 81,
+          "mean_words_no_parentheses": 21.458998226950353,
+          "nonlands": 4509,
+          "mean_mana_nonlands": 3.404746063428698,
+          "median_mana_nonlands": 3.0,
+          "mean_mana_with_lands": 3.4031471631205674,
+          "mana_bins_0_to_7plus": [
+            4,
+            547,
+            971,
+            1072,
+            849,
+            526,
+            311,
+            229
+          ],
+          "common_keywords": [
+            {
+              "keyword": "Trample",
+              "cards": 348
+            },
+            {
+              "keyword": "Reach",
+              "cards": 224
+            },
+            {
+              "keyword": "Enchant",
+              "cards": 198
+            }
+          ]
+        },
+        {
+          "color": "Multicolor",
+          "cards": 4116,
+          "mean_words": 34.05126336248785,
+          "median_words": 33.0,
+          "mean_keywords": 0.8245869776482021,
+          "median_keywords": 1.0,
+          "no_keyword": 1911,
+          "no_rules_words": 24,
+          "mean_words_no_parentheses": 28.849368318756074,
+          "nonlands": 4116,
+          "mean_mana_nonlands": 3.8938289601554907,
+          "median_mana_nonlands": 4.0,
+          "mean_mana_with_lands": 3.8938289601554907,
+          "mana_bins_0_to_7plus": [
+            1,
+            43,
+            750,
+            1061,
+            976,
+            686,
+            350,
+            249
+          ],
+          "common_keywords": [
+            {
+              "keyword": "Flying",
+              "cards": 557
+            },
+            {
+              "keyword": "Trample",
+              "cards": 208
+            },
+            {
+              "keyword": "Vigilance",
+              "cards": 198
+            }
+          ]
+        },
+        {
+          "color": "Colorless",
+          "cards": 3940,
+          "mean_words": 27.19263959390863,
+          "median_words": 25.0,
+          "mean_keywords": 0.4814720812182741,
+          "median_keywords": 0.0,
+          "no_keyword": 2492,
+          "no_rules_words": 19,
+          "mean_words_no_parentheses": 22.57690355329949,
+          "nonlands": 2846,
+          "mean_mana_nonlands": 3.2438510189739986,
+          "median_mana_nonlands": 3.0,
+          "mean_mana_with_lands": 2.3431472081218274,
+          "mana_bins_0_to_7plus": [
+            143,
+            323,
+            623,
+            714,
+            444,
+            248,
+            159,
+            192
+          ],
+          "common_keywords": [
+            {
+              "keyword": "Equip",
+              "cards": 364
+            },
+            {
+              "keyword": "Flying",
+              "cards": 142
+            },
+            {
+              "keyword": "Devoid",
+              "cards": 133
+            }
+          ]
+        }
+      ],
+      "type_color": [
+        {
+          "type": "Creature",
+          "color": "White",
+          "cards": 2749,
+          "share_of_color": 0.5885249411260972,
+          "color_total": 4671
+        },
+        {
+          "type": "Instant",
+          "color": "White",
+          "cards": 658,
+          "share_of_color": 0.14086919289231428,
+          "color_total": 4671
+        },
+        {
+          "type": "Sorcery",
+          "color": "White",
+          "cards": 369,
+          "share_of_color": 0.0789980732177264,
+          "color_total": 4671
+        },
+        {
+          "type": "Enchantment",
+          "color": "White",
+          "cards": 789,
+          "share_of_color": 0.1689145793192036,
+          "color_total": 4671
+        },
+        {
+          "type": "Artifact",
+          "color": "White",
+          "cards": 181,
+          "share_of_color": 0.03874973239135089,
+          "color_total": 4671
+        },
+        {
+          "type": "Land",
+          "color": "White",
+          "cards": 0,
+          "share_of_color": 0.0,
+          "color_total": 4671
+        },
+        {
+          "type": "Planeswalker",
+          "color": "White",
+          "cards": 32,
+          "share_of_color": 0.006850781417255406,
+          "color_total": 4671
+        },
+        {
+          "type": "Battle",
+          "color": "White",
+          "cards": 4,
+          "share_of_color": 0.0008563476771569257,
+          "color_total": 4671
+        },
+        {
+          "type": "Creature",
+          "color": "Blue",
+          "cards": 2390,
+          "share_of_color": 0.5301685891748004,
+          "color_total": 4508
+        },
+        {
+          "type": "Instant",
+          "color": "Blue",
+          "cards": 853,
+          "share_of_color": 0.18921916592724047,
+          "color_total": 4508
+        },
+        {
+          "type": "Sorcery",
+          "color": "Blue",
+          "cards": 488,
+          "share_of_color": 0.10825199645075421,
+          "color_total": 4508
+        },
+        {
+          "type": "Enchantment",
+          "color": "Blue",
+          "cards": 682,
+          "share_of_color": 0.1512866015971606,
+          "color_total": 4508
+        },
+        {
+          "type": "Artifact",
+          "color": "Blue",
+          "cards": 182,
+          "share_of_color": 0.040372670807453416,
+          "color_total": 4508
+        },
+        {
+          "type": "Land",
+          "color": "Blue",
+          "cards": 0,
+          "share_of_color": 0.0,
+          "color_total": 4508
+        },
+        {
+          "type": "Planeswalker",
+          "color": "Blue",
+          "cards": 31,
+          "share_of_color": 0.006876663708961846,
+          "color_total": 4508
+        },
+        {
+          "type": "Battle",
+          "color": "Blue",
+          "cards": 4,
+          "share_of_color": 0.0008873114463176575,
+          "color_total": 4508
+        },
+        {
+          "type": "Creature",
+          "color": "Black",
+          "cards": 2640,
+          "share_of_color": 0.576545097182791,
+          "color_total": 4579
+        },
+        {
+          "type": "Instant",
+          "color": "Black",
+          "cards": 499,
+          "share_of_color": 0.108975758899323,
+          "color_total": 4579
+        },
+        {
+          "type": "Sorcery",
+          "color": "Black",
+          "cards": 795,
+          "share_of_color": 0.17361869403799957,
+          "color_total": 4579
+        },
+        {
+          "type": "Enchantment",
+          "color": "Black",
+          "cards": 574,
+          "share_of_color": 0.12535488097837955,
+          "color_total": 4579
+        },
+        {
+          "type": "Artifact",
+          "color": "Black",
+          "cards": 150,
+          "share_of_color": 0.032758244158113126,
+          "color_total": 4579
+        },
+        {
+          "type": "Land",
+          "color": "Black",
+          "cards": 0,
+          "share_of_color": 0.0,
+          "color_total": 4579
+        },
+        {
+          "type": "Planeswalker",
+          "color": "Black",
+          "cards": 25,
+          "share_of_color": 0.005459707359685521,
+          "color_total": 4579
+        },
+        {
+          "type": "Battle",
+          "color": "Black",
+          "cards": 4,
+          "share_of_color": 0.0008735531775496833,
+          "color_total": 4579
+        },
+        {
+          "type": "Creature",
+          "color": "Red",
+          "cards": 2585,
+          "share_of_color": 0.5650273224043716,
+          "color_total": 4575
+        },
+        {
+          "type": "Instant",
+          "color": "Red",
+          "cards": 631,
+          "share_of_color": 0.13792349726775957,
+          "color_total": 4575
+        },
+        {
+          "type": "Sorcery",
+          "color": "Red",
+          "cards": 700,
+          "share_of_color": 0.15300546448087432,
+          "color_total": 4575
+        },
+        {
+          "type": "Enchantment",
+          "color": "Red",
+          "cards": 546,
+          "share_of_color": 0.11934426229508197,
+          "color_total": 4575
+        },
+        {
+          "type": "Artifact",
+          "color": "Red",
+          "cards": 165,
+          "share_of_color": 0.036065573770491806,
+          "color_total": 4575
+        },
+        {
+          "type": "Land",
+          "color": "Red",
+          "cards": 1,
+          "share_of_color": 0.0002185792349726776,
+          "color_total": 4575
+        },
+        {
+          "type": "Planeswalker",
+          "color": "Red",
+          "cards": 41,
+          "share_of_color": 0.008961748633879782,
+          "color_total": 4575
+        },
+        {
+          "type": "Battle",
+          "color": "Red",
+          "cards": 5,
+          "share_of_color": 0.001092896174863388,
+          "color_total": 4575
+        },
+        {
+          "type": "Creature",
+          "color": "Green",
+          "cards": 2803,
+          "share_of_color": 0.6212322695035462,
+          "color_total": 4512
+        },
+        {
+          "type": "Instant",
+          "color": "Green",
+          "cards": 501,
+          "share_of_color": 0.1110372340425532,
+          "color_total": 4512
+        },
+        {
+          "type": "Sorcery",
+          "color": "Green",
+          "cards": 557,
+          "share_of_color": 0.12344858156028368,
+          "color_total": 4512
+        },
+        {
+          "type": "Enchantment",
+          "color": "Green",
+          "cards": 596,
+          "share_of_color": 0.1320921985815603,
+          "color_total": 4512
+        },
+        {
+          "type": "Artifact",
+          "color": "Green",
+          "cards": 88,
+          "share_of_color": 0.01950354609929078,
+          "color_total": 4512
+        },
+        {
+          "type": "Land",
+          "color": "Green",
+          "cards": 3,
+          "share_of_color": 0.0006648936170212766,
+          "color_total": 4512
+        },
+        {
+          "type": "Planeswalker",
+          "color": "Green",
+          "cards": 30,
+          "share_of_color": 0.006648936170212766,
+          "color_total": 4512
+        },
+        {
+          "type": "Battle",
+          "color": "Green",
+          "cards": 6,
+          "share_of_color": 0.0013297872340425532,
+          "color_total": 4512
+        },
+        {
+          "type": "Creature",
+          "color": "Multicolor",
+          "cards": 2896,
+          "share_of_color": 0.7035957240038873,
+          "color_total": 4116
+        },
+        {
+          "type": "Instant",
+          "color": "Multicolor",
+          "cards": 372,
+          "share_of_color": 0.09037900874635568,
+          "color_total": 4116
+        },
+        {
+          "type": "Sorcery",
+          "color": "Multicolor",
+          "cards": 341,
+          "share_of_color": 0.08284742468415938,
+          "color_total": 4116
+        },
+        {
+          "type": "Enchantment",
+          "color": "Multicolor",
+          "cards": 341,
+          "share_of_color": 0.08284742468415938,
+          "color_total": 4116
+        },
+        {
+          "type": "Artifact",
+          "color": "Multicolor",
+          "cards": 152,
+          "share_of_color": 0.0369290573372206,
+          "color_total": 4116
+        },
+        {
+          "type": "Land",
+          "color": "Multicolor",
+          "cards": 0,
+          "share_of_color": 0.0,
+          "color_total": 4116
+        },
+        {
+          "type": "Planeswalker",
+          "color": "Multicolor",
+          "cards": 128,
+          "share_of_color": 0.031098153547133137,
+          "color_total": 4116
+        },
+        {
+          "type": "Battle",
+          "color": "Multicolor",
+          "cards": 13,
+          "share_of_color": 0.0031584062196307093,
+          "color_total": 4116
+        },
+        {
+          "type": "Creature",
+          "color": "Colorless",
+          "cards": 967,
+          "share_of_color": 0.24543147208121827,
+          "color_total": 3940
+        },
+        {
+          "type": "Instant",
+          "color": "Colorless",
+          "cards": 35,
+          "share_of_color": 0.008883248730964468,
+          "color_total": 3940
+        },
+        {
+          "type": "Sorcery",
+          "color": "Colorless",
+          "cards": 33,
+          "share_of_color": 0.008375634517766498,
+          "color_total": 3940
+        },
+        {
+          "type": "Enchantment",
+          "color": "Colorless",
+          "cards": 16,
+          "share_of_color": 0.0040609137055837565,
+          "color_total": 3940
+        },
+        {
+          "type": "Artifact",
+          "color": "Colorless",
+          "cards": 2584,
+          "share_of_color": 0.6558375634517767,
+          "color_total": 3940
+        },
+        {
+          "type": "Land",
+          "color": "Colorless",
+          "cards": 1094,
+          "share_of_color": 0.27766497461928935,
+          "color_total": 3940
+        },
+        {
+          "type": "Planeswalker",
+          "color": "Colorless",
+          "cards": 10,
+          "share_of_color": 0.0025380710659898475,
+          "color_total": 3940
+        },
+        {
+          "type": "Battle",
+          "color": "Colorless",
+          "cards": 2,
+          "share_of_color": 0.0005076142131979696,
+          "color_total": 3940
+        }
+      ],
+      "types": [
+        {
+          "type": "Creature",
+          "cards": 17030,
+          "mean_words": 27.63775689958896,
+          "median_words": 25.0,
+          "mean_keywords": 0.8537874339401057,
+          "median_keywords": 1.0,
+          "no_keyword": 7074,
+          "no_rules_words": 348,
+          "mean_words_no_parentheses": 21.475689958896066
+        },
+        {
+          "type": "Instant",
+          "cards": 3549,
+          "mean_words": 24.709213863060018,
+          "median_words": 22.0,
+          "mean_keywords": 0.31191885038038886,
+          "median_keywords": 0.0,
+          "no_keyword": 2553,
+          "no_rules_words": 0,
+          "mean_words_no_parentheses": 19.640180332488026
+        },
+        {
+          "type": "Sorcery",
+          "cards": 3283,
+          "mean_words": 27.942126104173013,
+          "median_words": 26.0,
+          "mean_keywords": 0.3627779469996954,
+          "median_keywords": 0.0,
+          "no_keyword": 2219,
+          "no_rules_words": 0,
+          "mean_words_no_parentheses": 21.874505025890954
+        },
+        {
+          "type": "Enchantment",
+          "cards": 3544,
+          "mean_words": 31.02257336343115,
+          "median_words": 28.0,
+          "mean_keywords": 0.6489841986455982,
+          "median_keywords": 1.0,
+          "no_keyword": 1701,
+          "no_rules_words": 5,
+          "mean_words_no_parentheses": 26.288656884875845
+        },
+        {
+          "type": "Artifact",
+          "cards": 3502,
+          "mean_words": 29.8258138206739,
+          "median_words": 28.0,
+          "mean_keywords": 0.6987435750999429,
+          "median_keywords": 0.0,
+          "no_keyword": 1811,
+          "no_rules_words": 20,
+          "mean_words_no_parentheses": 23.87778412335808
+        },
+        {
+          "type": "Land",
+          "cards": 1098,
+          "mean_words": 24.65846994535519,
+          "median_words": 21.0,
+          "mean_keywords": 0.21766848816029144,
+          "median_keywords": 0.0,
+          "no_keyword": 883,
+          "no_rules_words": 0,
+          "mean_words_no_parentheses": 21.24681238615665
+        },
+        {
+          "type": "Planeswalker",
+          "cards": 297,
+          "mean_words": 55.82491582491583,
+          "median_words": 57.0,
+          "mean_keywords": 0.2356902356902357,
+          "median_keywords": 0.0,
+          "no_keyword": 236,
+          "no_rules_words": 0,
+          "mean_words_no_parentheses": 53.82491582491583
+        },
+        {
+          "type": "Battle",
+          "cards": 38,
+          "mean_words": 47.421052631578945,
+          "median_words": 46.0,
+          "mean_keywords": 1.736842105263158,
+          "median_keywords": 2.0,
+          "no_keyword": 2,
+          "no_rules_words": 0,
+          "mean_words_no_parentheses": 21.94736842105263
+        }
+      ],
+      "eras": [
+        {
+          "start": 1993,
+          "end": 1994,
+          "cards": 988,
+          "mean_words": 21.412955465587043,
+          "median_words": 16.0,
+          "mean_keywords": 0.2783400809716599,
+          "median_keywords": 0.0,
+          "no_keyword": 755,
+          "no_rules_words": 39,
+          "mean_words_no_parentheses": 18.512145748987855,
+          "creature_mean_words": 20.42396313364055
+        },
+        {
+          "start": 1995,
+          "end": 1999,
+          "cards": 3170,
+          "mean_words": 20.18738170347003,
+          "median_words": 17.0,
+          "mean_keywords": 0.34858044164037855,
+          "median_keywords": 0.0,
+          "no_keyword": 2256,
+          "no_rules_words": 70,
+          "mean_words_no_parentheses": 17.228706624605678,
+          "creature_mean_words": 18.073738680465716
+        },
+        {
+          "start": 2000,
+          "end": 2004,
+          "cards": 2968,
+          "mean_words": 22.214285714285715,
+          "median_words": 20.0,
+          "mean_keywords": 0.46495956873315364,
+          "median_keywords": 0.0,
+          "no_keyword": 1822,
+          "no_rules_words": 14,
+          "mean_words_no_parentheses": 18.579177897574123,
+          "creature_mean_words": 21.67237969676994
+        },
+        {
+          "start": 2005,
+          "end": 2009,
+          "cards": 3444,
+          "mean_words": 24.965737514518004,
+          "median_words": 22.0,
+          "mean_keywords": 0.5711382113821138,
+          "median_keywords": 0.0,
+          "no_keyword": 1920,
+          "no_rules_words": 38,
+          "mean_words_no_parentheses": 18.957026713124275,
+          "creature_mean_words": 24.424028268551236
+        },
+        {
+          "start": 2010,
+          "end": 2014,
+          "cards": 3673,
+          "mean_words": 23.36373536618568,
+          "median_words": 21.0,
+          "mean_keywords": 0.6226517832834195,
+          "median_keywords": 0.0,
+          "no_keyword": 1853,
+          "no_rules_words": 73,
+          "mean_words_no_parentheses": 18.449496324530358,
+          "creature_mean_words": 22.980577689243027
+        },
+        {
+          "start": 2015,
+          "end": 2019,
+          "cards": 5176,
+          "mean_words": 26.16673106646059,
+          "median_words": 24.0,
+          "mean_keywords": 0.651468315301391,
+          "median_keywords": 0.0,
+          "no_keyword": 2614,
+          "no_rules_words": 81,
+          "mean_words_no_parentheses": 21.12673879443586,
+          "creature_mean_words": 24.90820921371666
+        },
+        {
+          "start": 2020,
+          "end": 2024,
+          "cards": 9434,
+          "mean_words": 35.6624973500106,
+          "median_words": 34.0,
+          "mean_keywords": 0.894000423998304,
+          "median_keywords": 1.0,
+          "no_keyword": 3833,
+          "no_rules_words": 24,
+          "mean_words_no_parentheses": 28.153911384354462,
+          "creature_mean_words": 35.173024274502644
+        },
+        {
+          "start": 2025,
+          "end": 2025,
+          "cards": 2048,
+          "mean_words": 35.9150390625,
+          "median_words": 35.0,
+          "mean_keywords": 0.9267578125,
+          "median_keywords": 1.0,
+          "no_keyword": 814,
+          "no_rules_words": 9,
+          "mean_words_no_parentheses": 27.87646484375,
+          "creature_mean_words": 35.51443123938879
+        }
+      ]
+    },
+    "expansions": {
+      "sets": [
+        {
+          "code": "wwk",
+          "expansion": "Worldwake",
+          "release": "2010-02-05",
+          "eligible_names": 145,
+          "quoted_names": 139,
+          "coverage": 0.9586206896551724,
+          "one_copy_usd": 262.58,
+          "mean_card_usd": 1.8890647482014387,
+          "top_name": "Amulet of Vigor",
+          "top_price_usd": 55.99,
+          "top_five_share": 0.6294843476273898,
+          "value_ex_top_five_usd": 97.28999999999999
+        },
+        {
+          "code": "roe",
+          "expansion": "Rise of the Eldrazi",
+          "release": "2010-04-23",
+          "eligible_names": 228,
+          "quoted_names": 223,
+          "coverage": 0.9780701754385965,
+          "one_copy_usd": 250.71999999999997,
+          "mean_card_usd": 1.124304932735426,
+          "top_name": "Realms Uncharted",
+          "top_price_usd": 14.36,
+          "top_five_share": 0.25514518187619656,
+          "value_ex_top_five_usd": 186.74999999999997
+        },
+        {
+          "code": "som",
+          "expansion": "Scars of Mirrodin",
+          "release": "2010-10-01",
+          "eligible_names": 229,
+          "quoted_names": 224,
+          "coverage": 0.9781659388646288,
+          "one_copy_usd": 397.76,
+          "mean_card_usd": 1.7757142857142856,
+          "top_name": "Mox Opal",
+          "top_price_usd": 187.01,
+          "top_five_share": 0.5991301287208367,
+          "value_ex_top_five_usd": 159.45
+        },
+        {
+          "code": "mbs",
+          "expansion": "Mirrodin Besieged",
+          "release": "2011-02-04",
+          "eligible_names": 145,
+          "quoted_names": 142,
+          "coverage": 0.9793103448275862,
+          "one_copy_usd": 220.60000000000002,
+          "mean_card_usd": 1.5535211267605635,
+          "top_name": "Blightsteel Colossus",
+          "top_price_usd": 38.69,
+          "top_five_share": 0.62792384406165,
+          "value_ex_top_five_usd": 82.08000000000001
+        },
+        {
+          "code": "nph",
+          "expansion": "New Phyrexia",
+          "release": "2011-05-13",
+          "eligible_names": 165,
+          "quoted_names": 159,
+          "coverage": 0.9636363636363636,
+          "one_copy_usd": 238.69,
+          "mean_card_usd": 1.5011949685534591,
+          "top_name": "Unwinding Clock",
+          "top_price_usd": 18.64,
+          "top_five_share": 0.27789182621810715,
+          "value_ex_top_five_usd": 172.36
+        },
+        {
+          "code": "isd",
+          "expansion": "Innistrad",
+          "release": "2011-09-30",
+          "eligible_names": 249,
+          "quoted_names": 247,
+          "coverage": 0.9919678714859438,
+          "one_copy_usd": 180.68000000000004,
+          "mean_card_usd": 0.7314979757085022,
+          "top_name": "Parallel Lives",
+          "top_price_usd": 26.45,
+          "top_five_share": 0.38139251715740524,
+          "value_ex_top_five_usd": 111.77000000000004
+        },
+        {
+          "code": "dka",
+          "expansion": "Dark Ascension",
+          "release": "2012-02-03",
+          "eligible_names": 158,
+          "quoted_names": 153,
+          "coverage": 0.9683544303797469,
+          "one_copy_usd": 63.19,
+          "mean_card_usd": 0.4130065359477124,
+          "top_name": "Gravecrawler",
+          "top_price_usd": 2.63,
+          "top_five_share": 0.16648203829719893,
+          "value_ex_top_five_usd": 52.67
+        },
+        {
+          "code": "avr",
+          "expansion": "Avacyn Restored",
+          "release": "2012-05-04",
+          "eligible_names": 229,
+          "quoted_names": 223,
+          "coverage": 0.9737991266375546,
+          "one_copy_usd": 211.20999999999998,
+          "mean_card_usd": 0.9471300448430492,
+          "top_name": "Cavern of Souls",
+          "top_price_usd": 41.68,
+          "top_five_share": 0.44278206524312297,
+          "value_ex_top_five_usd": 117.68999999999998
+        },
+        {
+          "code": "rtr",
+          "expansion": "Return to Ravnica",
+          "release": "2012-10-05",
+          "eligible_names": 249,
+          "quoted_names": 243,
+          "coverage": 0.9759036144578314,
+          "one_copy_usd": 207.82,
+          "mean_card_usd": 0.8552263374485597,
+          "top_name": "Cyclonic Rift",
+          "top_price_usd": 29.64,
+          "top_five_share": 0.4534693484746416,
+          "value_ex_top_five_usd": 113.57999999999998
+        },
+        {
+          "code": "gtc",
+          "expansion": "Gatecrash",
+          "release": "2013-02-01",
+          "eligible_names": 249,
+          "quoted_names": 245,
+          "coverage": 0.9839357429718876,
+          "one_copy_usd": 167.84,
+          "mean_card_usd": 0.6850612244897959,
+          "top_name": "Breeding Pool",
+          "top_price_usd": 10.0,
+          "top_five_share": 0.27526215443279317,
+          "value_ex_top_five_usd": 121.64
+        },
+        {
+          "code": "dgm",
+          "expansion": "Dragon's Maze",
+          "release": "2013-05-03",
+          "eligible_names": 156,
+          "quoted_names": 149,
+          "coverage": 0.9551282051282052,
+          "one_copy_usd": 53.370000000000005,
+          "mean_card_usd": 0.35818791946308726,
+          "top_name": "Master of Cruelties",
+          "top_price_usd": 3.6,
+          "top_five_share": 0.23739928798950719,
+          "value_ex_top_five_usd": 40.7
+        },
+        {
+          "code": "ths",
+          "expansion": "Theros",
+          "release": "2013-09-27",
+          "eligible_names": 229,
+          "quoted_names": 217,
+          "coverage": 0.9475982532751092,
+          "one_copy_usd": 92.36,
+          "mean_card_usd": 0.4256221198156682,
+          "top_name": "Swan Song",
+          "top_price_usd": 9.0,
+          "top_five_share": 0.3348852317020355,
+          "value_ex_top_five_usd": 61.43
+        },
+        {
+          "code": "bng",
+          "expansion": "Born of the Gods",
+          "release": "2014-02-07",
+          "eligible_names": 165,
+          "quoted_names": 158,
+          "coverage": 0.9575757575757575,
+          "one_copy_usd": 52.36,
+          "mean_card_usd": 0.33139240506329115,
+          "top_name": "Courser of Kruphix",
+          "top_price_usd": 1.98,
+          "top_five_share": 0.1573720397249809,
+          "value_ex_top_five_usd": 44.12
+        },
+        {
+          "code": "jou",
+          "expansion": "Journey into Nyx",
+          "release": "2014-05-02",
+          "eligible_names": 165,
+          "quoted_names": 158,
+          "coverage": 0.9575757575757575,
+          "one_copy_usd": 117.63,
+          "mean_card_usd": 0.7444936708860759,
+          "top_name": "Mana Confluence",
+          "top_price_usd": 27.0,
+          "top_five_share": 0.5400833120802516,
+          "value_ex_top_five_usd": 54.099999999999994
+        },
+        {
+          "code": "ktk",
+          "expansion": "Khans of Tarkir",
+          "release": "2014-09-26",
+          "eligible_names": 249,
+          "quoted_names": 244,
+          "coverage": 0.9799196787148594,
+          "one_copy_usd": 171.19,
+          "mean_card_usd": 0.7015983606557377,
+          "top_name": "Polluted Delta",
+          "top_price_usd": 17.41,
+          "top_five_share": 0.4421987265611309,
+          "value_ex_top_five_usd": 95.49
+        },
+        {
+          "code": "frf",
+          "expansion": "Fate Reforged",
+          "release": "2015-01-23",
+          "eligible_names": 175,
+          "quoted_names": 166,
+          "coverage": 0.9485714285714286,
+          "one_copy_usd": 60.0,
+          "mean_card_usd": 0.3614457831325301,
+          "top_name": "Dark Deal",
+          "top_price_usd": 3.2,
+          "top_five_share": 0.20099999999999998,
+          "value_ex_top_five_usd": 47.94
+        },
+        {
+          "code": "dtk",
+          "expansion": "Dragons of Tarkir",
+          "release": "2015-03-27",
+          "eligible_names": 249,
+          "quoted_names": 246,
+          "coverage": 0.9879518072289156,
+          "one_copy_usd": 128.61,
+          "mean_card_usd": 0.5228048780487805,
+          "top_name": "Sarkhan Unbroken",
+          "top_price_usd": 17.01,
+          "top_five_share": 0.30720783764870535,
+          "value_ex_top_five_usd": 89.10000000000002
+        },
+        {
+          "code": "bfz",
+          "expansion": "Battle for Zendikar",
+          "release": "2015-10-02",
+          "eligible_names": 249,
+          "quoted_names": 241,
+          "coverage": 0.9678714859437751,
+          "one_copy_usd": 100.35,
+          "mean_card_usd": 0.4163900414937759,
+          "top_name": "Void Winnower",
+          "top_price_usd": 19.99,
+          "top_five_share": 0.32267065271549583,
+          "value_ex_top_five_usd": 67.97
+        },
+        {
+          "code": "ogw",
+          "expansion": "Oath of the Gatewatch",
+          "release": "2016-01-22",
+          "eligible_names": 182,
+          "quoted_names": 174,
+          "coverage": 0.9560439560439561,
+          "one_copy_usd": 65.59,
+          "mean_card_usd": 0.3769540229885058,
+          "top_name": "Thought-Knot Seer",
+          "top_price_usd": 4.59,
+          "top_five_share": 0.2354017380698277,
+          "value_ex_top_five_usd": 50.150000000000006
+        },
+        {
+          "code": "soi",
+          "expansion": "Shadows over Innistrad",
+          "release": "2016-04-08",
+          "eligible_names": 282,
+          "quoted_names": 276,
+          "coverage": 0.9787234042553191,
+          "one_copy_usd": 113.10999999999999,
+          "mean_card_usd": 0.4098188405797101,
+          "top_name": "Relentless Dead",
+          "top_price_usd": 8.88,
+          "top_five_share": 0.2273892670851384,
+          "value_ex_top_five_usd": 87.38999999999999
+        },
+        {
+          "code": "emn",
+          "expansion": "Eldritch Moon",
+          "release": "2016-07-22",
+          "eligible_names": 208,
+          "quoted_names": 198,
+          "coverage": 0.9519230769230769,
+          "one_copy_usd": 101.53,
+          "mean_card_usd": 0.5127777777777778,
+          "top_name": "Sigarda's Aid",
+          "top_price_usd": 15.9,
+          "top_five_share": 0.39820742637644047,
+          "value_ex_top_five_usd": 61.1
+        },
+        {
+          "code": "kld",
+          "expansion": "Kaladesh",
+          "release": "2016-09-30",
+          "eligible_names": 249,
+          "quoted_names": 240,
+          "coverage": 0.963855421686747,
+          "one_copy_usd": 120.82000000000001,
+          "mean_card_usd": 0.5034166666666667,
+          "top_name": "Aetherflux Reservoir",
+          "top_price_usd": 19.48,
+          "top_five_share": 0.37353087237212373,
+          "value_ex_top_five_usd": 75.69000000000001
+        },
+        {
+          "code": "aer",
+          "expansion": "Aether Revolt",
+          "release": "2017-01-20",
+          "eligible_names": 184,
+          "quoted_names": 179,
+          "coverage": 0.9728260869565217,
+          "one_copy_usd": 97.00999999999999,
+          "mean_card_usd": 0.5419553072625698,
+          "top_name": "Heroic Intervention",
+          "top_price_usd": 12.0,
+          "top_five_share": 0.34480981342129674,
+          "value_ex_top_five_usd": 63.559999999999995
+        },
+        {
+          "code": "akh",
+          "expansion": "Amonkhet",
+          "release": "2017-04-28",
+          "eligible_names": 249,
+          "quoted_names": 243,
+          "coverage": 0.9759036144578314,
+          "one_copy_usd": 156.81,
+          "mean_card_usd": 0.6453086419753087,
+          "top_name": "Anointed Procession",
+          "top_price_usd": 45.62,
+          "top_five_share": 0.4235061539442637,
+          "value_ex_top_five_usd": 90.4
+        },
+        {
+          "code": "hou",
+          "expansion": "Hour of Devastation",
+          "release": "2017-07-14",
+          "eligible_names": 184,
+          "quoted_names": 178,
+          "coverage": 0.967391304347826,
+          "one_copy_usd": 122.13000000000001,
+          "mean_card_usd": 0.6861235955056181,
+          "top_name": "Torment of Hailfire",
+          "top_price_usd": 25.36,
+          "top_five_share": 0.4887415049537378,
+          "value_ex_top_five_usd": 62.440000000000005
+        },
+        {
+          "code": "xln",
+          "expansion": "Ixalan",
+          "release": "2017-09-29",
+          "eligible_names": 259,
+          "quoted_names": 251,
+          "coverage": 0.9691119691119691,
+          "one_copy_usd": 144.46,
+          "mean_card_usd": 0.5755378486055778,
+          "top_name": "Revel in Riches",
+          "top_price_usd": 16.52,
+          "top_five_share": 0.32098850892980757,
+          "value_ex_top_five_usd": 98.09
+        },
+        {
+          "code": "rix",
+          "expansion": "Rivals of Ixalan",
+          "release": "2018-01-19",
+          "eligible_names": 191,
+          "quoted_names": 180,
+          "coverage": 0.9424083769633508,
+          "one_copy_usd": 129.85,
+          "mean_card_usd": 0.7213888888888889,
+          "top_name": "Polyraptor",
+          "top_price_usd": 16.43,
+          "top_five_share": 0.35541008856372736,
+          "value_ex_top_five_usd": 83.69999999999999
+        },
+        {
+          "code": "dom",
+          "expansion": "Dominaria",
+          "release": "2018-04-27",
+          "eligible_names": 249,
+          "quoted_names": 211,
+          "coverage": 0.8473895582329317,
+          "one_copy_usd": 172.04999999999995,
+          "mean_card_usd": 0.8154028436018955,
+          "top_name": "Mox Amber",
+          "top_price_usd": 68.9,
+          "top_five_share": 0.5815170008718398,
+          "value_ex_top_five_usd": 71.99999999999994
+        },
+        {
+          "code": "grn",
+          "expansion": "Guilds of Ravnica",
+          "release": "2018-10-05",
+          "eligible_names": 254,
+          "quoted_names": 240,
+          "coverage": 0.9448818897637795,
+          "one_copy_usd": 150.30999999999997,
+          "mean_card_usd": 0.6262916666666666,
+          "top_name": "Steam Vents",
+          "top_price_usd": 18.36,
+          "top_five_share": 0.41327922293925895,
+          "value_ex_top_five_usd": 88.18999999999997
+        },
+        {
+          "code": "rna",
+          "expansion": "Ravnica Allegiance",
+          "release": "2019-01-25",
+          "eligible_names": 254,
+          "quoted_names": 242,
+          "coverage": 0.952755905511811,
+          "one_copy_usd": 186.10999999999996,
+          "mean_card_usd": 0.7690495867768593,
+          "top_name": "Smothering Tithe",
+          "top_price_usd": 40.8,
+          "top_five_share": 0.48976411799473446,
+          "value_ex_top_five_usd": 94.95999999999995
+        },
+        {
+          "code": "war",
+          "expansion": "War of the Spark",
+          "release": "2019-05-03",
+          "eligible_names": 249,
+          "quoted_names": 206,
+          "coverage": 0.8273092369477911,
+          "one_copy_usd": 142.91,
+          "mean_card_usd": 0.6937378640776699,
+          "top_name": "Finale of Devastation",
+          "top_price_usd": 29.16,
+          "top_five_share": 0.42999090336575474,
+          "value_ex_top_five_usd": 81.45999999999998
+        },
+        {
+          "code": "eld",
+          "expansion": "Throne of Eldraine",
+          "release": "2019-10-04",
+          "eligible_names": 249,
+          "quoted_names": 234,
+          "coverage": 0.9397590361445783,
+          "one_copy_usd": 180.65,
+          "mean_card_usd": 0.772008547008547,
+          "top_name": "The Great Henge",
+          "top_price_usd": 65.0,
+          "top_five_share": 0.49399391087738714,
+          "value_ex_top_five_usd": 91.41000000000001
+        },
+        {
+          "code": "thb",
+          "expansion": "Theros Beyond Death",
+          "release": "2020-01-24",
+          "eligible_names": 249,
+          "quoted_names": 224,
+          "coverage": 0.8995983935742972,
+          "one_copy_usd": 193.02999999999997,
+          "mean_card_usd": 0.8617410714285713,
+          "top_name": "Shadowspear",
+          "top_price_usd": 41.5,
+          "top_five_share": 0.5629176811894525,
+          "value_ex_top_five_usd": 84.36999999999996
+        },
+        {
+          "code": "iko",
+          "expansion": "Ikoria: Lair of Behemoths",
+          "release": "2020-04-24",
+          "eligible_names": 259,
+          "quoted_names": 237,
+          "coverage": 0.915057915057915,
+          "one_copy_usd": 221.67999999999995,
+          "mean_card_usd": 0.9353586497890293,
+          "top_name": "The Ozolith",
+          "top_price_usd": 49.99,
+          "top_five_share": 0.5525081198123423,
+          "value_ex_top_five_usd": 99.19999999999993
+        },
+        {
+          "code": "znr",
+          "expansion": "Zendikar Rising",
+          "release": "2020-09-25",
+          "eligible_names": 265,
+          "quoted_names": 246,
+          "coverage": 0.9283018867924528,
+          "one_copy_usd": 242.82999999999996,
+          "mean_card_usd": 0.9871138211382112,
+          "top_name": "Sea Gate Restoration",
+          "top_price_usd": 34.99,
+          "top_five_share": 0.38137791870856164,
+          "value_ex_top_five_usd": 150.21999999999997
+        },
+        {
+          "code": "khm",
+          "expansion": "Kaldheim",
+          "release": "2021-02-05",
+          "eligible_names": 275,
+          "quoted_names": 245,
+          "coverage": 0.8909090909090909,
+          "one_copy_usd": 138.94,
+          "mean_card_usd": 0.5671020408163265,
+          "top_name": "Goldspan Dragon",
+          "top_price_usd": 10.39,
+          "top_five_share": 0.2515474305455593,
+          "value_ex_top_five_usd": 103.99
+        },
+        {
+          "code": "stx",
+          "expansion": "Strixhaven: School of Mages",
+          "release": "2021-04-23",
+          "eligible_names": 275,
+          "quoted_names": 257,
+          "coverage": 0.9345454545454546,
+          "one_copy_usd": 119.6,
+          "mean_card_usd": 0.4653696498054474,
+          "top_name": "Crackle with Power",
+          "top_price_usd": 13.27,
+          "top_five_share": 0.29397993311036785,
+          "value_ex_top_five_usd": 84.44
+        },
+        {
+          "code": "afr",
+          "expansion": "Adventures in the Forgotten Realms",
+          "release": "2021-07-23",
+          "eligible_names": 261,
+          "quoted_names": 241,
+          "coverage": 0.9233716475095786,
+          "one_copy_usd": 209.79,
+          "mean_card_usd": 0.8704979253112033,
+          "top_name": "Old Gnawbone",
+          "top_price_usd": 44.34,
+          "top_five_share": 0.43367176700510035,
+          "value_ex_top_five_usd": 118.80999999999999
+        },
+        {
+          "code": "mid",
+          "expansion": "Innistrad: Midnight Hunt",
+          "release": "2021-09-24",
+          "eligible_names": 267,
+          "quoted_names": 249,
+          "coverage": 0.9325842696629213,
+          "one_copy_usd": 120.44,
+          "mean_card_usd": 0.48369477911646586,
+          "top_name": "The Meathook Massacre",
+          "top_price_usd": 24.15,
+          "top_five_share": 0.3650780471604118,
+          "value_ex_top_five_usd": 76.47
+        },
+        {
+          "code": "vow",
+          "expansion": "Innistrad: Crimson Vow",
+          "release": "2021-11-19",
+          "eligible_names": 267,
+          "quoted_names": 250,
+          "coverage": 0.9363295880149812,
+          "one_copy_usd": 123.72999999999999,
+          "mean_card_usd": 0.49491999999999997,
+          "top_name": "Deathcap Glade",
+          "top_price_usd": 6.73,
+          "top_five_share": 0.23050189929685605,
+          "value_ex_top_five_usd": 95.21
+        },
+        {
+          "code": "neo",
+          "expansion": "Kamigawa: Neon Dynasty",
+          "release": "2022-02-18",
+          "eligible_names": 282,
+          "quoted_names": 251,
+          "coverage": 0.8900709219858156,
+          "one_copy_usd": 116.97999999999999,
+          "mean_card_usd": 0.4660557768924302,
+          "top_name": "Kodama of the West Tree",
+          "top_price_usd": 20.14,
+          "top_five_share": 0.34646948196272864,
+          "value_ex_top_five_usd": 76.44999999999999
+        },
+        {
+          "code": "snc",
+          "expansion": "Streets of New Capenna",
+          "release": "2022-04-29",
+          "eligible_names": 261,
+          "quoted_names": 239,
+          "coverage": 0.9157088122605364,
+          "one_copy_usd": 154.88999999999996,
+          "mean_card_usd": 0.6480753138075313,
+          "top_name": "Jetmir's Garden",
+          "top_price_usd": 16.31,
+          "top_five_share": 0.4088708115436763,
+          "value_ex_top_five_usd": 91.55999999999995
+        },
+        {
+          "code": "dmu",
+          "expansion": "Dominaria United",
+          "release": "2022-09-09",
+          "eligible_names": 261,
+          "quoted_names": 225,
+          "coverage": 0.8620689655172413,
+          "one_copy_usd": 114.57999999999998,
+          "mean_card_usd": 0.5092444444444444,
+          "top_name": "Timeless Lotus",
+          "top_price_usd": 15.71,
+          "top_five_share": 0.33819165648455235,
+          "value_ex_top_five_usd": 75.82999999999998
+        },
+        {
+          "code": "bro",
+          "expansion": "The Brothers' War",
+          "release": "2022-11-18",
+          "eligible_names": 270,
+          "quoted_names": 243,
+          "coverage": 0.9,
+          "one_copy_usd": 159.07,
+          "mean_card_usd": 0.6546090534979424,
+          "top_name": "Portal to Phyrexia",
+          "top_price_usd": 28.97,
+          "top_five_share": 0.48494373546237507,
+          "value_ex_top_five_usd": 81.92999999999999
+        },
+        {
+          "code": "one",
+          "expansion": "Phyrexia: All Will Be One",
+          "release": "2023-02-10",
+          "eligible_names": 261,
+          "quoted_names": 216,
+          "coverage": 0.8275862068965517,
+          "one_copy_usd": 108.30999999999999,
+          "mean_card_usd": 0.5014351851851852,
+          "top_name": "All Will Be One",
+          "top_price_usd": 16.37,
+          "top_five_share": 0.4051334133505679,
+          "value_ex_top_five_usd": 64.42999999999998
+        },
+        {
+          "code": "mom",
+          "expansion": "March of the Machine",
+          "release": "2023-04-21",
+          "eligible_names": 276,
+          "quoted_names": 265,
+          "coverage": 0.9601449275362319,
+          "one_copy_usd": 217.20000000000002,
+          "mean_card_usd": 0.819622641509434,
+          "top_name": "Faerie Mastermind",
+          "top_price_usd": 18.0,
+          "top_five_share": 0.3250460405156537,
+          "value_ex_top_five_usd": 146.60000000000002
+        },
+        {
+          "code": "mat",
+          "expansion": "March of the Machine: The Aftermath",
+          "release": "2023-05-12",
+          "eligible_names": 50,
+          "quoted_names": 32,
+          "coverage": 0.64,
+          "one_copy_usd": 26.060000000000002,
+          "mean_card_usd": 0.8143750000000001,
+          "top_name": "Training Grounds",
+          "top_price_usd": 5.1,
+          "top_five_share": 0.6488871834228702,
+          "value_ex_top_five_usd": 9.150000000000002
+        },
+        {
+          "code": "woe",
+          "expansion": "Wilds of Eldraine",
+          "release": "2023-09-08",
+          "eligible_names": 261,
+          "quoted_names": 242,
+          "coverage": 0.9272030651340997,
+          "one_copy_usd": 165.48000000000002,
+          "mean_card_usd": 0.683801652892562,
+          "top_name": "Agatha's Soul Cauldron",
+          "top_price_usd": 33.4,
+          "top_five_share": 0.47727822093304323,
+          "value_ex_top_five_usd": 86.50000000000001
+        },
+        {
+          "code": "lci",
+          "expansion": "The Lost Caverns of Ixalan",
+          "release": "2023-11-17",
+          "eligible_names": 286,
+          "quoted_names": 260,
+          "coverage": 0.9090909090909091,
+          "one_copy_usd": 223.92000000000004,
+          "mean_card_usd": 0.8612307692307694,
+          "top_name": "Cavern of Souls",
+          "top_price_usd": 40.1,
+          "top_five_share": 0.563549481957842,
+          "value_ex_top_five_usd": 97.73000000000003
+        },
+        {
+          "code": "mkm",
+          "expansion": "Murders at Karlov Manor",
+          "release": "2024-02-09",
+          "eligible_names": 271,
+          "quoted_names": 249,
+          "coverage": 0.9188191881918819,
+          "one_copy_usd": 227.60999999999999,
+          "mean_card_usd": 0.9140963855421687,
+          "top_name": "Undercity Sewers",
+          "top_price_usd": 20.47,
+          "top_five_share": 0.3580246913580247,
+          "value_ex_top_five_usd": 146.11999999999998
+        },
+        {
+          "code": "otj",
+          "expansion": "Outlaws of Thunder Junction",
+          "release": "2024-04-19",
+          "eligible_names": 271,
+          "quoted_names": 232,
+          "coverage": 0.8560885608856088,
+          "one_copy_usd": 137.20999999999998,
+          "mean_card_usd": 0.5914224137931033,
+          "top_name": "Terror of the Peaks",
+          "top_price_usd": 24.9,
+          "top_five_share": 0.35318125501056774,
+          "value_ex_top_five_usd": 88.74999999999999
+        },
+        {
+          "code": "blb",
+          "expansion": "Bloomburrow",
+          "release": "2024-08-02",
+          "eligible_names": 261,
+          "quoted_names": 238,
+          "coverage": 0.9118773946360154,
+          "one_copy_usd": 225.84999999999997,
+          "mean_card_usd": 0.9489495798319326,
+          "top_name": "Three Tree City",
+          "top_price_usd": 22.25,
+          "top_five_share": 0.35297764002656634,
+          "value_ex_top_five_usd": 146.12999999999997
+        },
+        {
+          "code": "dsk",
+          "expansion": "Duskmourn: House of Horror",
+          "release": "2024-09-27",
+          "eligible_names": 271,
+          "quoted_names": 253,
+          "coverage": 0.933579335793358,
+          "one_copy_usd": 251.57,
+          "mean_card_usd": 0.9943478260869565,
+          "top_name": "Overlord of the Balemurk",
+          "top_price_usd": 29.62,
+          "top_five_share": 0.29963827165401286,
+          "value_ex_top_five_usd": 176.19
+        },
+        {
+          "code": "dft",
+          "expansion": "Aetherdrift",
+          "release": "2025-02-14",
+          "eligible_names": 271,
+          "quoted_names": 242,
+          "coverage": 0.8929889298892989,
+          "one_copy_usd": 186.03,
+          "mean_card_usd": 0.7687190082644628,
+          "top_name": "Riverpyre Verge",
+          "top_price_usd": 22.57,
+          "top_five_share": 0.44148793205396986,
+          "value_ex_top_five_usd": 103.89999999999999
+        },
+        {
+          "code": "tdm",
+          "expansion": "Tarkir: Dragonstorm",
+          "release": "2025-04-11",
+          "eligible_names": 271,
+          "quoted_names": 255,
+          "coverage": 0.940959409594096,
+          "one_copy_usd": 148.51,
+          "mean_card_usd": 0.582392156862745,
+          "top_name": "Voice of Victory",
+          "top_price_usd": 14.97,
+          "top_five_share": 0.3479226988081611,
+          "value_ex_top_five_usd": 96.83999999999999
+        },
+        {
+          "code": "fin",
+          "expansion": "Final Fantasy",
+          "release": "2025-06-13",
+          "eligible_names": 294,
+          "quoted_names": 224,
+          "coverage": 0.7619047619047619,
+          "one_copy_usd": 225.51,
+          "mean_card_usd": 1.0067410714285714,
+          "top_name": "Buster Sword",
+          "top_price_usd": 35.65,
+          "top_five_share": 0.5104873398075473,
+          "value_ex_top_five_usd": 110.38999999999999
+        },
+        {
+          "code": "eoe",
+          "expansion": "Edge of Eternities",
+          "release": "2025-08-01",
+          "eligible_names": 261,
+          "quoted_names": 237,
+          "coverage": 0.9080459770114943,
+          "one_copy_usd": 265.17999999999995,
+          "mean_card_usd": 1.1189029535864976,
+          "top_name": "Quantum Riddler",
+          "top_price_usd": 54.98,
+          "top_five_share": 0.5113507806018555,
+          "value_ex_top_five_usd": 129.57999999999996
+        },
+        {
+          "code": "spm",
+          "expansion": "Marvel's Spider-Man",
+          "release": "2025-09-26",
+          "eligible_names": 188,
+          "quoted_names": 128,
+          "coverage": 0.6808510638297872,
+          "one_copy_usd": 151.39000000000004,
+          "mean_card_usd": 1.1827343750000003,
+          "top_name": "The Soul Stone",
+          "top_price_usd": 63.99,
+          "top_five_share": 0.64290904286941,
+          "value_ex_top_five_usd": 54.060000000000045
+        },
+        {
+          "code": "tla",
+          "expansion": "Avatar: The Last Airbender",
+          "release": "2025-11-21",
+          "eligible_names": 281,
+          "quoted_names": 229,
+          "coverage": 0.8149466192170819,
+          "one_copy_usd": 253.09999999999997,
+          "mean_card_usd": 1.105240174672489,
+          "top_name": "Badgermole Cub",
+          "top_price_usd": 54.81,
+          "top_five_share": 0.4481232714342158,
+          "value_ex_top_five_usd": 139.67999999999995
+        }
+      ],
+      "coverage_sensitivity": [
+        {
+          "coverage_at_least": 0.8,
+          "sets": 56,
+          "mean_basket_usd": 164.03267857142853,
+          "median_basket_usd": 155.84999999999997
+        },
+        {
+          "coverage_at_least": 0.9,
+          "sets": 46,
+          "mean_basket_usd": 165.71065217391305,
+          "median_basket_usd": 157.94
+        },
+        {
+          "coverage_at_least": 0.95,
+          "sets": 26,
+          "mean_basket_usd": 159.59115384615384,
+          "median_basket_usd": 150.635
+        },
+        {
+          "coverage_at_least": 1.0,
+          "sets": 0,
+          "mean_basket_usd": null,
+          "median_basket_usd": null
+        }
+      ]
+    },
+    "market": {
+      "covered_names": 25703,
+      "exactly_one": 148,
+      "below_one": 21903,
+      "eligible": 3652,
+      "all_value": 81841.95,
+      "top_value": 65743.37,
+      "top_share": 0.8032967200805944,
+      "top_effective_names": 37.66099173983205,
+      "rank_curve": [
+        {
+          "rank": 1,
+          "share": 0.06182636166415879
+        },
+        {
+          "rank": 2,
+          "share": 0.11717694898520868
+        },
+        {
+          "rank": 3,
+          "share": 0.16287466268826684
+        },
+        {
+          "rank": 4,
+          "share": 0.20075242586473077
+        },
+        {
+          "rank": 5,
+          "share": 0.23789706867932642
+        },
+        {
+          "rank": 6,
+          "share": 0.2739665904832424
+        },
+        {
+          "rank": 7,
+          "share": 0.29987017660258586
+        },
+        {
+          "rank": 8,
+          "share": 0.3230928637453042
+        },
+        {
+          "rank": 9,
+          "share": 0.34142075060528254
+        },
+        {
+          "rank": 10,
+          "share": 0.35548053290519105
+        },
+        {
+          "rank": 11,
+          "share": 0.3689210728727749
+        },
+        {
+          "rank": 12,
+          "share": 0.3822852461359975
+        },
+        {
+          "rank": 13,
+          "share": 0.3955125702650047
+        },
+        {
+          "rank": 14,
+          "share": 0.4075826639028029
+        },
+        {
+          "rank": 15,
+          "share": 0.418274002513381
+        },
+        {
+          "rank": 17,
+          "share": 0.43806800791036865
+        },
+        {
+          "rank": 18,
+          "share": 0.4474152925241884
+        },
+        {
+          "rank": 20,
+          "share": 0.4642730286851669
+        },
+        {
+          "rank": 21,
+          "share": 0.4725511794379288
+        },
+        {
+          "rank": 23,
+          "share": 0.4882843089638015
+        },
+        {
+          "rank": 25,
+          "share": 0.5023811138419844
+        },
+        {
+          "rank": 28,
+          "share": 0.5212836448789403
+        },
+        {
+          "rank": 30,
+          "share": 0.532588727419129
+        },
+        {
+          "rank": 32,
+          "share": 0.5433410372064691
+        },
+        {
+          "rank": 35,
+          "share": 0.5589771504711212
+        },
+        {
+          "rank": 38,
+          "share": 0.5734254865628199
+        },
+        {
+          "rank": 42,
+          "share": 0.5906718987023155
+        },
+        {
+          "rank": 45,
+          "share": 0.6025754518312426
+        },
+        {
+          "rank": 49,
+          "share": 0.6172143992170271
+        },
+        {
+          "rank": 53,
+          "share": 0.6283942403620633
+        },
+        {
+          "rank": 58,
+          "share": 0.6410882194278114
+        },
+        {
+          "rank": 63,
+          "share": 0.6519924073167852
+        },
+        {
+          "rank": 68,
+          "share": 0.6616625092632809
+        },
+        {
+          "rank": 74,
+          "share": 0.6720478923095059
+        },
+        {
+          "rank": 81,
+          "share": 0.682822073520975
+        },
+        {
+          "rank": 88,
+          "share": 0.6920818724382785
+        },
+        {
+          "rank": 95,
+          "share": 0.7002358814764307
+        },
+        {
+          "rank": 100,
+          "share": 0.7052395501329081
+        },
+        {
+          "rank": 104,
+          "share": 0.7089086953573316
+        },
+        {
+          "rank": 113,
+          "share": 0.7165143303648063
+        },
+        {
+          "rank": 122,
+          "share": 0.7235433662076718
+        },
+        {
+          "rank": 133,
+          "share": 0.7311526668169558
+        },
+        {
+          "rank": 144,
+          "share": 0.7382735870785087
+        },
+        {
+          "rank": 157,
+          "share": 0.7458963282277603
+        },
+        {
+          "rank": 170,
+          "share": 0.7528144185225295
+        },
+        {
+          "rank": 185,
+          "share": 0.7602790500470716
+        },
+        {
+          "rank": 201,
+          "share": 0.7676553405680087
+        },
+        {
+          "rank": 218,
+          "share": 0.7748549490817356
+        },
+        {
+          "rank": 237,
+          "share": 0.7823275227435315
+        },
+        {
+          "rank": 258,
+          "share": 0.7899353571120921
+        },
+        {
+          "rank": 280,
+          "share": 0.7971980139769391
+        },
+        {
+          "rank": 300,
+          "share": 0.8032967200805939
+        },
+        {
+          "rank": 304,
+          "share": 0.8044733782613925
+        },
+        {
+          "rank": 330,
+          "share": 0.8117720802106988
+        },
+        {
+          "rank": 359,
+          "share": 0.8192252261829054
+        },
+        {
+          "rank": 390,
+          "share": 0.8265324812031001
+        },
+        {
+          "rank": 424,
+          "share": 0.833886778113181
+        },
+        {
+          "rank": 460,
+          "share": 0.841008553681823
+        },
+        {
+          "rank": 500,
+          "share": 0.8484273651837487
+        },
+        {
+          "rank": 543,
+          "share": 0.8557871604965438
+        },
+        {
+          "rank": 590,
+          "share": 0.8632514254609049
+        },
+        {
+          "rank": 641,
+          "share": 0.8704917221547159
+        },
+        {
+          "rank": 696,
+          "share": 0.8776439222183755
+        },
+        {
+          "rank": 757,
+          "share": 0.8848954600910683
+        },
+        {
+          "rank": 822,
+          "share": 0.8919935314346767
+        },
+        {
+          "rank": 893,
+          "share": 0.8991111526546018
+        },
+        {
+          "rank": 970,
+          "share": 0.9061195389406079
+        },
+        {
+          "rank": 1054,
+          "share": 0.9131353786169605
+        },
+        {
+          "rank": 1145,
+          "share": 0.9200191344414497
+        },
+        {
+          "rank": 1244,
+          "share": 0.9268092952330725
+        },
+        {
+          "rank": 1351,
+          "share": 0.933488754850054
+        },
+        {
+          "rank": 1468,
+          "share": 0.9402594879520882
+        },
+        {
+          "rank": 1595,
+          "share": 0.9468887288242815
+        },
+        {
+          "rank": 1732,
+          "share": 0.9534315836805021
+        },
+        {
+          "rank": 1882,
+          "share": 0.9597718529433915
+        },
+        {
+          "rank": 2045,
+          "share": 0.965784417404526
+        },
+        {
+          "rank": 2221,
+          "share": 0.9715763126367387
+        },
+        {
+          "rank": 2413,
+          "share": 0.9771202909999143
+        },
+        {
+          "rank": 2622,
+          "share": 0.9823866611193961
+        },
+        {
+          "rank": 2848,
+          "share": 0.9873016222120871
+        },
+        {
+          "rank": 3094,
+          "share": 0.9918370713307858
+        },
+        {
+          "rank": 3362,
+          "share": 0.9960846485207231
+        },
+        {
+          "rank": 3652,
+          "share": 1.0000000000000062
+        }
+      ],
+      "holdings": [
+        {
+          "rank": 1,
+          "card_name": "Timetwister",
+          "printing": "Timetwister [2ED]",
+          "price": 5059.99,
+          "weight_top_300": 0.07696578377409008,
+          "weight_all_over_1": 0.06182636166415879,
+          "cumulative_share_all_over_1": 0.06182636166415879
+        },
+        {
+          "rank": 2,
+          "card_name": "Time Walk",
+          "printing": "Time Walk [LEB]",
+          "price": 4530.0,
+          "weight_top_300": 0.06890428647025548,
+          "weight_all_over_1": 0.0553505873210499,
+          "cumulative_share_all_over_1": 0.1171769489852087
+        },
+        {
+          "rank": 3,
+          "card_name": "Mox Pearl",
+          "printing": "Mox Pearl [2ED]",
+          "price": 3739.99,
+          "weight_top_300": 0.056887713544346755,
+          "weight_all_over_1": 0.04569771370305815,
+          "cumulative_share_all_over_1": 0.16287466268826684
+        },
+        {
+          "rank": 4,
+          "card_name": "The Tabernacle at Pendrell Vale",
+          "printing": "The Tabernacle at Pendrell Vale [LEG]",
+          "price": 3099.99,
+          "weight_top_300": 0.047152891614774234,
+          "weight_all_over_1": 0.0378777631764639,
+          "cumulative_share_all_over_1": 0.20075242586473074
+        },
+        {
+          "rank": 5,
+          "card_name": "Mishra's Workshop",
+          "printing": "Mishra's Workshop [ATQ]",
+          "price": 3039.99,
+          "weight_top_300": 0.04624025205887681,
+          "weight_all_over_1": 0.037144642814595695,
+          "cumulative_share_all_over_1": 0.23789706867932645
+        },
+        {
+          "rank": 6,
+          "card_name": "Mox Emerald",
+          "printing": "Mox Emerald [2ED]",
+          "price": 2952.0,
+          "weight_top_300": 0.04490186615015324,
+          "weight_all_over_1": 0.03606952180391596,
+          "cumulative_share_all_over_1": 0.2739665904832424
+        },
+        {
+          "rank": 7,
+          "card_name": "Bazaar of Baghdad",
+          "printing": "Bazaar of Baghdad [ARN]",
+          "price": 2120.0,
+          "weight_top_300": 0.032246597641708966,
+          "weight_all_over_1": 0.025903586119343444,
+          "cumulative_share_all_over_1": 0.29987017660258586
+        },
+        {
+          "rank": 8,
+          "card_name": "Candelabra of Tawnos",
+          "printing": "Candelabra of Tawnos [ATQ]",
+          "price": 1900.59,
+          "weight_top_300": 0.02890922689238474,
+          "weight_all_over_1": 0.023222687142718374,
+          "cumulative_share_all_over_1": 0.3230928637453042
+        },
+        {
+          "rank": 9,
+          "card_name": "Library of Alexandria",
+          "printing": "Library of Alexandria [ARN]",
+          "price": 1499.99,
+          "weight_top_300": 0.022815836790842942,
+          "weight_all_over_1": 0.018327886859978288,
+          "cumulative_share_all_over_1": 0.3414207506052825
+        },
+        {
+          "rank": 10,
+          "card_name": "Gaea's Cradle",
+          "printing": "Gaea's Cradle [UZ]",
+          "price": 1150.68,
+          "weight_top_300": 0.017502601403000792,
+          "weight_all_over_1": 0.014059782299908544,
+          "cumulative_share_all_over_1": 0.35548053290519105
+        },
+        {
+          "rank": 11,
+          "card_name": "Time Vault",
+          "printing": "Time Vault [2ED]",
+          "price": 1100.0,
+          "weight_top_300": 0.016731725191452766,
+          "weight_all_over_1": 0.013440539967583862,
+          "cumulative_share_all_over_1": 0.3689210728727749
+        },
+        {
+          "rank": 12,
+          "card_name": "Chains of Mephistopheles",
+          "printing": "Chains of Mephistopheles [LEG]",
+          "price": 1093.75,
+          "weight_top_300": 0.016636658571046785,
+          "weight_all_over_1": 0.01336417326322259,
+          "cumulative_share_all_over_1": 0.3822852461359975
+        },
+        {
+          "rank": 13,
+          "card_name": "Chaos Orb",
+          "printing": "Chaos Orb [2ED]",
+          "price": 1082.55,
+          "weight_top_300": 0.016466299187279265,
+          "weight_all_over_1": 0.01322732412900719,
+          "cumulative_share_all_over_1": 0.3955125702650047
+        },
+        {
+          "rank": 14,
+          "card_name": "Underground Sea",
+          "printing": "Underground Sea [3ED]",
+          "price": 987.84,
+          "weight_top_300": 0.015025697648295182,
+          "weight_all_over_1": 0.012070093637798221,
+          "cumulative_share_all_over_1": 0.4075826639028029
+        },
+        {
+          "rank": 15,
+          "card_name": "Moat",
+          "printing": "Moat [LEG]",
+          "price": 875.0,
+          "weight_top_300": 0.013309326856837427,
+          "weight_all_over_1": 0.010691338610578072,
+          "cumulative_share_all_over_1": 0.418274002513381
+        },
+        {
+          "rank": 16,
+          "card_name": "Mox Diamond",
+          "printing": "Mox Diamond [ST]",
+          "price": 829.99,
+          "weight_top_300": 0.01262469508332171,
+          "weight_all_over_1": 0.010141376152449935,
+          "cumulative_share_all_over_1": 0.4284153786658309
+        },
+        {
+          "rank": 17,
+          "card_name": "The Abyss",
+          "printing": "The Abyss [LEG]",
+          "price": 789.99,
+          "weight_top_300": 0.012016268712723429,
+          "weight_all_over_1": 0.009652629244537796,
+          "cumulative_share_all_over_1": 0.4380680079103687
+        },
+        {
+          "rank": 18,
+          "card_name": "Volcanic Island",
+          "printing": "Volcanic Island [3ED]",
+          "price": 765.0,
+          "weight_top_300": 0.011636154337692151,
+          "weight_all_over_1": 0.009347284613819685,
+          "cumulative_share_all_over_1": 0.4474152925241884
+        },
+        {
+          "rank": 19,
+          "card_name": "Gauntlet of Might",
+          "printing": "Gauntlet of Might [2ED]",
+          "price": 699.68,
+          "weight_top_300": 0.010642594074505156,
+          "weight_all_over_1": 0.00854916091319916,
+          "cumulative_share_all_over_1": 0.45596445343738756
+        },
+        {
+          "rank": 20,
+          "card_name": "Nether Void",
+          "printing": "Nether Void [LEG]",
+          "price": 679.99,
+          "weight_top_300": 0.010343096193578151,
+          "weight_all_over_1": 0.00830857524777941,
+          "cumulative_share_all_over_1": 0.46427302868516696
+        },
+        {
+          "rank": 21,
+          "card_name": "Guardian Beast",
+          "printing": "Guardian Beast [ARN]",
+          "price": 677.5,
+          "weight_top_300": 0.010305221652008409,
+          "weight_all_over_1": 0.008278150752761879,
+          "cumulative_share_all_over_1": 0.47255117943792885
+        },
+        {
+          "rank": 22,
+          "card_name": "Forcefield",
+          "printing": "Forcefield [2ED]",
+          "price": 648.99,
+          "weight_top_300": 0.009871565756364484,
+          "weight_all_over_1": 0.0079297963941475,
+          "cumulative_share_all_over_1": 0.48048097583207633
+        },
+        {
+          "rank": 23,
+          "card_name": "Diamond Valley",
+          "printing": "Diamond Valley [ARN]",
+          "price": 638.64,
+          "weight_top_300": 0.009714135432972178,
+          "weight_all_over_1": 0.007803333131725234,
+          "cumulative_share_all_over_1": 0.48828430896380154
+        },
+        {
+          "rank": 24,
+          "card_name": "Lion's Eye Diamond",
+          "printing": "Lion's Eye Diamond [MI]",
+          "price": 599.99,
+          "weight_top_300": 0.009126243452381586,
+          "weight_all_over_1": 0.0073310814319551285,
+          "cumulative_share_all_over_1": 0.4956153903957567
+        },
+        {
+          "rank": 25,
+          "card_name": "Tundra",
+          "printing": "Tundra [3ED]",
+          "price": 553.72,
+          "weight_top_300": 0.008422446248192024,
+          "weight_all_over_1": 0.00676572344622776,
+          "cumulative_share_all_over_1": 0.5023811138419845
+        },
+        {
+          "rank": 26,
+          "card_name": "Tropical Island",
+          "printing": "Tropical Island [3ED]",
+          "price": 534.65,
+          "weight_top_300": 0.008132378976009292,
+          "weight_all_over_1": 0.006532713357880647,
+          "cumulative_share_all_over_1": 0.5089138271998651
+        },
+        {
+          "rank": 27,
+          "card_name": "All Hallow's Eve",
+          "printing": "All Hallow's Eve [LEG]",
+          "price": 522.99,
+          "weight_top_300": 0.007955022688979893,
+          "weight_all_over_1": 0.0063902436342242585,
+          "cumulative_share_all_over_1": 0.5153040708340894
+        },
+        {
+          "rank": 28,
+          "card_name": "Eureka",
+          "printing": "Eureka [LEG]",
+          "price": 489.38,
+          "weight_top_300": 0.0074437924310846865,
+          "weight_all_over_1": 0.005979574044851082,
+          "cumulative_share_all_over_1": 0.5212836448789404
+        },
+        {
+          "rank": 29,
+          "card_name": "Shahrazad",
+          "printing": "Shahrazad [ARN]",
+          "price": 477.49,
+          "weight_top_300": 0.007262937692424347,
+          "weight_all_over_1": 0.005834294026474198,
+          "cumulative_share_all_over_1": 0.5271179389054146
+        },
+        {
+          "rank": 30,
+          "card_name": "Bayou",
+          "printing": "Bayou [3ED]",
+          "price": 447.74,
+          "weight_top_300": 0.006810420579291874,
+          "weight_all_over_1": 0.005470788513714544,
+          "cumulative_share_all_over_1": 0.5325887274191291
+        },
+        {
+          "rank": 31,
+          "card_name": "Badlands",
+          "printing": "Badlands [3ED]",
+          "price": 440.0,
+          "weight_top_300": 0.006692690076581106,
+          "weight_all_over_1": 0.0053762159870335445,
+          "cumulative_share_all_over_1": 0.5379649434061626
+        },
+        {
+          "rank": 32,
+          "card_name": "City of Traitors",
+          "printing": "City of Traitors [EX]",
+          "price": 439.99,
+          "weight_top_300": 0.006692537969988457,
+          "weight_all_over_1": 0.005376093800306567,
+          "cumulative_share_all_over_1": 0.5433410372064692
+        },
+        {
+          "rank": 33,
+          "card_name": "Drop of Honey",
+          "printing": "Drop of Honey [ARN]",
+          "price": 439.99,
+          "weight_top_300": 0.006692537969988457,
+          "weight_all_over_1": 0.005376093800306567,
+          "cumulative_share_all_over_1": 0.5487171310067758
+        },
+        {
+          "rank": 34,
+          "card_name": "Grim Monolith",
+          "printing": "Grim Monolith [UL]",
+          "price": 439.71,
+          "weight_top_300": 0.0066882789853942685,
+          "weight_all_over_1": 0.005372672571951181,
+          "cumulative_share_all_over_1": 0.554089803578727
+        },
+        {
+          "rank": 35,
+          "card_name": "Scrubland",
+          "printing": "Scrubland [3ED]",
+          "price": 399.99,
+          "weight_top_300": 0.006084111599390175,
+          "weight_all_over_1": 0.0048873468923944265,
+          "cumulative_share_all_over_1": 0.5589771504711214
+        },
+        {
+          "rank": 36,
+          "card_name": "Transmute Artifact",
+          "printing": "Transmute Artifact [ATQ]",
+          "price": 399.99,
+          "weight_top_300": 0.006084111599390175,
+          "weight_all_over_1": 0.0048873468923944265,
+          "cumulative_share_all_over_1": 0.5638644973635158
+        },
+        {
+          "rank": 37,
+          "card_name": "Taiga",
+          "printing": "Taiga [3ED]",
+          "price": 397.49,
+          "weight_top_300": 0.0060460849512277825,
+          "weight_all_over_1": 0.004856800210649917,
+          "cumulative_share_all_over_1": 0.5687212975741658
+        },
+        {
+          "rank": 38,
+          "card_name": "City in a Bottle",
+          "printing": "City in a Bottle [ARN]",
+          "price": 385.0,
+          "weight_top_300": 0.005856103817008468,
+          "weight_all_over_1": 0.004704188988654352,
+          "cumulative_share_all_over_1": 0.5734254865628201
+        },
+        {
+          "rank": 39,
+          "card_name": "Savannah",
+          "printing": "Savannah [3ED]",
+          "price": 379.5,
+          "weight_top_300": 0.0057724451910512046,
+          "weight_all_over_1": 0.004636986288816433,
+          "cumulative_share_all_over_1": 0.5780624728516366
+        },
+        {
+          "rank": 40,
+          "card_name": "Mirror Universe",
+          "printing": "Mirror Universe [LEG]",
+          "price": 349.99,
+          "weight_top_300": 0.005323578636142322,
+          "weight_all_over_1": 0.004276413257504251,
+          "cumulative_share_all_over_1": 0.5823388861091409
+        },
+        {
+          "rank": 41,
+          "card_name": "Wheel of Fortune",
+          "printing": "Wheel of Fortune [3ED]",
+          "price": 341.99,
+          "weight_top_300": 0.005201893362022665,
+          "weight_all_over_1": 0.004178663875921823,
+          "cumulative_share_all_over_1": 0.5865175499850627
+        },
+        {
+          "rank": 42,
+          "card_name": "Plateau",
+          "printing": "Plateau [3ED]",
+          "price": 340.0,
+          "weight_top_300": 0.0051716241500854,
+          "weight_all_over_1": 0.004154348717253194,
+          "cumulative_share_all_over_1": 0.5906718987023158
+        },
+        {
+          "rank": 43,
+          "card_name": "Serra's Sanctum",
+          "printing": "Serra's Sanctum [UZ]",
+          "price": 335.35,
+          "weight_top_300": 0.005100894584503351,
+          "weight_all_over_1": 0.004097531889208407,
+          "cumulative_share_all_over_1": 0.5947694305915242
+        },
+        {
+          "rank": 44,
+          "card_name": "Old Man of the Sea",
+          "printing": "Old Man of the Sea [ARN]",
+          "price": 321.39,
+          "weight_top_300": 0.004888553781164549,
+          "weight_all_over_1": 0.00392695921834707,
+          "cumulative_share_all_over_1": 0.5986963898098713
+        },
+        {
+          "rank": 45,
+          "card_name": "Sliver Queen",
+          "printing": "Sliver Queen [ST]",
+          "price": 317.47,
+          "weight_top_300": 0.0048289279968459185,
+          "weight_all_over_1": 0.003879062021371681,
+          "cumulative_share_all_over_1": 0.602575451831243
+        },
+        {
+          "rank": 46,
+          "card_name": "Ali from Cairo",
+          "printing": "Ali from Cairo [ARN]",
+          "price": 308.58,
+          "weight_top_300": 0.00469370523598045,
+          "weight_all_over_1": 0.0037704380210882072,
+          "cumulative_share_all_over_1": 0.6063458898523312
+        },
+        {
+          "rank": 47,
+          "card_name": "Word of Command",
+          "printing": "Word of Command [2ED]",
+          "price": 303.5,
+          "weight_top_300": 0.004616435086914468,
+          "weight_all_over_1": 0.0037083671637833655,
+          "cumulative_share_all_over_1": 0.6100542570161145
+        },
+        {
+          "rank": 48,
+          "card_name": "Island of Wak-Wak",
+          "printing": "Island of Wak-Wak [ARN]",
+          "price": 300.0,
+          "weight_top_300": 0.004563197779487118,
+          "weight_all_over_1": 0.003665601809341053,
+          "cumulative_share_all_over_1": 0.6137198588254555
+        },
+        {
+          "rank": 49,
+          "card_name": "Elephant Graveyard",
+          "printing": "Elephant Graveyard [ARN]",
+          "price": 286.0,
+          "weight_top_300": 0.004350248549777719,
+          "weight_all_over_1": 0.003494540391571804,
+          "cumulative_share_all_over_1": 0.6172143992170274
+        },
+        {
+          "rank": 50,
+          "card_name": "Survival of the Fittest",
+          "printing": "Survival of the Fittest [EX]",
+          "price": 247.59,
+          "weight_top_300": 0.0037660071274107187,
+          "weight_all_over_1": 0.0030252211732491713,
+          "cumulative_share_all_over_1": 0.6202396203902766
+        },
+        {
+          "rank": 51,
+          "card_name": "Living Plane",
+          "printing": "Living Plane [LEG]",
+          "price": 225.39,
+          "weight_top_300": 0.0034283304917286715,
+          "weight_all_over_1": 0.002753966639357933,
+          "cumulative_share_all_over_1": 0.6229935870296345
+        },
+        {
+          "rank": 52,
+          "card_name": "Angus Mackenzie",
+          "printing": "Angus Mackenzie [LEG]",
+          "price": 222.0,
+          "weight_top_300": 0.0033767663568204675,
+          "weight_all_over_1": 0.0027125453389123793,
+          "cumulative_share_all_over_1": 0.6257061323685469
+        },
+        {
+          "rank": 53,
+          "card_name": "In the Eye of Chaos",
+          "printing": "In the Eye of Chaos [LEG]",
+          "price": 220.0,
+          "weight_top_300": 0.003346345038290553,
+          "weight_all_over_1": 0.0026881079935167722,
+          "cumulative_share_all_over_1": 0.6283942403620637
+        },
+        {
+          "rank": 54,
+          "card_name": "Intuition",
+          "printing": "Intuition [TE]",
+          "price": 217.74,
+          "weight_top_300": 0.0033119689483517506,
+          "weight_all_over_1": 0.0026604937932197367,
+          "cumulative_share_all_over_1": 0.6310547341552835
+        },
+        {
+          "rank": 55,
+          "card_name": "Illusionary Mask",
+          "printing": "Illusionary Mask [2ED]",
+          "price": 215.0,
+          "weight_top_300": 0.003270291741965768,
+          "weight_all_over_1": 0.002627014630027755,
+          "cumulative_share_all_over_1": 0.6336817487853112
+        },
+        {
+          "rank": 56,
+          "card_name": "Yawgmoth's Will",
+          "printing": "Yawgmoth's Will [UZ]",
+          "price": 210.89,
+          "weight_top_300": 0.0032077759323867945,
+          "weight_all_over_1": 0.0025767958852397823,
+          "cumulative_share_all_over_1": 0.636258544670551
+        },
+        {
+          "rank": 57,
+          "card_name": "Gwendlyn Di Corci",
+          "printing": "Gwendlyn Di Corci [LEG]",
+          "price": 205.28,
+          "weight_top_300": 0.003122444133910385,
+          "weight_all_over_1": 0.002508249131405105,
+          "cumulative_share_all_over_1": 0.6387667938019561
+        },
+        {
+          "rank": 58,
+          "card_name": "Gilded Drake",
+          "printing": "Gilded Drake [UZ]",
+          "price": 189.99,
+          "weight_top_300": 0.002889873153749192,
+          "weight_all_over_1": 0.002321425625855689,
+          "cumulative_share_all_over_1": 0.6410882194278118
+        },
+        {
+          "rank": 59,
+          "card_name": "Mox Opal",
+          "printing": "Mox Opal [SOM]",
+          "price": 187.01,
+          "weight_top_300": 0.00284454538913962,
+          "weight_all_over_1": 0.0022850139812162344,
+          "cumulative_share_all_over_1": 0.6433732334090281
+        },
+        {
+          "rank": 60,
+          "card_name": "Phyrexian Dreadnought",
+          "printing": "Phyrexian Dreadnought [MI]",
+          "price": 185.47,
+          "weight_top_300": 0.002821120973871586,
+          "weight_all_over_1": 0.0022661972252616173,
+          "cumulative_share_all_over_1": 0.6456394306342897
+        },
+        {
+          "rank": 61,
+          "card_name": "Power Artifact",
+          "printing": "Power Artifact [ATQ]",
+          "price": 179.98,
+          "weight_top_300": 0.0027376144545069717,
+          "weight_all_over_1": 0.0021991167121506758,
+          "cumulative_share_all_over_1": 0.6478385473464404
+        },
+        {
+          "rank": 62,
+          "card_name": "Raging River",
+          "printing": "Raging River [2ED]",
+          "price": 169.99,
+          "weight_top_300": 0.0025856599684500508,
+          "weight_all_over_1": 0.002077052171899619,
+          "cumulative_share_all_over_1": 0.64991559951834
+        },
+        {
+          "rank": 63,
+          "card_name": "Tolarian Academy",
+          "printing": "Tolarian Academy [UZ]",
+          "price": 169.97,
+          "weight_top_300": 0.0025853557552647515,
+          "weight_all_over_1": 0.002076807798445663,
+          "cumulative_share_all_over_1": 0.6519924073167856
+        },
+        {
+          "rank": 64,
+          "card_name": "Lich",
+          "printing": "Lich [2ED]",
+          "price": 165.58,
+          "weight_top_300": 0.0025185809610915903,
+          "weight_all_over_1": 0.0020231678253023054,
+          "cumulative_share_all_over_1": 0.654015575142088
+        },
+        {
+          "rank": 65,
+          "card_name": "King Suleiman",
+          "printing": "King Suleiman [ARN]",
+          "price": 164.96,
+          "weight_top_300": 0.002509150352347317,
+          "weight_all_over_1": 0.0020155922482296674,
+          "cumulative_share_all_over_1": 0.6560311673903176
+        },
+        {
+          "rank": 66,
+          "card_name": "Imperial Seal",
+          "printing": "Imperial Seal [2X2]",
+          "price": 158.6,
+          "weight_top_300": 0.00241241055942219,
+          "weight_all_over_1": 0.0019378814898716368,
+          "cumulative_share_all_over_1": 0.6579690488801893
+        },
+        {
+          "rank": 67,
+          "card_name": "Metalworker",
+          "printing": "Metalworker [UD]",
+          "price": 152.29,
+          "weight_top_300": 0.0023164312994603106,
+          "weight_all_over_1": 0.0018607816651484965,
+          "cumulative_share_all_over_1": 0.6598298305453377
+        },
+        {
+          "rank": 68,
+          "card_name": "Serendib Djinn",
+          "printing": "Serendib Djinn [ARN]",
+          "price": 149.99,
+          "weight_top_300": 0.0022814467831509095,
+          "weight_all_over_1": 0.0018326787179435487,
+          "cumulative_share_all_over_1": 0.6616625092632813
+        },
+        {
+          "rank": 69,
+          "card_name": "Null Rod",
+          "printing": "Null Rod [WL]",
+          "price": 146.36,
+          "weight_top_300": 0.0022262320900191157,
+          "weight_all_over_1": 0.001788324936050522,
+          "cumulative_share_all_over_1": 0.6634508341993318
+        },
+        {
+          "rank": 70,
+          "card_name": "Divine Intervention",
+          "printing": "Divine Intervention [LEG]",
+          "price": 143.87,
+          "weight_top_300": 0.0021883575484493724,
+          "weight_all_over_1": 0.0017579004410329911,
+          "cumulative_share_all_over_1": 0.6652087346403648
+        },
+        {
+          "rank": 71,
+          "card_name": "Hazezon Tamar",
+          "printing": "Hazezon Tamar [LEG]",
+          "price": 142.04,
+          "weight_top_300": 0.002160522041994501,
+          "weight_all_over_1": 0.0017355402699960106,
+          "cumulative_share_all_over_1": 0.6669442749103608
+        },
+        {
+          "rank": 72,
+          "card_name": "Singing Tree",
+          "printing": "Singing Tree [ARN]",
+          "price": 140.2,
+          "weight_top_300": 0.0021325344289469797,
+          "weight_all_over_1": 0.001713057912232052,
+          "cumulative_share_all_over_1": 0.6686573328225929
+        },
+        {
+          "rank": 73,
+          "card_name": "Rasputin Dreamweaver",
+          "printing": "Rasputin Dreamweaver [LEG]",
+          "price": 139.99,
+          "weight_top_300": 0.002129340190501339,
+          "weight_all_over_1": 0.0017104919909655136,
+          "cumulative_share_all_over_1": 0.6703678248135584
+        },
+        {
+          "rank": 74,
+          "card_name": "Argivian Archaeologist",
+          "printing": "Argivian Archaeologist [ATQ]",
+          "price": 137.5,
+          "weight_top_300": 0.0020914656489315958,
+          "weight_all_over_1": 0.0016800674959479827,
+          "cumulative_share_all_over_1": 0.6720478923095063
+        },
+        {
+          "rank": 75,
+          "card_name": "Pyramids",
+          "printing": "Pyramids [ARN]",
+          "price": 130.53,
+          "weight_top_300": 0.001985447353854845,
+          "weight_all_over_1": 0.0015949033472442923,
+          "cumulative_share_all_over_1": 0.6736427956567507
+        },
+        {
+          "rank": 76,
+          "card_name": "Replenish",
+          "printing": "Replenish [UD]",
+          "price": 130.42,
+          "weight_top_300": 0.0019837741813356997,
+          "weight_all_over_1": 0.0015935592932475337,
+          "cumulative_share_all_over_1": 0.6752363549499982
+        },
+        {
+          "rank": 77,
+          "card_name": "Earthcraft",
+          "printing": "Earthcraft [TE]",
+          "price": 128.98,
+          "weight_top_300": 0.0019618708319941616,
+          "weight_all_over_1": 0.0015759644045626967,
+          "cumulative_share_all_over_1": 0.6768123193545609
+        },
+        {
+          "rank": 78,
+          "card_name": "Cyclopean Tomb",
+          "printing": "Cyclopean Tomb [2ED]",
+          "price": 127.03,
+          "weight_top_300": 0.0019322100464274955,
+          "weight_all_over_1": 0.00155213799280198,
+          "cumulative_share_all_over_1": 0.6783644573473628
+        },
+        {
+          "rank": 79,
+          "card_name": "Falling Star",
+          "printing": "Falling Star [LEG]",
+          "price": 125.14,
+          "weight_top_300": 0.0019034619004167266,
+          "weight_all_over_1": 0.0015290447014031313,
+          "cumulative_share_all_over_1": 0.679893502048766
+        },
+        {
+          "rank": 80,
+          "card_name": "Land Equilibrium",
+          "printing": "Land Equilibrium [LEG]",
+          "price": 119.99,
+          "weight_top_300": 0.0018251270052021976,
+          "weight_all_over_1": 0.0014661185370094432,
+          "cumulative_share_all_over_1": 0.6813596205857754
+        },
+        {
+          "rank": 81,
+          "card_name": "Field of Dreams",
+          "printing": "Field of Dreams [LEG]",
+          "price": 119.69,
+          "weight_top_300": 0.0018205638074227106,
+          "weight_all_over_1": 0.0014624529352001022,
+          "cumulative_share_all_over_1": 0.6828220735209755
+        },
+        {
+          "rank": 82,
+          "card_name": "Thunder Spirit",
+          "printing": "Thunder Spirit [LEG]",
+          "price": 117.5,
+          "weight_top_300": 0.0017872524636324547,
+          "weight_all_over_1": 0.0014356940419919125,
+          "cumulative_share_all_over_1": 0.6842577675629674
+        },
+        {
+          "rank": 83,
+          "card_name": "Chrome Mox",
+          "printing": "Chrome Mox [EMA]",
+          "price": 116.71,
+          "weight_top_300": 0.0017752360428131384,
+          "weight_all_over_1": 0.0014260412905606477,
+          "cumulative_share_all_over_1": 0.6856838088535281
+        },
+        {
+          "rank": 84,
+          "card_name": "Hellfire",
+          "printing": "Hellfire [LEG]",
+          "price": 106.69,
+          "weight_top_300": 0.0016228252369782689,
+          "weight_all_over_1": 0.0013036101901286565,
+          "cumulative_share_all_over_1": 0.6869874190436568
+        },
+        {
+          "rank": 85,
+          "card_name": "Tawnos's Coffin",
+          "printing": "Tawnos's Coffin [ATQ]",
+          "price": 104.99,
+          "weight_top_300": 0.0015969671162278417,
+          "weight_all_over_1": 0.0012828384465423904,
+          "cumulative_share_all_over_1": 0.6882702574901992
+        },
+        {
+          "rank": 86,
+          "card_name": "Volrath's Stronghold",
+          "printing": "Volrath's Stronghold [ST]",
+          "price": 104.99,
+          "weight_top_300": 0.0015969671162278417,
+          "weight_all_over_1": 0.0012828384465423904,
+          "cumulative_share_all_over_1": 0.6895530959367416
+        },
+        {
+          "rank": 87,
+          "card_name": "Time Spiral",
+          "printing": "Time Spiral [UZ]",
+          "price": 103.79,
+          "weight_top_300": 0.0015787143251098934,
+          "weight_all_over_1": 0.0012681760393050264,
+          "cumulative_share_all_over_1": 0.6908212719760467
+        },
+        {
+          "rank": 88,
+          "card_name": "Sword of the Ages",
+          "printing": "Sword of the Ages [LEG]",
+          "price": 103.17,
+          "weight_top_300": 0.00156928371636562,
+          "weight_all_over_1": 0.0012606004622323882,
+          "cumulative_share_all_over_1": 0.6920818724382791
+        },
+        {
+          "rank": 89,
+          "card_name": "The One Ring",
+          "printing": "The One Ring [LTR]",
+          "price": 100.69,
+          "weight_top_300": 0.0015315612813885265,
+          "weight_all_over_1": 0.0012302981539418355,
+          "cumulative_share_all_over_1": 0.6933121705922209
+        },
+        {
+          "rank": 90,
+          "card_name": "Ancient Tomb",
+          "printing": "Ancient Tomb [UMA]",
+          "price": 99.73,
+          "weight_top_300": 0.0015169590484941677,
+          "weight_all_over_1": 0.0012185682281519441,
+          "cumulative_share_all_over_1": 0.6945307388203729
+        },
+        {
+          "rank": 91,
+          "card_name": "Blaze of Glory",
+          "printing": "Blaze of Glory [2ED]",
+          "price": 99.19,
+          "weight_top_300": 0.0015087452924910907,
+          "weight_all_over_1": 0.0012119701448951301,
+          "cumulative_share_all_over_1": 0.695742708965268
+        },
+        {
+          "rank": 92,
+          "card_name": "Su-Chi",
+          "printing": "Su-Chi [ATQ]",
+          "price": 94.99,
+          "weight_top_300": 0.001444860523578271,
+          "weight_all_over_1": 0.0011606517195643553,
+          "cumulative_share_all_over_1": 0.6969033606848324
+        },
+        {
+          "rank": 93,
+          "card_name": "Lake of the Dead",
+          "printing": "Lake of the Dead [ALL]",
+          "price": 92.99,
+          "weight_top_300": 0.001414439205048357,
+          "weight_all_over_1": 0.0011362143741687485,
+          "cumulative_share_all_over_1": 0.6980395750590012
+        },
+        {
+          "rank": 94,
+          "card_name": "Natural Selection",
+          "printing": "Natural Selection [2ED]",
+          "price": 90.0,
+          "weight_top_300": 0.0013689593338461355,
+          "weight_all_over_1": 0.001099680542802316,
+          "cumulative_share_all_over_1": 0.6991392556018035
+        },
+        {
+          "rank": 95,
+          "card_name": "Squandered Resources",
+          "printing": "Squandered Resources [VI]",
+          "price": 89.75,
+          "weight_top_300": 0.0013651566690298961,
+          "weight_all_over_1": 0.001096625874627865,
+          "cumulative_share_all_over_1": 0.7002358814764313
+        },
+        {
+          "rank": 96,
+          "card_name": "Ancient Copper Dragon",
+          "printing": "Ancient Copper Dragon [CLB]",
+          "price": 85.09,
+          "weight_top_300": 0.0012942749968551963,
+          "weight_all_over_1": 0.0010396868598561008,
+          "cumulative_share_all_over_1": 0.7012755683362875
+        },
+        {
+          "rank": 97,
+          "card_name": "Acid Rain",
+          "printing": "Acid Rain [LEG]",
+          "price": 85.0,
+          "weight_top_300": 0.00129290603752135,
+          "weight_all_over_1": 0.0010385871793132985,
+          "cumulative_share_all_over_1": 0.7023141555156007
+        },
+        {
+          "rank": 98,
+          "card_name": "Ice Storm",
+          "printing": "Ice Storm [2ED]",
+          "price": 80.6,
+          "weight_top_300": 0.001225979136755539,
+          "weight_all_over_1": 0.0009848250194429628,
+          "cumulative_share_all_over_1": 0.7032989805350437
+        },
+        {
+          "rank": 99,
+          "card_name": "Al-abara's Carpet",
+          "printing": "Al-abara's Carpet [LEG]",
+          "price": 79.95,
+          "weight_top_300": 0.001216092208233317,
+          "weight_all_over_1": 0.0009768828821893906,
+          "cumulative_share_all_over_1": 0.7042758634172331
+        },
+        {
+          "rank": 100,
+          "card_name": "Two-Headed Giant of Foriys",
+          "printing": "Two-Headed Giant of Foriys [2ED]",
+          "price": 78.87,
+          "weight_top_300": 0.0011996646962271634,
+          "weight_all_over_1": 0.000963686715675763,
+          "cumulative_share_all_over_1": 0.705239550132909
+        },
+        {
+          "rank": 101,
+          "card_name": "Goblin Wizard",
+          "printing": "Goblin Wizard [DRK]",
+          "price": 75.88,
+          "weight_top_300": 0.0011541848250249417,
+          "weight_all_over_1": 0.0009271528843093303,
+          "cumulative_share_all_over_1": 0.7061667030172183
+        },
+        {
+          "rank": 102,
+          "card_name": "Planar Gate",
+          "printing": "Planar Gate [LEG]",
+          "price": 75.03,
+          "weight_top_300": 0.0011412557646497282,
+          "weight_all_over_1": 0.0009167670125161975,
+          "cumulative_share_all_over_1": 0.7070834700297345
+        },
+        {
+          "rank": 103,
+          "card_name": "Copper Tablet",
+          "printing": "Copper Tablet [2ED]",
+          "price": 74.91,
+          "weight_top_300": 0.0011394304855379333,
+          "weight_all_over_1": 0.000915300771792461,
+          "cumulative_share_all_over_1": 0.707998770801527
+        },
+        {
+          "rank": 104,
+          "card_name": "Willow Satyr",
+          "printing": "Willow Satyr [LEG]",
+          "price": 74.47,
+          "weight_top_300": 0.0011327377954613524,
+          "weight_all_over_1": 0.0009099245558054274,
+          "cumulative_share_all_over_1": 0.7089086953573324
+        },
+        {
+          "rank": 105,
+          "card_name": "Academy Rector",
+          "printing": "Academy Rector [UD]",
+          "price": 72.11,
+          "weight_top_300": 0.0010968406395960536,
+          "weight_all_over_1": 0.0008810884882386111,
+          "cumulative_share_all_over_1": 0.709789783845571
+        },
+        {
+          "rank": 106,
+          "card_name": "Mana Vault",
+          "printing": "Mana Vault [5ED]",
+          "price": 71.12,
+          "weight_top_300": 0.0010817820869237463,
+          "weight_all_over_1": 0.0008689920022677857,
+          "cumulative_share_all_over_1": 0.7106587758478388
+        },
+        {
+          "rank": 107,
+          "card_name": "Yavimaya Hollow",
+          "printing": "Yavimaya Hollow [UD]",
+          "price": 70.65,
+          "weight_top_300": 0.0010746330770692164,
+          "weight_all_over_1": 0.0008632492260998181,
+          "cumulative_share_all_over_1": 0.7115220250739386
+        },
+        {
+          "rank": 108,
+          "card_name": "Mox Amber",
+          "printing": "Mox Amber [DOM]",
+          "price": 68.9,
+          "weight_top_300": 0.0010480144233555415,
+          "weight_all_over_1": 0.000841866548878662,
+          "cumulative_share_all_over_1": 0.7123638916228172
+        },
+        {
+          "rank": 109,
+          "card_name": "Adun Oakenshield",
+          "printing": "Adun Oakenshield [LEG]",
+          "price": 68.65,
+          "weight_top_300": 0.0010442117585393023,
+          "weight_all_over_1": 0.0008388118807042111,
+          "cumulative_share_all_over_1": 0.7132027035035214
+        },
+        {
+          "rank": 110,
+          "card_name": "Painter's Servant",
+          "printing": "Painter's Servant [SHM]",
+          "price": 68.52,
+          "weight_top_300": 0.0010422343728348578,
+          "weight_all_over_1": 0.0008372234532534965,
+          "cumulative_share_all_over_1": 0.714039926956775
+        },
+        {
+          "rank": 111,
+          "card_name": "Merchant Ship",
+          "printing": "Merchant Ship [ARN]",
+          "price": 68.34,
+          "weight_top_300": 0.0010394964541671657,
+          "weight_all_over_1": 0.000835024092167892,
+          "cumulative_share_all_over_1": 0.7148749510489428
+        },
+        {
+          "rank": 112,
+          "card_name": "Ydwen Efreet",
+          "printing": "Ydwen Efreet [ARN]",
+          "price": 67.99,
+          "weight_top_300": 0.0010341727234244305,
+          "weight_all_over_1": 0.0008307475567236606,
+          "cumulative_share_all_over_1": 0.7157056986056665
+        },
+        {
+          "rank": 113,
+          "card_name": "Copy Artifact",
+          "printing": "Copy Artifact [3ED]",
+          "price": 66.18,
+          "weight_top_300": 0.0010066414301548583,
+          "weight_all_over_1": 0.0008086317591406364,
+          "cumulative_share_all_over_1": 0.716514330364807
+        },
+        {
+          "rank": 114,
+          "card_name": "Force of Will",
+          "printing": "Force of Will [DMR]",
+          "price": 65.51,
+          "weight_top_300": 0.000996450288447337,
+          "weight_all_over_1": 0.0008004452484331081,
+          "cumulative_share_all_over_1": 0.7173147756132402
+        },
+        {
+          "rank": 115,
+          "card_name": "Recurring Nightmare",
+          "printing": "Recurring Nightmare [EX]",
+          "price": 65.43,
+          "weight_top_300": 0.0009952334357061405,
+          "weight_all_over_1": 0.0007994677546172838,
+          "cumulative_share_all_over_1": 0.7181142433678575
+        },
+        {
+          "rank": 116,
+          "card_name": "Kobold Overlord",
+          "printing": "Kobold Overlord [LEG]",
+          "price": 65.0,
+          "weight_top_300": 0.000988692852222209,
+          "weight_all_over_1": 0.0007942137253572282,
+          "cumulative_share_all_over_1": 0.7189084570932147
+        },
+        {
+          "rank": 117,
+          "card_name": "Tetsuo Umezawa",
+          "printing": "Tetsuo Umezawa [LEG]",
+          "price": 65.0,
+          "weight_top_300": 0.000988692852222209,
+          "weight_all_over_1": 0.0007942137253572282,
+          "cumulative_share_all_over_1": 0.719702670818572
+        },
+        {
+          "rank": 118,
+          "card_name": "The Soul Stone",
+          "printing": "The Soul Stone [SPM]",
+          "price": 63.99,
+          "weight_top_300": 0.0009733300863646023,
+          "weight_all_over_1": 0.0007818728659324467,
+          "cumulative_share_all_over_1": 0.7204845436845044
+        },
+        {
+          "rank": 119,
+          "card_name": "The Great Henge",
+          "printing": "The Great Henge [CMM]",
+          "price": 63.61,
+          "weight_top_300": 0.0009675500358439186,
+          "weight_all_over_1": 0.0007772297703072813,
+          "cumulative_share_all_over_1": 0.7212617734548117
+        },
+        {
+          "rank": 120,
+          "card_name": "Mana Matrix",
+          "printing": "Mana Matrix [LEG]",
+          "price": 62.87,
+          "weight_top_300": 0.0009562941479878504,
+          "weight_all_over_1": 0.0007681879525109067,
+          "cumulative_share_all_over_1": 0.7220299614073226
+        },
+        {
+          "rank": 121,
+          "card_name": "Caverns of Despair",
+          "printing": "Caverns of Despair [LEG]",
+          "price": 62.24,
+          "weight_top_300": 0.0009467114326509275,
+          "weight_all_over_1": 0.0007604901887112906,
+          "cumulative_share_all_over_1": 0.7227904515960338
+        },
+        {
+          "rank": 122,
+          "card_name": "Shallow Grave",
+          "printing": "Shallow Grave [MI]",
+          "price": 61.62,
+          "weight_top_300": 0.000937280823906654,
+          "weight_all_over_1": 0.0007529146116386523,
+          "cumulative_share_all_over_1": 0.7235433662076725
+        },
+        {
+          "rank": 123,
+          "card_name": "Ashcoat of the Shadow Swarm",
+          "printing": "Ashcoat of the Shadow Swarm [J22]",
+          "price": 60.99,
+          "weight_top_300": 0.0009276981085697311,
+          "weight_all_over_1": 0.0007452168478390361,
+          "cumulative_share_all_over_1": 0.7242885830555115
+        },
+        {
+          "rank": 124,
+          "card_name": "Powder Keg",
+          "printing": "Powder Keg [UD]",
+          "price": 60.0,
+          "weight_top_300": 0.0009126395558974236,
+          "weight_all_over_1": 0.0007331203618682106,
+          "cumulative_share_all_over_1": 0.7250217034173797
+        },
+        {
+          "rank": 125,
+          "card_name": "Vampiric Tutor",
+          "printing": "Vampiric Tutor [PLIST]",
+          "price": 57.45,
+          "weight_top_300": 0.0008738523747717832,
+          "weight_all_over_1": 0.0007019627464888117,
+          "cumulative_share_all_over_1": 0.7257236661638685
+        },
+        {
+          "rank": 126,
+          "card_name": "Parallax Tide",
+          "printing": "Parallax Tide [NE]",
+          "price": 56.65,
+          "weight_top_300": 0.0008616838473598174,
+          "weight_all_over_1": 0.0006921878083305689,
+          "cumulative_share_all_over_1": 0.7264158539721991
+        },
+        {
+          "rank": 127,
+          "card_name": "Scorched Ruins",
+          "printing": "Scorched Ruins [WL]",
+          "price": 56.01,
+          "weight_top_300": 0.0008519490254302449,
+          "weight_all_over_1": 0.0006843678578039746,
+          "cumulative_share_all_over_1": 0.7271002218300031
+        },
+        {
+          "rank": 128,
+          "card_name": "Amulet of Vigor",
+          "printing": "Amulet of Vigor [WWK]",
+          "price": 55.99,
+          "weight_top_300": 0.0008516448122449458,
+          "weight_all_over_1": 0.0006841234843500186,
+          "cumulative_share_all_over_1": 0.7277843453143531
+        },
+        {
+          "rank": 129,
+          "card_name": "Gaea's Avenger",
+          "printing": "Gaea's Avenger [ATQ]",
+          "price": 55.89,
+          "weight_top_300": 0.0008501237463184501,
+          "weight_all_over_1": 0.0006829016170802382,
+          "cumulative_share_all_over_1": 0.7284672469314334
+        },
+        {
+          "rank": 130,
+          "card_name": "Cursed Scroll",
+          "printing": "Cursed Scroll [TE]",
+          "price": 55.0,
+          "weight_top_300": 0.0008365862595726383,
+          "weight_all_over_1": 0.0006720269983791931,
+          "cumulative_share_all_over_1": 0.7291392739298126
+        },
+        {
+          "rank": 131,
+          "card_name": "Spinal Villain",
+          "printing": "Spinal Villain [LEG]",
+          "price": 54.99,
+          "weight_top_300": 0.0008364341529799888,
+          "weight_all_over_1": 0.0006719048116522151,
+          "cumulative_share_all_over_1": 0.7298111787414648
+        },
+        {
+          "rank": 132,
+          "card_name": "Quantum Riddler",
+          "printing": "Quantum Riddler [EOE]",
+          "price": 54.98,
+          "weight_top_300": 0.0008362820463873391,
+          "weight_all_over_1": 0.000671782624925237,
+          "cumulative_share_all_over_1": 0.7304829613663901
+        },
+        {
+          "rank": 133,
+          "card_name": "Badgermole Cub",
+          "printing": "Badgermole Cub [TLA]",
+          "price": 54.81,
+          "weight_top_300": 0.0008336962343122965,
+          "weight_all_over_1": 0.0006697054505666104,
+          "cumulative_share_all_over_1": 0.7311526668169568
+        },
+        {
+          "rank": 134,
+          "card_name": "Gravity Sphere",
+          "printing": "Gravity Sphere [LEG]",
+          "price": 54.52,
+          "weight_top_300": 0.000829285143125459,
+          "weight_all_over_1": 0.0006661620354842475,
+          "cumulative_share_all_over_1": 0.731818828852441
+        },
+        {
+          "rank": 135,
+          "card_name": "Disharmony",
+          "printing": "Disharmony [LEG]",
+          "price": 54.19,
+          "weight_top_300": 0.0008242656255680231,
+          "weight_all_over_1": 0.0006621298734939723,
+          "cumulative_share_all_over_1": 0.732480958725935
+        },
+        {
+          "rank": 136,
+          "card_name": "Deflecting Swat",
+          "printing": "Deflecting Swat [CMM]",
+          "price": 53.99,
+          "weight_top_300": 0.0008212234937150317,
+          "weight_all_over_1": 0.0006596861389544116,
+          "cumulative_share_all_over_1": 0.7331406448648894
+        },
+        {
+          "rank": 137,
+          "card_name": "Phyrexian Altar",
+          "printing": "Phyrexian Altar [PLIST]",
+          "price": 53.71,
+          "weight_top_300": 0.0008169645091208438,
+          "weight_all_over_1": 0.0006562649105990266,
+          "cumulative_share_all_over_1": 0.7337969097754884
+        },
+        {
+          "rank": 138,
+          "card_name": "Scapeshift",
+          "printing": "Scapeshift [M19]",
+          "price": 53.45,
+          "weight_top_300": 0.000813009737711955,
+          "weight_all_over_1": 0.0006530880556975977,
+          "cumulative_share_all_over_1": 0.734449997831186
+        },
+        {
+          "rank": 139,
+          "card_name": "Eye of Ugin",
+          "printing": "Eye of Ugin [WWK]",
+          "price": 53.0,
+          "weight_top_300": 0.0008061649410427242,
+          "weight_all_over_1": 0.0006475896529835861,
+          "cumulative_share_all_over_1": 0.7350975874841696
+        },
+        {
+          "rank": 140,
+          "card_name": "Force of Negation",
+          "printing": "Force of Negation [2X2]",
+          "price": 52.59,
+          "weight_top_300": 0.0007999285707440918,
+          "weight_all_over_1": 0.0006425799971774866,
+          "cumulative_share_all_over_1": 0.7357401674813472
+        },
+        {
+          "rank": 141,
+          "card_name": "Demonic Tutor",
+          "printing": "Demonic Tutor [UMA]",
+          "price": 52.49,
+          "weight_top_300": 0.0007984075048175961,
+          "weight_all_over_1": 0.0006413581299077063,
+          "cumulative_share_all_over_1": 0.7363815256112549
+        },
+        {
+          "rank": 142,
+          "card_name": "Gate to Phyrexia",
+          "printing": "Gate to Phyrexia [ATQ]",
+          "price": 51.69,
+          "weight_top_300": 0.0007862389774056305,
+          "weight_all_over_1": 0.0006315831917494634,
+          "cumulative_share_all_over_1": 0.7370131088030044
+        },
+        {
+          "rank": 143,
+          "card_name": "Rhystic Study",
+          "printing": "Rhystic Study [PR]",
+          "price": 51.65,
+          "weight_top_300": 0.0007856305510350321,
+          "weight_all_over_1": 0.0006310944448415513,
+          "cumulative_share_all_over_1": 0.737644203247846
+        },
+        {
+          "rank": 144,
+          "card_name": "Knowledge Vault",
+          "printing": "Knowledge Vault [LEG]",
+          "price": 51.51,
+          "weight_top_300": 0.0007835010587379382,
+          "weight_all_over_1": 0.0006293838306638588,
+          "cumulative_share_all_over_1": 0.7382735870785099
+        },
+        {
+          "rank": 145,
+          "card_name": "Deranged Hermit",
+          "printing": "Deranged Hermit [UL]",
+          "price": 51.29,
+          "weight_top_300": 0.0007801547136996476,
+          "weight_all_over_1": 0.0006266957226703421,
+          "cumulative_share_all_over_1": 0.7389002828011803
+        },
+        {
+          "rank": 146,
+          "card_name": "Sliver Legion",
+          "printing": "Sliver Legion [TSR]",
+          "price": 50.7,
+          "weight_top_300": 0.0007711804247333231,
+          "weight_all_over_1": 0.000619486705778638,
+          "cumulative_share_all_over_1": 0.7395197695069589
+        },
+        {
+          "rank": 147,
+          "card_name": "City of Shadows",
+          "printing": "City of Shadows [DRK]",
+          "price": 50.0,
+          "weight_top_300": 0.0007605329632478531,
+          "weight_all_over_1": 0.0006109336348901755,
+          "cumulative_share_all_over_1": 0.740130703141849
+        },
+        {
+          "rank": 148,
+          "card_name": "The Ozolith",
+          "printing": "The Ozolith [IKO]",
+          "price": 49.99,
+          "weight_top_300": 0.0007603808566552035,
+          "weight_all_over_1": 0.0006108114481631975,
+          "cumulative_share_all_over_1": 0.7407415145900123
+        },
+        {
+          "rank": 149,
+          "card_name": "Esper Sentinel",
+          "printing": "Esper Sentinel [MH2]",
+          "price": 49.92,
+          "weight_top_300": 0.0007593161105066565,
+          "weight_all_over_1": 0.0006099561410743512,
+          "cumulative_share_all_over_1": 0.7413514707310866
+        },
+        {
+          "rank": 150,
+          "card_name": "Archangel of Thune",
+          "printing": "Archangel of Thune [M14]",
+          "price": 49.11,
+          "weight_top_300": 0.0007469954765020412,
+          "weight_all_over_1": 0.0006000590161891304,
+          "cumulative_share_all_over_1": 0.7419515297472757
+        },
+        {
+          "rank": 151,
+          "card_name": "Sliver Overlord",
+          "printing": "Sliver Overlord [SCG]",
+          "price": 48.18,
+          "weight_top_300": 0.0007328495633856312,
+          "weight_all_over_1": 0.0005886956505801731,
+          "cumulative_share_all_over_1": 0.7425402253978559
+        },
+        {
+          "rank": 152,
+          "card_name": "Teferi's Protection",
+          "printing": "Teferi's Protection <borderless> [2X2]",
+          "price": 46.66,
+          "weight_top_300": 0.0007097293613028964,
+          "weight_all_over_1": 0.0005701232680795118,
+          "cumulative_share_all_over_1": 0.7431103486659354
+        },
+        {
+          "rank": 153,
+          "card_name": "Tombstone Stairwell",
+          "printing": "Tombstone Stairwell [MI]",
+          "price": 46.24,
+          "weight_top_300": 0.0007033408844116145,
+          "weight_all_over_1": 0.0005649914255464344,
+          "cumulative_share_all_over_1": 0.7436753400914818
+        },
+        {
+          "rank": 154,
+          "card_name": "Sword of Fire and Ice",
+          "printing": "Sword of Fire and Ice [DST]",
+          "price": 46.0,
+          "weight_top_300": 0.0006996903261880248,
+          "weight_all_over_1": 0.0005620589440989615,
+          "cumulative_share_all_over_1": 0.7442373990355808
+        },
+        {
+          "rank": 155,
+          "card_name": "Anointed Procession",
+          "printing": "Anointed Procession [AKH]",
+          "price": 45.62,
+          "weight_top_300": 0.0006939102756673411,
+          "weight_all_over_1": 0.0005574158484737961,
+          "cumulative_share_all_over_1": 0.7447948148840546
+        },
+        {
+          "rank": 156,
+          "card_name": "Storm World",
+          "printing": "Storm World [LEG]",
+          "price": 45.13,
+          "weight_top_300": 0.0006864570526275122,
+          "weight_all_over_1": 0.0005514286988518725,
+          "cumulative_share_all_over_1": 0.7453462435829065
+        },
+        {
+          "rank": 157,
+          "card_name": "Argothian Enchantress",
+          "printing": "Argothian Enchantress [EMA]",
+          "price": 45.02,
+          "weight_top_300": 0.0006847838801083669,
+          "weight_all_over_1": 0.0005500846448551141,
+          "cumulative_share_all_over_1": 0.7458963282277615
+        },
+        {
+          "rank": 158,
+          "card_name": "Humility",
+          "printing": "Humility [TE]",
+          "price": 45.0,
+          "weight_top_300": 0.0006844796669230678,
+          "weight_all_over_1": 0.000549840271401158,
+          "cumulative_share_all_over_1": 0.7464461684991627
+        },
+        {
+          "rank": 159,
+          "card_name": "Hatred",
+          "printing": "Hatred [EX]",
+          "price": 44.99,
+          "weight_top_300": 0.0006843275603304182,
+          "weight_all_over_1": 0.0005497180846741799,
+          "cumulative_share_all_over_1": 0.7469958865838369
+        },
+        {
+          "rank": 160,
+          "card_name": "Mana Drain",
+          "printing": "Mana Drain [CMR]",
+          "price": 44.85,
+          "weight_top_300": 0.0006821980680333242,
+          "weight_all_over_1": 0.0005480074704964875,
+          "cumulative_share_all_over_1": 0.7475438940543333
+        },
+        {
+          "rank": 161,
+          "card_name": "Doubling Cube",
+          "printing": "Doubling Cube [PLIST]",
+          "price": 44.61,
+          "weight_top_300": 0.0006785475098097345,
+          "weight_all_over_1": 0.0005450749890490146,
+          "cumulative_share_all_over_1": 0.7480889690433823
+        },
+        {
+          "rank": 162,
+          "card_name": "Rohgahh of Kher Keep",
+          "printing": "Rohgahh of Kher Keep [LEG]",
+          "price": 44.45,
+          "weight_top_300": 0.0006761138043273414,
+          "weight_all_over_1": 0.0005431200014173661,
+          "cumulative_share_all_over_1": 0.7486320890447996
+        },
+        {
+          "rank": 163,
+          "card_name": "Fierce Guardianship",
+          "printing": "Fierce Guardianship [CMM]",
+          "price": 43.92,
+          "weight_top_300": 0.0006680521549169141,
+          "weight_all_over_1": 0.0005366441048875302,
+          "cumulative_share_all_over_1": 0.7491687331496871
+        },
+        {
+          "rank": 164,
+          "card_name": "Cruel Tutor",
+          "printing": "Cruel Tutor [PLIST]",
+          "price": 42.99,
+          "weight_top_300": 0.0006539062418005041,
+          "weight_all_over_1": 0.000525280739278573,
+          "cumulative_share_all_over_1": 0.7496940138889657
+        },
+        {
+          "rank": 165,
+          "card_name": "Tangle Wire",
+          "printing": "Tangle Wire [NE]",
+          "price": 42.95,
+          "weight_top_300": 0.0006532978154299058,
+          "weight_all_over_1": 0.0005247919923706608,
+          "cumulative_share_all_over_1": 0.7502188058813364
+        },
+        {
+          "rank": 166,
+          "card_name": "Old Gnawbone",
+          "printing": "Old Gnawbone [PLIST]",
+          "price": 42.79,
+          "weight_top_300": 0.0006508641099475126,
+          "weight_all_over_1": 0.0005228370047390122,
+          "cumulative_share_all_over_1": 0.7507416428860754
+        },
+        {
+          "rank": 167,
+          "card_name": "Ramses Overdark",
+          "printing": "Ramses Overdark [LEG]",
+          "price": 42.54,
+          "weight_top_300": 0.0006470614451312733,
+          "weight_all_over_1": 0.0005197823365645614,
+          "cumulative_share_all_over_1": 0.75126142522264
+        },
+        {
+          "rank": 168,
+          "card_name": "Scythecat Cub",
+          "printing": "Scythecat Cub [J25]",
+          "price": 42.52,
+          "weight_top_300": 0.0006467572319459742,
+          "weight_all_over_1": 0.0005195379631106053,
+          "cumulative_share_all_over_1": 0.7517809631857505
+        },
+        {
+          "rank": 169,
+          "card_name": "Pixie Queen",
+          "printing": "Pixie Queen [LEG]",
+          "price": 42.39,
+          "weight_top_300": 0.0006447798462415298,
+          "weight_all_over_1": 0.0005179495356598909,
+          "cumulative_share_all_over_1": 0.7522989127214104
+        },
+        {
+          "rank": 170,
+          "card_name": "Mycosynth Lattice",
+          "printing": "Mycosynth Lattice [PLIST]",
+          "price": 42.19,
+          "weight_top_300": 0.0006417377143885383,
+          "weight_all_over_1": 0.0005155058011203301,
+          "cumulative_share_all_over_1": 0.7528144185225307
+        },
+        {
+          "rank": 171,
+          "card_name": "Commander's Plate",
+          "printing": "Commander's Plate [CMR]",
+          "price": 42.0,
+          "weight_top_300": 0.0006388476891281966,
+          "weight_all_over_1": 0.0005131842533077475,
+          "cumulative_share_all_over_1": 0.7533276027758384
+        },
+        {
+          "rank": 172,
+          "card_name": "Mana Crypt",
+          "printing": "Mana Crypt [EMA]",
+          "price": 41.79,
+          "weight_top_300": 0.0006356534506825555,
+          "weight_all_over_1": 0.0005106183320412087,
+          "cumulative_share_all_over_1": 0.7538382211078797
+        },
+        {
+          "rank": 173,
+          "card_name": "Shadowspear",
+          "printing": "Shadowspear [THB]",
+          "price": 41.5,
+          "weight_top_300": 0.000631242359495718,
+          "weight_all_over_1": 0.0005070749169588457,
+          "cumulative_share_all_over_1": 0.7543452960248386
+        },
+        {
+          "rank": 174,
+          "card_name": "Jeweled Lotus",
+          "printing": "Jeweled Lotus [CMR]",
+          "price": 41.4,
+          "weight_top_300": 0.0006297212935692223,
+          "weight_all_over_1": 0.0005058530496890654,
+          "cumulative_share_all_over_1": 0.7548511490745277
+        },
+        {
+          "rank": 175,
+          "card_name": "Necroskitter",
+          "printing": "Necroskitter [MM2]",
+          "price": 40.99,
+          "weight_top_300": 0.00062348492327059,
+          "weight_all_over_1": 0.0005008433938829659,
+          "cumulative_share_all_over_1": 0.7553519924684107
+        },
+        {
+          "rank": 176,
+          "card_name": "Gemstone Caverns",
+          "printing": "Gemstone Caverns [TSR]",
+          "price": 40.91,
+          "weight_top_300": 0.0006222680705293933,
+          "weight_all_over_1": 0.0004998659000671415,
+          "cumulative_share_all_over_1": 0.7558518583684778
+        },
+        {
+          "rank": 177,
+          "card_name": "Smothering Tithe",
+          "printing": "Smothering Tithe [RNA]",
+          "price": 40.8,
+          "weight_top_300": 0.000620594898010248,
+          "weight_all_over_1": 0.0004985218460703832,
+          "cumulative_share_all_over_1": 0.7563503802145481
+        },
+        {
+          "rank": 178,
+          "card_name": "Mind Over Matter",
+          "printing": "Mind Over Matter [EX]",
+          "price": 40.67,
+          "weight_top_300": 0.0006186175123058037,
+          "weight_all_over_1": 0.0004969334186196688,
+          "cumulative_share_all_over_1": 0.7568473136331678
+        },
+        {
+          "rank": 179,
+          "card_name": "Bone Miser",
+          "printing": "Bone Miser [PLIST]",
+          "price": 40.38,
+          "weight_top_300": 0.0006142064211189661,
+          "weight_all_over_1": 0.0004933900035373058,
+          "cumulative_share_all_over_1": 0.7573407036367051
+        },
+        {
+          "rank": 180,
+          "card_name": "Bruvac the Grandiloquent",
+          "printing": "Bruvac the Grandiloquent [JMP]",
+          "price": 40.27,
+          "weight_top_300": 0.0006125332485998209,
+          "weight_all_over_1": 0.0004920459495405474,
+          "cumulative_share_all_over_1": 0.7578327495862457
+        },
+        {
+          "rank": 181,
+          "card_name": "Ancient Silver Dragon",
+          "printing": "Ancient Silver Dragon [CLB]",
+          "price": 40.22,
+          "weight_top_300": 0.000611772715636573,
+          "weight_all_over_1": 0.0004914350159056571,
+          "cumulative_share_all_over_1": 0.7583241846021513
+        },
+        {
+          "rank": 182,
+          "card_name": "Lifeline",
+          "printing": "Lifeline [UZ]",
+          "price": 40.22,
+          "weight_top_300": 0.000611772715636573,
+          "weight_all_over_1": 0.0004914350159056571,
+          "cumulative_share_all_over_1": 0.758815619618057
+        },
+        {
+          "rank": 183,
+          "card_name": "Cavern of Souls",
+          "printing": "Cavern of Souls [LCI]",
+          "price": 40.1,
+          "weight_top_300": 0.0006099474365247781,
+          "weight_all_over_1": 0.0004899687751819208,
+          "cumulative_share_all_over_1": 0.7593055883932389
+        },
+        {
+          "rank": 184,
+          "card_name": "Jeska's Will",
+          "printing": "Jeska's Will [CMR]",
+          "price": 39.97,
+          "weight_top_300": 0.0006079700508203337,
+          "weight_all_over_1": 0.0004883803477312063,
+          "cumulative_share_all_over_1": 0.7597939687409702
+        },
+        {
+          "rank": 185,
+          "card_name": "Darksteel Forge",
+          "printing": "Darksteel Forge [M14]",
+          "price": 39.7,
+          "weight_top_300": 0.0006038631728187954,
+          "weight_all_over_1": 0.0004850813061027994,
+          "cumulative_share_all_over_1": 0.760279050047073
+        },
+        {
+          "rank": 186,
+          "card_name": "Treachery",
+          "printing": "Treachery [UD]",
+          "price": 39.5,
+          "weight_top_300": 0.0006008210409658039,
+          "weight_all_over_1": 0.0004826375715632387,
+          "cumulative_share_all_over_1": 0.7607616876186362
+        },
+        {
+          "rank": 187,
+          "card_name": "Urza's Saga",
+          "printing": "Urza's Saga <showcase> [MH2]",
+          "price": 38.93,
+          "weight_top_300": 0.0005921509651847784,
+          "weight_all_over_1": 0.0004756729281254907,
+          "cumulative_share_all_over_1": 0.7612373605467616
+        },
+        {
+          "rank": 188,
+          "card_name": "Palinchron",
+          "printing": "Palinchron [UL]",
+          "price": 38.66,
+          "weight_top_300": 0.0005880440871832399,
+          "weight_all_over_1": 0.0004723738864970837,
+          "cumulative_share_all_over_1": 0.7617097344332587
+        },
+        {
+          "rank": 189,
+          "card_name": "Orcish Bowmasters",
+          "printing": "Orcish Bowmasters [LTR]",
+          "price": 38.54,
+          "weight_top_300": 0.0005862188080714452,
+          "weight_all_over_1": 0.0004709076457733473,
+          "cumulative_share_all_over_1": 0.7621806420790321
+        },
+        {
+          "rank": 190,
+          "card_name": "Ocelot Pride",
+          "printing": "Ocelot Pride [MH3]",
+          "price": 38.34,
+          "weight_top_300": 0.0005831766762184538,
+          "weight_all_over_1": 0.00046846391123378663,
+          "cumulative_share_all_over_1": 0.7626491059902659
+        },
+        {
+          "rank": 191,
+          "card_name": "Anvil of Bogardan",
+          "printing": "Anvil of Bogardan [VI]",
+          "price": 38.11,
+          "weight_top_300": 0.0005796782245875135,
+          "weight_all_over_1": 0.00046565361651329176,
+          "cumulative_share_all_over_1": 0.7631147596067792
+        },
+        {
+          "rank": 192,
+          "card_name": "Lotus Vale",
+          "printing": "Lotus Vale [WL]",
+          "price": 38.0,
+          "weight_top_300": 0.0005780050520683683,
+          "weight_all_over_1": 0.0004643095625165334,
+          "cumulative_share_all_over_1": 0.7635790691692957
+        },
+        {
+          "rank": 193,
+          "card_name": "Mana Echoes",
+          "printing": "Mana Echoes [ONS]",
+          "price": 38.0,
+          "weight_top_300": 0.0005780050520683683,
+          "weight_all_over_1": 0.0004643095625165334,
+          "cumulative_share_all_over_1": 0.7640433787318123
+        },
+        {
+          "rank": 194,
+          "card_name": "Lady Evangela",
+          "printing": "Lady Evangela [LEG]",
+          "price": 37.98,
+          "weight_top_300": 0.0005777008388830691,
+          "weight_all_over_1": 0.0004640651890625773,
+          "cumulative_share_all_over_1": 0.7645074439208749
+        },
+        {
+          "rank": 195,
+          "card_name": "Braid of Fire",
+          "printing": "Braid of Fire [CSP]",
+          "price": 37.5,
+          "weight_top_300": 0.0005703997224358897,
+          "weight_all_over_1": 0.00045820022616763163,
+          "cumulative_share_all_over_1": 0.7649656441470425
+        },
+        {
+          "rank": 196,
+          "card_name": "Roaming Throne",
+          "printing": "Roaming Throne <borderless> [LCI]",
+          "price": 37.35,
+          "weight_top_300": 0.0005681181235461462,
+          "weight_all_over_1": 0.00045636742526296113,
+          "cumulative_share_all_over_1": 0.7654220115723055
+        },
+        {
+          "rank": 197,
+          "card_name": "Ouroboroid",
+          "printing": "Ouroboroid [EOE]",
+          "price": 36.93,
+          "weight_top_300": 0.0005617296466548643,
+          "weight_all_over_1": 0.00045123558272988363,
+          "cumulative_share_all_over_1": 0.7658732471550354
+        },
+        {
+          "rank": 198,
+          "card_name": "Master of the Hunt",
+          "printing": "Master of the Hunt [LEG]",
+          "price": 36.68,
+          "weight_top_300": 0.000557926981838625,
+          "weight_all_over_1": 0.00044818091455543275,
+          "cumulative_share_all_over_1": 0.7663214280695908
+        },
+        {
+          "rank": 199,
+          "card_name": "The First Sliver",
+          "printing": "The First Sliver [MH1]",
+          "price": 36.65,
+          "weight_top_300": 0.0005574706620606763,
+          "weight_all_over_1": 0.00044781435437449865,
+          "cumulative_share_all_over_1": 0.7667692424239653
+        },
+        {
+          "rank": 200,
+          "card_name": "Food Chain",
+          "printing": "Food Chain [2X2]",
+          "price": 36.4,
+          "weight_top_300": 0.000553667997244437,
+          "weight_all_over_1": 0.00044475968620004777,
+          "cumulative_share_all_over_1": 0.7672140021101653
+        },
+        {
+          "rank": 201,
+          "card_name": "Blightsteel Colossus",
+          "printing": "Blightsteel Colossus [PLIST]",
+          "price": 36.12,
+          "weight_top_300": 0.000549409012650249,
+          "weight_all_over_1": 0.0004413384578446628,
+          "cumulative_share_all_over_1": 0.76765534056801
+        },
+        {
+          "rank": 202,
+          "card_name": "Field of the Dead",
+          "printing": "Field of the Dead [M20]",
+          "price": 36.08,
+          "weight_top_300": 0.0005488005862796507,
+          "weight_all_over_1": 0.00044084971093675065,
+          "cumulative_share_all_over_1": 0.7680961902789467
+        },
+        {
+          "rank": 203,
+          "card_name": "Livonya Silone",
+          "printing": "Livonya Silone [LEG]",
+          "price": 35.75,
+          "weight_top_300": 0.0005437810687222149,
+          "weight_all_over_1": 0.0004368175489464755,
+          "cumulative_share_all_over_1": 0.7685330078278931
+        },
+        {
+          "rank": 204,
+          "card_name": "Buster Sword",
+          "printing": "Buster Sword [FIN]",
+          "price": 35.65,
+          "weight_top_300": 0.0005422600027957192,
+          "weight_all_over_1": 0.0004355956816766951,
+          "cumulative_share_all_over_1": 0.7689686035095699
+        },
+        {
+          "rank": 205,
+          "card_name": "Chromatic Orrery",
+          "printing": "Chromatic Orrery [M21]",
+          "price": 35.27,
+          "weight_top_300": 0.0005364799522750356,
+          "weight_all_over_1": 0.00043095258605152986,
+          "cumulative_share_all_over_1": 0.7693995560956214
+        },
+        {
+          "rank": 206,
+          "card_name": "Mycosynth Golem",
+          "printing": "Mycosynth Golem [PLIST]",
+          "price": 35.26,
+          "weight_top_300": 0.000536327845682386,
+          "weight_all_over_1": 0.00043083039932455177,
+          "cumulative_share_all_over_1": 0.769830386494946
+        },
+        {
+          "rank": 207,
+          "card_name": "Telekinesis",
+          "printing": "Telekinesis [LEG]",
+          "price": 35.16,
+          "weight_top_300": 0.0005348067797558901,
+          "weight_all_over_1": 0.0004296085320547714,
+          "cumulative_share_all_over_1": 0.7702599950270007
+        },
+        {
+          "rank": 208,
+          "card_name": "Memory Jar",
+          "printing": "Memory Jar [UL]",
+          "price": 35.0,
+          "weight_top_300": 0.0005323730742734971,
+          "weight_all_over_1": 0.00042765354442312286,
+          "cumulative_share_all_over_1": 0.7706876485714238
+        },
+        {
+          "rank": 209,
+          "card_name": "Sea Gate Restoration",
+          "printing": "Sea Gate Restoration [ZNR]",
+          "price": 34.99,
+          "weight_top_300": 0.0005322209676808476,
+          "weight_all_over_1": 0.0004275313576961449,
+          "cumulative_share_all_over_1": 0.7711151799291199
+        },
+        {
+          "rank": 210,
+          "card_name": "Serra Ascendant",
+          "printing": "Serra Ascendant [M11]",
+          "price": 34.98,
+          "weight_top_300": 0.0005320688610881979,
+          "weight_all_over_1": 0.0004274091709691668,
+          "cumulative_share_all_over_1": 0.7715425891000891
+        },
+        {
+          "rank": 211,
+          "card_name": "Prismatic Vista",
+          "printing": "Prismatic Vista [MH1]",
+          "price": 34.8,
+          "weight_top_300": 0.0005293309424205056,
+          "weight_all_over_1": 0.00042520980988356214,
+          "cumulative_share_all_over_1": 0.7719677989099727
+        },
+        {
+          "rank": 212,
+          "card_name": "Sensei's Divining Top",
+          "printing": "Sensei's Divining Top [PLIST]",
+          "price": 34.43,
+          "weight_top_300": 0.0005237029984924716,
+          "weight_all_over_1": 0.00042068890098537486,
+          "cumulative_share_all_over_1": 0.772388487810958
+        },
+        {
+          "rank": 213,
+          "card_name": "Bloodthirsty Conqueror",
+          "printing": "Bloodthirsty Conqueror [FDN]",
+          "price": 33.96,
+          "weight_top_300": 0.0005165539886379418,
+          "weight_all_over_1": 0.00041494612481740725,
+          "cumulative_share_all_over_1": 0.7728034339357754
+        },
+        {
+          "rank": 214,
+          "card_name": "Masticore",
+          "printing": "Masticore [UD]",
+          "price": 33.91,
+          "weight_top_300": 0.0005157934556746939,
+          "weight_all_over_1": 0.000414335191182517,
+          "cumulative_share_all_over_1": 0.7732177691269579
+        },
+        {
+          "rank": 215,
+          "card_name": "Consecrated Sphinx",
+          "printing": "Consecrated Sphinx [MBS]",
+          "price": 33.56,
+          "weight_top_300": 0.000510469724931959,
+          "weight_all_over_1": 0.00041005865573828586,
+          "cumulative_share_all_over_1": 0.7736278277826962
+        },
+        {
+          "rank": 216,
+          "card_name": "Sword of Truth and Justice",
+          "printing": "Sword of Truth and Justice [MH1]",
+          "price": 33.53,
+          "weight_top_300": 0.0005100134051540103,
+          "weight_all_over_1": 0.0004096920955573517,
+          "cumulative_share_all_over_1": 0.7740375198782535
+        },
+        {
+          "rank": 217,
+          "card_name": "Fork",
+          "printing": "Fork [3ED]",
+          "price": 33.5,
+          "weight_top_300": 0.0005095570853760616,
+          "weight_all_over_1": 0.0004093255353764176,
+          "cumulative_share_all_over_1": 0.77444684541363
+        },
+        {
+          "rank": 218,
+          "card_name": "Agatha's Soul Cauldron",
+          "printing": "Agatha's Soul Cauldron [WOE]",
+          "price": 33.4,
+          "weight_top_300": 0.0005080360194495658,
+          "weight_all_over_1": 0.0004081036681066372,
+          "cumulative_share_all_over_1": 0.7748549490817366
+        },
+        {
+          "rank": 219,
+          "card_name": "Burgeoning",
+          "printing": "Burgeoning [CN2]",
+          "price": 33.14,
+          "weight_top_300": 0.000504081248040677,
+          "weight_all_over_1": 0.00040492681320520836,
+          "cumulative_share_all_over_1": 0.7752598758949418
+        },
+        {
+          "rank": 220,
+          "card_name": "Aluren",
+          "printing": "Aluren [TE]",
+          "price": 33.0,
+          "weight_top_300": 0.000501951755743583,
+          "weight_all_over_1": 0.00040321619902751585,
+          "cumulative_share_all_over_1": 0.7756630920939693
+        },
+        {
+          "rank": 221,
+          "card_name": "The Ur-Dragon",
+          "printing": "The Ur-Dragon [CMM]",
+          "price": 32.97,
+          "weight_top_300": 0.0005014954359656343,
+          "weight_all_over_1": 0.00040284963884658175,
+          "cumulative_share_all_over_1": 0.776065941732816
+        },
+        {
+          "rank": 222,
+          "card_name": "Mortuary",
+          "printing": "Mortuary [ST]",
+          "price": 32.83,
+          "weight_top_300": 0.0004993659436685403,
+          "weight_all_over_1": 0.00040113902466888923,
+          "cumulative_share_all_over_1": 0.7764670807574848
+        },
+        {
+          "rank": 223,
+          "card_name": "Vivi Ornitier",
+          "printing": "Vivi Ornitier [FIN]",
+          "price": 32.76,
+          "weight_top_300": 0.0004983011975199932,
+          "weight_all_over_1": 0.000400283717580043,
+          "cumulative_share_all_over_1": 0.7768673644750649
+        },
+        {
+          "rank": 224,
+          "card_name": "Firestorm Phoenix",
+          "printing": "Firestorm Phoenix [LEG]",
+          "price": 32.73,
+          "weight_top_300": 0.0004978448777420445,
+          "weight_all_over_1": 0.00039991715739910884,
+          "cumulative_share_all_over_1": 0.777267281632464
+        },
+        {
+          "rank": 225,
+          "card_name": "Sword of Feast and Famine",
+          "printing": "Sword of Feast and Famine [ACR]",
+          "price": 32.69,
+          "weight_top_300": 0.0004972364513714463,
+          "weight_all_over_1": 0.00039942841049119676,
+          "cumulative_share_all_over_1": 0.7776667100429552
+        },
+        {
+          "rank": 226,
+          "card_name": "Jovial Evil",
+          "printing": "Jovial Evil [LEG]",
+          "price": 32.42,
+          "weight_top_300": 0.0004931295733699079,
+          "weight_all_over_1": 0.0003961293688627898,
+          "cumulative_share_all_over_1": 0.778062839411818
+        },
+        {
+          "rank": 227,
+          "card_name": "Dolmen Gate",
+          "printing": "Dolmen Gate [LRW]",
+          "price": 32.33,
+          "weight_top_300": 0.0004917606140360617,
+          "weight_all_over_1": 0.00039502968831998746,
+          "cumulative_share_all_over_1": 0.7784578691001379
+        },
+        {
+          "rank": 228,
+          "card_name": "Tainted Pact",
+          "printing": "Tainted Pact [OD]",
+          "price": 32.26,
+          "weight_top_300": 0.0004906958678875148,
+          "weight_all_over_1": 0.00039417438123114123,
+          "cumulative_share_all_over_1": 0.778852043481369
+        },
+        {
+          "rank": 229,
+          "card_name": "Fastbond",
+          "printing": "Fastbond [3ED]",
+          "price": 32.1,
+          "weight_top_300": 0.0004882621624051217,
+          "weight_all_over_1": 0.0003922193935994927,
+          "cumulative_share_all_over_1": 0.7792442628749685
+        },
+        {
+          "rank": 230,
+          "card_name": "Enlightened Tutor",
+          "printing": "Enlightened Tutor [DMR]",
+          "price": 32.0,
+          "weight_top_300": 0.00048674109647862593,
+          "weight_all_over_1": 0.00039099752632971237,
+          "cumulative_share_all_over_1": 0.7796352604012983
+        },
+        {
+          "rank": 231,
+          "card_name": "Ancient Brass Dragon",
+          "printing": "Ancient Brass Dragon [CLB]",
+          "price": 31.99,
+          "weight_top_300": 0.00048658898988597634,
+          "weight_all_over_1": 0.0003908753396027343,
+          "cumulative_share_all_over_1": 0.780026135740901
+        },
+        {
+          "rank": 232,
+          "card_name": "Edgar Markov",
+          "printing": "Edgar Markov [INR]",
+          "price": 31.89,
+          "weight_top_300": 0.0004850679239594807,
+          "weight_all_over_1": 0.00038965347233295395,
+          "cumulative_share_all_over_1": 0.780415789213234
+        },
+        {
+          "rank": 233,
+          "card_name": "Preacher",
+          "printing": "Preacher [DRK]",
+          "price": 31.65,
+          "weight_top_300": 0.00048141736573589094,
+          "weight_all_over_1": 0.0003867209908854811,
+          "cumulative_share_all_over_1": 0.7808025102041194
+        },
+        {
+          "rank": 234,
+          "card_name": "Crucible of Worlds",
+          "printing": "Crucible of Worlds [M19]",
+          "price": 31.51,
+          "weight_top_300": 0.000479287873438797,
+          "weight_all_over_1": 0.00038501037670778864,
+          "cumulative_share_all_over_1": 0.7811875205808272
+        },
+        {
+          "rank": 235,
+          "card_name": "Goblin Sharpshooter",
+          "printing": "Goblin Sharpshooter [ONS]",
+          "price": 31.18,
+          "weight_top_300": 0.00047426835588136113,
+          "weight_all_over_1": 0.0003809782147175135,
+          "cumulative_share_all_over_1": 0.7815684987955447
+        },
+        {
+          "rank": 236,
+          "card_name": "North Star",
+          "printing": "North Star [LEG]",
+          "price": 31.18,
+          "weight_top_300": 0.00047426835588136113,
+          "weight_all_over_1": 0.0003809782147175135,
+          "cumulative_share_all_over_1": 0.7819494770102622
+        },
+        {
+          "rank": 237,
+          "card_name": "Simulacrum Synthesizer",
+          "printing": "Simulacrum Synthesizer [BIG]",
+          "price": 30.94,
+          "weight_top_300": 0.0004706177976577715,
+          "weight_all_over_1": 0.00037804573327004064,
+          "cumulative_share_all_over_1": 0.7823275227435322
+        },
+        {
+          "rank": 238,
+          "card_name": "Attunement",
+          "printing": "Attunement [UZ]",
+          "price": 30.91,
+          "weight_top_300": 0.00047016147787982276,
+          "weight_all_over_1": 0.00037767917308910654,
+          "cumulative_share_all_over_1": 0.7827052019166213
+        },
+        {
+          "rank": 239,
+          "card_name": "Sakashima's Student",
+          "printing": "Sakashima's Student [PLIST]",
+          "price": 30.88,
+          "weight_top_300": 0.00046970515810187404,
+          "weight_all_over_1": 0.0003773126129081724,
+          "cumulative_share_all_over_1": 0.7830825145295295
+        },
+        {
+          "rank": 240,
+          "card_name": "Sakashima of a Thousand Faces",
+          "printing": "Sakashima of a Thousand Faces [CMR]",
+          "price": 30.85,
+          "weight_top_300": 0.0004692488383239253,
+          "weight_all_over_1": 0.00037694605272723834,
+          "cumulative_share_all_over_1": 0.7834594605822567
+        },
+        {
+          "rank": 241,
+          "card_name": "Halfdane",
+          "printing": "Halfdane [LEG]",
+          "price": 30.8,
+          "weight_top_300": 0.0004684883053606775,
+          "weight_all_over_1": 0.0003763351190923481,
+          "cumulative_share_all_over_1": 0.783835795701349
+        },
+        {
+          "rank": 242,
+          "card_name": "Exploration",
+          "printing": "Exploration [DMR]",
+          "price": 30.23,
+          "weight_top_300": 0.00045981822957965197,
+          "weight_all_over_1": 0.0003693704756546001,
+          "cumulative_share_all_over_1": 0.7842051661770035
+        },
+        {
+          "rank": 243,
+          "card_name": "Ring of Immortals",
+          "printing": "Ring of Immortals [LEG]",
+          "price": 30.05,
+          "weight_top_300": 0.0004570803109119597,
+          "weight_all_over_1": 0.0003671711145689955,
+          "cumulative_share_all_over_1": 0.7845723372915725
+        },
+        {
+          "rank": 244,
+          "card_name": "Panoptic Mirror",
+          "printing": "Panoptic Mirror [DST]",
+          "price": 30.0,
+          "weight_top_300": 0.0004563197779487118,
+          "weight_all_over_1": 0.0003665601809341053,
+          "cumulative_share_all_over_1": 0.7849388974725066
+        },
+        {
+          "rank": 245,
+          "card_name": "Worldfire",
+          "printing": "Worldfire [M13]",
+          "price": 30.0,
+          "weight_top_300": 0.0004563197779487118,
+          "weight_all_over_1": 0.0003665601809341053,
+          "cumulative_share_all_over_1": 0.7853054576534406
+        },
+        {
+          "rank": 246,
+          "card_name": "Doubling Season",
+          "printing": "Doubling Season [FDN]",
+          "price": 29.99,
+          "weight_top_300": 0.0004561676713560622,
+          "weight_all_over_1": 0.00036643799420712727,
+          "cumulative_share_all_over_1": 0.7856718956476477
+        },
+        {
+          "rank": 247,
+          "card_name": "Nova Pentacle",
+          "printing": "Nova Pentacle [LEG]",
+          "price": 29.99,
+          "weight_top_300": 0.0004561676713560622,
+          "weight_all_over_1": 0.00036643799420712727,
+          "cumulative_share_all_over_1": 0.7860383336418548
+        },
+        {
+          "rank": 248,
+          "card_name": "Akroma's Memorial",
+          "printing": "Akroma's Memorial [M13]",
+          "price": 29.97,
+          "weight_top_300": 0.0004558634581707631,
+          "weight_all_over_1": 0.0003661936207531712,
+          "cumulative_share_all_over_1": 0.786404527262608
+        },
+        {
+          "rank": 249,
+          "card_name": "Overlord of the Balemurk",
+          "printing": "Overlord of the Balemurk [DSK]",
+          "price": 29.62,
+          "weight_top_300": 0.00045053972742802815,
+          "weight_all_over_1": 0.00036191708530894,
+          "cumulative_share_all_over_1": 0.786766444347917
+        },
+        {
+          "rank": 250,
+          "card_name": "Finale of Devastation",
+          "printing": "Finale of Devastation [WAR]",
+          "price": 29.16,
+          "weight_top_300": 0.0004435428241661479,
+          "weight_all_over_1": 0.00035629649586795036,
+          "cumulative_share_all_over_1": 0.787122740843785
+        },
+        {
+          "rank": 251,
+          "card_name": "Stoneforge Mystic",
+          "printing": "Stoneforge Mystic [WWK]",
+          "price": 29.07,
+          "weight_top_300": 0.00044217386483230177,
+          "weight_all_over_1": 0.00035519681532514806,
+          "cumulative_share_all_over_1": 0.7874779376591101
+        },
+        {
+          "rank": 252,
+          "card_name": "Oath of Druids",
+          "printing": "Oath of Druids [EX]",
+          "price": 28.98,
+          "weight_top_300": 0.0004408049054984556,
+          "weight_all_over_1": 0.00035409713478234576,
+          "cumulative_share_all_over_1": 0.7878320347938924
+        },
+        {
+          "rank": 253,
+          "card_name": "Portal to Phyrexia",
+          "printing": "Portal to Phyrexia [BRO]",
+          "price": 28.97,
+          "weight_top_300": 0.000440652798905806,
+          "weight_all_over_1": 0.0003539749480553677,
+          "cumulative_share_all_over_1": 0.7881860097419477
+        },
+        {
+          "rank": 254,
+          "card_name": "Allosaurus Shepherd",
+          "printing": "Allosaurus Shepherd [2X2]",
+          "price": 28.79,
+          "weight_top_300": 0.00043791488023811376,
+          "weight_all_over_1": 0.0003517755869697631,
+          "cumulative_share_all_over_1": 0.7885377853289175
+        },
+        {
+          "rank": 255,
+          "card_name": "Cyclonic Rift",
+          "printing": "Cyclonic Rift [CMM]",
+          "price": 28.72,
+          "weight_top_300": 0.0004368501340895668,
+          "weight_all_over_1": 0.0003509202798809168,
+          "cumulative_share_all_over_1": 0.7888887056087984
+        },
+        {
+          "rank": 256,
+          "card_name": "Dream Halls",
+          "printing": "Dream Halls [ST]",
+          "price": 28.61,
+          "weight_top_300": 0.0004351769615704215,
+          "weight_all_over_1": 0.0003495762258841584,
+          "cumulative_share_all_over_1": 0.7892382818346826
+        },
+        {
+          "rank": 257,
+          "card_name": "Bitterblossom",
+          "printing": "Bitterblossom [2X2]",
+          "price": 28.56,
+          "weight_top_300": 0.00043441642860717365,
+          "weight_all_over_1": 0.00034896529224926826,
+          "cumulative_share_all_over_1": 0.7895872471269318
+        },
+        {
+          "rank": 258,
+          "card_name": "Harbinger of Night",
+          "printing": "Harbinger of Night [MI]",
+          "price": 28.49,
+          "weight_top_300": 0.0004333516824586266,
+          "weight_all_over_1": 0.00034810998516042203,
+          "cumulative_share_all_over_1": 0.7899353571120923
+        },
+        {
+          "rank": 259,
+          "card_name": "Scalding Tarn",
+          "printing": "Scalding Tarn [MH2]",
+          "price": 28.4,
+          "weight_top_300": 0.0004319827231247805,
+          "weight_all_over_1": 0.0003470103046176197,
+          "cumulative_share_all_over_1": 0.7902823674167099
+        },
+        {
+          "rank": 260,
+          "card_name": "Helm of Obedience",
+          "printing": "Helm of Obedience [ALL]",
+          "price": 28.0,
+          "weight_top_300": 0.0004258984594187977,
+          "weight_all_over_1": 0.0003421228355384983,
+          "cumulative_share_all_over_1": 0.7906244902522483
+        },
+        {
+          "rank": 261,
+          "card_name": "Ragnar",
+          "printing": "Ragnar [LEG]",
+          "price": 27.99,
+          "weight_top_300": 0.0004257463528261481,
+          "weight_all_over_1": 0.00034200064881152026,
+          "cumulative_share_all_over_1": 0.7909664909010599
+        },
+        {
+          "rank": 262,
+          "card_name": "Sandals of Abdallah",
+          "printing": "Sandals of Abdallah [ARN]",
+          "price": 27.99,
+          "weight_top_300": 0.0004257463528261481,
+          "weight_all_over_1": 0.00034200064881152026,
+          "cumulative_share_all_over_1": 0.7913084915498714
+        },
+        {
+          "rank": 263,
+          "card_name": "Vaultborn Tyrant",
+          "printing": "Vaultborn Tyrant [BIG]",
+          "price": 27.7,
+          "weight_top_300": 0.0004213352616393106,
+          "weight_all_over_1": 0.00033845723372915725,
+          "cumulative_share_all_over_1": 0.7916469487836005
+        },
+        {
+          "rank": 264,
+          "card_name": "Bloodletter of Aclazotz",
+          "printing": "Bloodletter of Aclazotz <borderless> [LCI]",
+          "price": 27.64,
+          "weight_top_300": 0.00042042262208341315,
+          "weight_all_over_1": 0.00033772411336728905,
+          "cumulative_share_all_over_1": 0.7919846728969678
+        },
+        {
+          "rank": 265,
+          "card_name": "Plague of Vermin",
+          "printing": "Plague of Vermin [SHM]",
+          "price": 27.55,
+          "weight_top_300": 0.00041905366274956705,
+          "weight_all_over_1": 0.00033662443282448675,
+          "cumulative_share_all_over_1": 0.7923212973297923
+        },
+        {
+          "rank": 266,
+          "card_name": "Opalescence",
+          "printing": "Opalescence [UD]",
+          "price": 27.29,
+          "weight_top_300": 0.00041509889134067816,
+          "weight_all_over_1": 0.0003334475779230578,
+          "cumulative_share_all_over_1": 0.7926547449077154
+        },
+        {
+          "rank": 267,
+          "card_name": "Golgothian Sylex",
+          "printing": "Golgothian Sylex [ATQ]",
+          "price": 27.27,
+          "weight_top_300": 0.00041479467815537903,
+          "weight_all_over_1": 0.0003332032044691017,
+          "cumulative_share_all_over_1": 0.7929879481121844
+        },
+        {
+          "rank": 268,
+          "card_name": "Mana Confluence",
+          "printing": "Mana Confluence [JOU]",
+          "price": 27.0,
+          "weight_top_300": 0.0004106878001538406,
+          "weight_all_over_1": 0.00032990416284069476,
+          "cumulative_share_all_over_1": 0.7933178522750252
+        },
+        {
+          "rank": 269,
+          "card_name": "Cabal Coffers",
+          "printing": "Cabal Coffers [TOR]",
+          "price": 26.99,
+          "weight_top_300": 0.000410535693561191,
+          "weight_all_over_1": 0.00032978197611371673,
+          "cumulative_share_all_over_1": 0.7936476342511388
+        },
+        {
+          "rank": 270,
+          "card_name": "Solitude",
+          "printing": "Solitude [MH2]",
+          "price": 26.94,
+          "weight_top_300": 0.00040977516059794323,
+          "weight_all_over_1": 0.0003291710424788266,
+          "cumulative_share_all_over_1": 0.7939768052936177
+        },
+        {
+          "rank": 271,
+          "card_name": "Arid Mesa",
+          "printing": "Arid Mesa [MH2]",
+          "price": 26.93,
+          "weight_top_300": 0.00040962305400529364,
+          "weight_all_over_1": 0.00032904885575184853,
+          "cumulative_share_all_over_1": 0.7943058541493695
+        },
+        {
+          "rank": 272,
+          "card_name": "Lotus Petal",
+          "printing": "Lotus Petal [TE]",
+          "price": 26.92,
+          "weight_top_300": 0.0004094709474126441,
+          "weight_all_over_1": 0.00032892666902487055,
+          "cumulative_share_all_over_1": 0.7946347808183943
+        },
+        {
+          "rank": 273,
+          "card_name": "Bloom Tender",
+          "printing": "Bloom Tender [2X2]",
+          "price": 26.6,
+          "weight_top_300": 0.00040460353644785783,
+          "weight_all_over_1": 0.0003250166937615734,
+          "cumulative_share_all_over_1": 0.794959797512156
+        },
+        {
+          "rank": 274,
+          "card_name": "Misty Rainforest",
+          "printing": "Misty Rainforest [MH2]",
+          "price": 26.56,
+          "weight_top_300": 0.0004039951100772595,
+          "weight_all_over_1": 0.00032452794685366125,
+          "cumulative_share_all_over_1": 0.7952843254590096
+        },
+        {
+          "rank": 275,
+          "card_name": "Parallel Lives",
+          "printing": "Parallel Lives [ISD]",
+          "price": 26.45,
+          "weight_top_300": 0.00040232193755811423,
+          "weight_all_over_1": 0.00032318389285690283,
+          "cumulative_share_all_over_1": 0.7956075093518665
+        },
+        {
+          "rank": 276,
+          "card_name": "Ad Nauseam",
+          "printing": "Ad Nauseam [2XM]",
+          "price": 26.09,
+          "weight_top_300": 0.0003968461002227297,
+          "weight_all_over_1": 0.0003187851706856936,
+          "cumulative_share_all_over_1": 0.7959262945225523
+        },
+        {
+          "rank": 277,
+          "card_name": "Mirri's Guile",
+          "printing": "Mirri's Guile [TE]",
+          "price": 26.06,
+          "weight_top_300": 0.000396389780444781,
+          "weight_all_over_1": 0.0003184186105047595,
+          "cumulative_share_all_over_1": 0.796244713133057
+        },
+        {
+          "rank": 278,
+          "card_name": "Tithe",
+          "printing": "Tithe [VI]",
+          "price": 26.04,
+          "weight_top_300": 0.00039608556725948186,
+          "weight_all_over_1": 0.0003181742370508034,
+          "cumulative_share_all_over_1": 0.7965628873701078
+        },
+        {
+          "rank": 279,
+          "card_name": "Parallax Wave",
+          "printing": "Parallax Wave [PLIST]",
+          "price": 26.03,
+          "weight_top_300": 0.0003959334606668323,
+          "weight_all_over_1": 0.0003180520503238254,
+          "cumulative_share_all_over_1": 0.7968809394204317
+        },
+        {
+          "rank": 280,
+          "card_name": "Reverberation",
+          "printing": "Reverberation [LEG]",
+          "price": 25.95,
+          "weight_top_300": 0.0003947166079256357,
+          "weight_all_over_1": 0.0003170745565080011,
+          "cumulative_share_all_over_1": 0.7971980139769397
+        },
+        {
+          "rank": 281,
+          "card_name": "Maralen of the Mornsong",
+          "printing": "Maralen of the Mornsong [MOR]",
+          "price": 25.71,
+          "weight_top_300": 0.00039106604970204605,
+          "weight_all_over_1": 0.00031414207506052827,
+          "cumulative_share_all_over_1": 0.7975121560520002
+        },
+        {
+          "rank": 282,
+          "card_name": "Grim Tutor",
+          "printing": "Grim Tutor [M21]",
+          "price": 25.69,
+          "weight_top_300": 0.0003907618365167469,
+          "weight_all_over_1": 0.0003138977016065722,
+          "cumulative_share_all_over_1": 0.7978260537536068
+        },
+        {
+          "rank": 283,
+          "card_name": "Cream of the Crop",
+          "printing": "Cream of the Crop [MOR]",
+          "price": 25.55,
+          "weight_top_300": 0.0003886323442196529,
+          "weight_all_over_1": 0.0003121870874288797,
+          "cumulative_share_all_over_1": 0.7981382408410357
+        },
+        {
+          "rank": 284,
+          "card_name": "Torment of Hailfire",
+          "printing": "Torment of Hailfire [HOU]",
+          "price": 25.36,
+          "weight_top_300": 0.00038574231895931106,
+          "weight_all_over_1": 0.000309865539616297,
+          "cumulative_share_all_over_1": 0.798448106380652
+        },
+        {
+          "rank": 285,
+          "card_name": "Urza's Miter",
+          "printing": "Urza's Miter [ATQ]",
+          "price": 25.36,
+          "weight_top_300": 0.00038574231895931106,
+          "weight_all_over_1": 0.000309865539616297,
+          "cumulative_share_all_over_1": 0.7987579719202683
+        },
+        {
+          "rank": 286,
+          "card_name": "Army of Allah",
+          "printing": "Army of Allah <A> [ARN]",
+          "price": 25.12,
+          "weight_top_300": 0.00038209176073572136,
+          "weight_all_over_1": 0.0003069330581688242,
+          "cumulative_share_all_over_1": 0.7990649049784372
+        },
+        {
+          "rank": 287,
+          "card_name": "Jacques le Vert",
+          "printing": "Jacques le Vert [LEG]",
+          "price": 25.1,
+          "weight_top_300": 0.00038178754755042223,
+          "weight_all_over_1": 0.00030668868471486814,
+          "cumulative_share_all_over_1": 0.799371593663152
+        },
+        {
+          "rank": 288,
+          "card_name": "The Walls of Ba Sing Se",
+          "printing": "The Walls of Ba Sing Se [TLA]",
+          "price": 25.0,
+          "weight_top_300": 0.00038026648162392654,
+          "weight_all_over_1": 0.00030546681744508775,
+          "cumulative_share_all_over_1": 0.7996770604805971
+        },
+        {
+          "rank": 289,
+          "card_name": "Reset",
+          "printing": "Reset [LEG]",
+          "price": 24.99,
+          "weight_top_300": 0.00038011437503127695,
+          "weight_all_over_1": 0.0003053446307181097,
+          "cumulative_share_all_over_1": 0.7999824051113151
+        },
+        {
+          "rank": 290,
+          "card_name": "Undiscovered Paradise",
+          "printing": "Undiscovered Paradise [VI]",
+          "price": 24.99,
+          "weight_top_300": 0.00038011437503127695,
+          "weight_all_over_1": 0.0003053446307181097,
+          "cumulative_share_all_over_1": 0.8002877497420332
+        },
+        {
+          "rank": 291,
+          "card_name": "City of Solitude",
+          "printing": "City of Solitude [VI]",
+          "price": 24.98,
+          "weight_top_300": 0.00037996226843862736,
+          "weight_all_over_1": 0.0003052224439911317,
+          "cumulative_share_all_over_1": 0.8005929721860243
+        },
+        {
+          "rank": 292,
+          "card_name": "Nyxbloom Ancient",
+          "printing": "Nyxbloom Ancient [THB]",
+          "price": 24.9,
+          "weight_top_300": 0.0003787454156974308,
+          "weight_all_over_1": 0.0003042449501753074,
+          "cumulative_share_all_over_1": 0.8008972171361997
+        },
+        {
+          "rank": 293,
+          "card_name": "Terror of the Peaks",
+          "printing": "Terror of the Peaks [OTJ]",
+          "price": 24.9,
+          "weight_top_300": 0.0003787454156974308,
+          "weight_all_over_1": 0.0003042449501753074,
+          "cumulative_share_all_over_1": 0.801201462086375
+        },
+        {
+          "rank": 294,
+          "card_name": "Sylvan Library",
+          "printing": "Sylvan Library [CC1]",
+          "price": 24.79,
+          "weight_top_300": 0.0003770722431782855,
+          "weight_all_over_1": 0.000302900896178549,
+          "cumulative_share_all_over_1": 0.8015043629825536
+        },
+        {
+          "rank": 295,
+          "card_name": "Sliver Gravemother",
+          "printing": "Sliver Gravemother <extended> [CMM]",
+          "price": 24.78,
+          "weight_top_300": 0.00037692013658563597,
+          "weight_all_over_1": 0.000302778709451571,
+          "cumulative_share_all_over_1": 0.8018071416920052
+        },
+        {
+          "rank": 296,
+          "card_name": "Displacer Kitten",
+          "printing": "Displacer Kitten [CLB]",
+          "price": 24.44,
+          "weight_top_300": 0.00037174851243555057,
+          "weight_all_over_1": 0.00029862436073431784,
+          "cumulative_share_all_over_1": 0.8021057660527395
+        },
+        {
+          "rank": 297,
+          "card_name": "Mithril Coat",
+          "printing": "Mithril Coat [LTR]",
+          "price": 24.38,
+          "weight_top_300": 0.00037083587287965313,
+          "weight_all_over_1": 0.0002978912403724496,
+          "cumulative_share_all_over_1": 0.802403657293112
+        },
+        {
+          "rank": 298,
+          "card_name": "Winding Canyons",
+          "printing": "Winding Canyons [WL]",
+          "price": 24.38,
+          "weight_top_300": 0.00037083587287965313,
+          "weight_all_over_1": 0.0002978912403724496,
+          "cumulative_share_all_over_1": 0.8027015485334845
+        },
+        {
+          "rank": 299,
+          "card_name": "Lifeblood",
+          "printing": "Lifeblood [LEG]",
+          "price": 24.36,
+          "weight_top_300": 0.000370531659694354,
+          "weight_all_over_1": 0.0002976468669184935,
+          "cumulative_share_all_over_1": 0.802999195400403
+        },
+        {
+          "rank": 300,
+          "card_name": "Twinflame Tyrant",
+          "printing": "Twinflame Tyrant [FDN]",
+          "price": 24.35,
+          "weight_top_300": 0.00037037955310170446,
+          "weight_all_over_1": 0.0002975246801915155,
+          "cumulative_share_all_over_1": 0.8032967200805945
+        }
+      ]
+    }
+  }
+}
